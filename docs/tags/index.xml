@@ -5,6 +5,25 @@
     <link>http://bykoga.com/tags/</link>
     <description>Recent content in Tags on byKoga</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://bykoga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2021 23:22:59 -0300</lastBuildDate><atom:link href="http://bykoga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bar</title>
+      <link>http://bykoga.com/tags/bar/</link>
+      <pubDate>Wed, 06 Jan 2021 23:22:59 -0300</pubDate>
+      
+      <guid>http://bykoga.com/tags/bar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>foo</title>
+      <link>http://bykoga.com/tags/foo/</link>
+      <pubDate>Wed, 06 Jan 2021 23:22:59 -0300</pubDate>
+      
+      <guid>http://bykoga.com/tags/foo/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -3,15 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://bykoga.com/</loc>
+    <loc>http://bykoga.com/tags/bar/</loc>
+    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://bykoga.com/categories/</loc>
+    <loc>http://bykoga.com/</loc>
+    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bykoga.com/tags/foo/</loc>
+    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bykoga.com/posts/hello-world/</loc>
+    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bykoga.com/posts/</loc>
+    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
   </url>
   
   <url>
     <loc>http://bykoga.com/tags/</loc>
+    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bykoga.com/categories/</loc>
   </url>
   
 </urlset>
