@@ -1,3 +1,5 @@
+# Remember the line to build: hugo -D -d docs
+
 baseURL = "http://bykoga.com/"
 languageCode = "en-us"
 title = "byKoga"
