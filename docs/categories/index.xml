@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on byKoga</title>
-    <link>http://bykoga.com/categories/</link>
+    <link>https://gitbykoga.github.io/categories/</link>
     <description>Recent content in Categories on byKoga</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://bykoga.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://gitbykoga.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

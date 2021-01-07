@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on byKoga</title>
-    <link>http://bykoga.com/tags/</link>
+    <link>https://gitbykoga.github.io/tags/</link>
     <description>Recent content in Tags on byKoga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 23:22:59 -0300</lastBuildDate><atom:link href="http://bykoga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 23:22:59 -0300</lastBuildDate><atom:link href="https://gitbykoga.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bar</title>
-      <link>http://bykoga.com/tags/bar/</link>
+      <link>https://gitbykoga.github.io/tags/bar/</link>
       <pubDate>Wed, 06 Jan 2021 23:22:59 -0300</pubDate>
       
-      <guid>http://bykoga.com/tags/bar/</guid>
+      <guid>https://gitbykoga.github.io/tags/bar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>foo</title>
-      <link>http://bykoga.com/tags/foo/</link>
+      <link>https://gitbykoga.github.io/tags/foo/</link>
       <pubDate>Wed, 06 Jan 2021 23:22:59 -0300</pubDate>
       
-      <guid>http://bykoga.com/tags/foo/</guid>
+      <guid>https://gitbykoga.github.io/tags/foo/</guid>
       <description></description>
     </item>
     
