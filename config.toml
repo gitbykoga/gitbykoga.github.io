@@ -1,6 +1,6 @@
 # Remember the line to build: hugo -D -d docs
 
-baseURL = "http://bykoga.com/"
+baseURL = "https://gitbykoga.github.io/"
 languageCode = "en-us"
 title = "byKoga"
 theme = "themebykoga"
