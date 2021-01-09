@@ -6,15 +6,3 @@ title = "byKoga"
 theme = "themebykoga"
 
 disableKinds = ["taxonomyTerm", "taxonomy"]
-
-[menu]
-  [[menu.main]]
-    name = "About"
-    pre = "question-mark"
-    url = "/about/"
-    weight = 2
-    [[menu.main]]
-    name = "Contact"
-    pre = "letter"
-    url = "/contact/"
-    weight = 3
