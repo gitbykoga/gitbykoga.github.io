@@ -1,4 +1,4 @@
-# Remember the line to build: hugo -D -d docs
+# Remember the line to build: hugo -D -d docs --cleanDestinationDir
 
 baseURL = "https://gitbykoga.github.io/"
 languageCode = "en-us"

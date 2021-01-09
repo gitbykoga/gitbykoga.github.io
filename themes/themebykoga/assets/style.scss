@@ -1,5 +1,7 @@
 @import "bulma/sass/utilities/_all";
 
+$navbar-breakpoint: 0;
+
 //$navbar-background-color: $yellow;
 $navbar-height: 1.5rem;
 $navbar-box-shadow-size: 0 2px 4px 0px;
@@ -13,6 +15,14 @@ $navbar-item-hover-color: $text;
 // SITE OVERALL STUFF
 body {
     visibility: hidden;
+}
+
+#content {
+    @include touch {
+        padding: 0 3rem;
+    }
+
+    padding: 0 18vw;
 }
 
 // NAVBAR
@@ -60,7 +70,7 @@ body {
     margin: 1rem 0rem;
 }
 #navleft .navbar-item, #navright .navbar-item {
-    padding: 0.75rem 0.5rem;
+    padding: 0.75rem 0.25rem;
 }
 #navleft {
     box-shadow: 0 -2px 4px 0 $grey-light;
