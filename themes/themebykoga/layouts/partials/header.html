@@ -1,14 +1,40 @@
-<div id="nav-border" class="container">
-    <nav id="nav" class="nav justify-content-center">
-        {{ range .Site.Menus.main }}
-        <a class="nav-link" href="{{ .URL }}">
-            {{ if .Pre }}
-            {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-            {{ $icon }}
-            {{ end }}
-            {{ $text := print .Name | safeHTML }}
-            {{ $text }}
-        </a>
-        {{ end }}
-    </nav>
-</div>
+<nav id="navmain" class="navbar is-fixed-top is-transparent has-shadow" role="navigation" aria-label="main navigation">
+    <div id="navmenu" class="navbar-menu px-4 py-0">
+        <div id="navstart" class="navbar-start is-flex">
+            <a class="navbar-item" href="/art">art</a>
+            <a class="navbar-item" href="/games">games</a>
+            <a class="navbar-item" href="/design">design</a>
+            <a class="navbar-item" href="/journal">journal</a>
+        </div>
+
+        <a id="navbrand" class="navbar-item has-text-black is-size-5 has-text-weight-bold has-text-centered is-flex is-justify-content-center" href="/">{{ .Site.Title }}</a>
+
+        <div id="navend" class="navbar-end is-flex">
+            <a class="navbar-item" href="/#recent">recent</a>
+            <a class="navbar-item" href="/#links">links</a>
+            <a class="navbar-item" href="/#about">about</a>
+            <a class="navbar-item" href="/#portfolio">portfolio</a>
+            <a class="navbar-item" href="/#contact">contact</a>
+        </div>
+    </div>
+</nav>
+
+<nav id="navleft" class="navbar is-fixed-left is-transparent" role="navigation" aria-label="mobile navigation 1">
+    <div id="navleftmenu" class="navbar-menu px-0 py-4 is-flex is-justify-content-space-around">
+        <a class="navbar-item" href="/art">art</a>
+        <a class="navbar-item" href="/games">games</a>
+        <a class="navbar-item" href="/design">design</a>
+        <a class="navbar-item" href="/journal">journal</a>
+    </div>
+</nav>
+
+<nav id="navright" class="navbar is-fixed-right is-transparent" role="navigation"
+    aria-label="mobile navigation 2">
+    <div id="navrightmenu" class="navbar-menu px-0 py-4 is-flex is-justify-content-space-around">
+        <a class="navbar-item" href="/#recent">recent</a>
+        <a class="navbar-item" href="/#links">links</a>
+        <a class="navbar-item" href="/#about">about</a>
+        <a class="navbar-item" href="/#portfolio">portfolio</a>
+        <a class="navbar-item" href="/#contact">contact</a>
+    </div>
+</nav>

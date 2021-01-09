@@ -1,0 +1,98 @@
+@import "bulma/sass/utilities/_all";
+
+//$navbar-background-color: $yellow;
+$navbar-height: 1.5rem;
+$navbar-box-shadow-size: 0 2px 4px 0px;
+$navbar-box-shadow-color: $grey-light;
+$navbar-padding-vertical: 1.5rem;
+$navbar-item-active-color: $black;
+$navbar-item-hover-color: $text;
+
+@import "bulma/bulma.sass";
+
+// SITE OVERALL STUFF
+body {
+    visibility: hidden;
+}
+
+// NAVBAR
+#navmain {
+    @include touch {
+        margin-right: auto;
+        margin-left: auto;
+        width: 9rem;
+    }
+
+    margin: 1rem;
+
+    //border: 3px solid $yellow;
+    border-radius: 4px
+}
+#navstart, #navend {
+    @include touch {
+        display: none !important;
+    }
+}
+
+#navmenu {
+    display: grid;
+
+    @include touch {
+        grid-template: 1fr / 1fr;
+    }
+    grid-template: 1fr / 1fr auto 1fr;
+}
+.navbar-item {
+    font-weight: 500;
+}
+.navbar-item.is-active {
+    text-shadow: 0.5px 0px 0px $black, -0.5px 0px 0px $black;
+}
+.navbar-item:not(.is-active):hover {
+    text-shadow: 0.5px 0px 0px $text, -0.5px 0px 0px $text;
+}
+
+#navleft, #navright {
+    @include desktop {
+        display: none !important;
+    }
+
+    margin: 1rem 0rem;
+}
+#navleft .navbar-item, #navright .navbar-item {
+    padding: 0.75rem 0.5rem;
+}
+#navleft {
+    box-shadow: 0 -2px 4px 0 $grey-light;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);    
+}
+#navright {
+    box-shadow: 0 2px 4px 0 $grey-light;
+    writing-mode: vertical-rl;  
+}
+
+.is-fixed-left {
+    left: 0;
+    top: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: $navbar-fixed-z;
+}
+
+.is-fixed-right {
+    right: 0;
+    top: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: $navbar-fixed-z;
+}
+
+// HASH STUFF
+h1:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -100px; 
+    height: 100px; 
+    visibility: hidden; 
+}

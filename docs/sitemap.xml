@@ -3,37 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gitbykoga.github.io/tags/bar/</loc>
-    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+    <loc>https://gitbykoga.github.io/about/</loc>
+    <lastmod>2021-01-07T22:49:26-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gitbykoga.github.io/contact/</loc>
+    <lastmod>2021-01-07T22:46:12-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gitbykoga.github.io/design/dark-mode/</loc>
+    <lastmod>2021-01-07T22:03:39-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gitbykoga.github.io/games/hypercolor/</loc>
+    <lastmod>2021-01-07T22:03:23-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gitbykoga.github.io/art/digital-art/</loc>
+    <lastmod>2021-01-07T22:03:09-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gitbykoga.github.io/journal/at-the-beach/</loc>
+    <lastmod>2021-01-07T21:58:37-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://gitbykoga.github.io/</loc>
-    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+    <lastmod>2021-01-07T14:42:08-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gitbykoga.github.io/tags/foo/</loc>
-    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+    <loc>https://gitbykoga.github.io/art/</loc>
+    <lastmod>2021-01-07T14:42:08-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gitbykoga.github.io/posts/hello-world/</loc>
-    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+    <loc>https://gitbykoga.github.io/design/</loc>
+    <lastmod>2021-01-07T14:42:08-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gitbykoga.github.io/posts/</loc>
-    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+    <loc>https://gitbykoga.github.io/games/</loc>
+    <lastmod>2021-01-07T14:42:08-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gitbykoga.github.io/tags/</loc>
-    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
+    <loc>https://gitbykoga.github.io/journal/</loc>
+    <lastmod>2021-01-07T14:42:08-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gitbykoga.github.io/categories/</loc>
+    <loc>https://gitbykoga.github.io/journal/hello-world/</loc>
+    <lastmod>2021-01-06T23:22:59-03:00</lastmod>
   </url>
   
 </urlset>

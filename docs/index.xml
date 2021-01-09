@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>byKoga</title>
+    <title>Homepage on byKoga</title>
     <link>https://gitbykoga.github.io/</link>
-    <description>Recent content on byKoga</description>
+    <description>Recent content in Homepage on byKoga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 23:22:59 -0300</lastBuildDate><atom:link href="https://gitbykoga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 14:42:08 -0300</lastBuildDate><atom:link href="https://gitbykoga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://gitbykoga.github.io/about/</link>
+      <pubDate>Thu, 07 Jan 2021 22:49:26 -0300</pubDate>
+      
+      <guid>https://gitbykoga.github.io/about/</guid>
+      <description>About me:
+Hey! My name is André Hiroshi Koga, better known as byKoga</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://gitbykoga.github.io/contact/</link>
+      <pubDate>Thu, 07 Jan 2021 22:46:12 -0300</pubDate>
+      
+      <guid>https://gitbykoga.github.io/contact/</guid>
+      <description>Contact me! Mail: mailbykoga@gmail.com</description>
+    </item>
+    
+    <item>
+      <title>Dark Mode</title>
+      <link>https://gitbykoga.github.io/design/dark-mode/</link>
+      <pubDate>Thu, 07 Jan 2021 22:03:39 -0300</pubDate>
+      
+      <guid>https://gitbykoga.github.io/design/dark-mode/</guid>
+      <description>Dark mode is indeed great!</description>
+    </item>
+    
+    <item>
+      <title>HyperColor</title>
+      <link>https://gitbykoga.github.io/games/hypercolor/</link>
+      <pubDate>Thu, 07 Jan 2021 22:03:23 -0300</pubDate>
+      
+      <guid>https://gitbykoga.github.io/games/hypercolor/</guid>
+      <description>Hyper color is a innovative platform game&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Digital Art</title>
+      <link>https://gitbykoga.github.io/art/digital-art/</link>
+      <pubDate>Thu, 07 Jan 2021 22:03:09 -0300</pubDate>
+      
+      <guid>https://gitbykoga.github.io/art/digital-art/</guid>
+      <description>So, I&amp;rsquo;ve been learning digital art with Krita for the past couple of months!</description>
+    </item>
+    
+    <item>
+      <title>At the Beach</title>
+      <link>https://gitbykoga.github.io/journal/at-the-beach/</link>
+      <pubDate>Thu, 07 Jan 2021 21:58:37 -0300</pubDate>
+      
+      <guid>https://gitbykoga.github.io/journal/at-the-beach/</guid>
+      <description>I am at the beach and it is great!</description>
+    </item>
+    
     <item>
       <title>Hello World</title>
-      <link>https://gitbykoga.github.io/posts/hello-world/</link>
+      <link>https://gitbykoga.github.io/journal/hello-world/</link>
       <pubDate>Wed, 06 Jan 2021 23:22:59 -0300</pubDate>
       
-      <guid>https://gitbykoga.github.io/posts/hello-world/</guid>
+      <guid>https://gitbykoga.github.io/journal/hello-world/</guid>
       <description>Hello World! This is my first post
 byKoga</description>
     </item>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on byKoga</title>
+    <link>https://gitbykoga.github.io/journal/</link>
+    <description>Recent content in Homepage on byKoga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Jan 2021 14:42:08 -0300</lastBuildDate><atom:link href="https://gitbykoga.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>At the Beach</title>
+      <link>https://gitbykoga.github.io/journal/at-the-beach/</link>
+      <pubDate>Thu, 07 Jan 2021 21:58:37 -0300</pubDate>
+      
+      <guid>https://gitbykoga.github.io/journal/at-the-beach/</guid>
+      <description>I am at the beach and it is great!</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://gitbykoga.github.io/journal/hello-world/</link>
+      <pubDate>Wed, 06 Jan 2021 23:22:59 -0300</pubDate>
+      
+      <guid>https://gitbykoga.github.io/journal/hello-world/</guid>
+      <description>Hello World! This is my first post
+byKoga</description>
+    </item>
+    
+  </channel>
+</rss>
