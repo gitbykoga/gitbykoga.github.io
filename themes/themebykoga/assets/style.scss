@@ -6,7 +6,6 @@ $navbar-breakpoint: 0;
 $navbar-height: 1.5rem;
 $navbar-box-shadow-size: 0 2px 4px 0px;
 $navbar-box-shadow-color: $grey-light;
-$navbar-padding-vertical: 1.5rem;
 $navbar-item-active-color: $black;
 $navbar-item-hover-color: $text;
 
@@ -19,10 +18,10 @@ body {
 
 #content {
     @include touch {
-        padding: 0 3rem;
+        padding: 2rem 3rem 0rem;
     }
 
-    padding: 0 18vw;
+    padding: 7rem 18vw 0rem;
 }
 
 // NAVBAR
