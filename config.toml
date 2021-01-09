@@ -1,4 +1,5 @@
 # Remember the line to build: hugo -D -d docs --cleanDestinationDir
+# Remember the line to server: hugo server -D -w
 
 baseURL = "https://gitbykoga.github.io/"
 languageCode = "en-us"
