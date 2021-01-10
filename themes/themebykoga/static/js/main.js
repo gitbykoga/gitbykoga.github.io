@@ -26,40 +26,66 @@ if (window.location.pathname.substring(0, 1) === "/#" || window.location.pathnam
         var currentHash = "#recent"
 
         $(document).scroll(function () {
-            var minDist = $(window).height() * 0.8;
-            var closestHash = "";
+            uiNavigation(currentHash);
+        });
 
-            $('h1[id]').each(function () {
-                var distance = $(this).offset().top - $(window).scrollTop() + 100;
-                var hash = $(this).attr('id');
-
-                if (distance > 70 && distance < ($(window).height() * 0.8) && minDist > distance) {
-                    minDist = distance;
-                    closestHash = hash;
-                }
-            });
-            
-            if (closestHash != currentHash && closestHash != "") {
-                currentHash = closestHash;
-                
-                if (history.pushState) {
-                    history.pushState(null, null, '#' + currentHash);
-                }
-                else {
-                    location.hash = '#' + currentHash;
-                }
-
-                $("#navend .navbar-item").each(function () {
-                    var href = $(this).attr('href');
-
-                    if ("/#" + currentHash === href) {
-                        $(this).addClass('is-active');
-                    }
-                    else {
-                        $(this).removeClass('is-active');
-                    }
-                });
-            }
+        $().ready(function () {
+            uiNavigation(currentHash);
         });
     });
 }
+
+function uiNavigation(currentHash) {
+    var minDist = $(window).height() * 0.8;
+    var closestHash = "";
+
+    $('h1[id]').each(function () {
+        var distance = $(this).offset().top - $(window).scrollTop() + 100;
+        var hash = $(this).attr('id');
+
+        if (distance > 70 && distance < ($(window).height() * 0.8) && minDist > distance) {
+            minDist = distance;
+            closestHash = hash;
+        }
+    });
+
+    if (closestHash != currentHash && closestHash != "") {
+        currentHash = closestHash;
+
+        if (history.pushState) {
+            history.pushState(null, null, '#' + currentHash);
+        }
+        else {
+            location.hash = '#' + currentHash;
+        }
+
+        $("#navend .navbar-item").each(function () {
+            var href = $(this).attr('href');
+
+            if ("/#" + currentHash === href) {
+                $(this).addClass('is-active');
+            }
+            else {
+                $(this).removeClass('is-active');
+            }
+        });
+    }
+}
+
+var isDark = false;
+
+$(function () {
+    $("#darkmode a").click(function () {
+        if (isDark) {
+            isDark = false;
+            $("#darkmode svg").replaceWith(feather.icons.moon.toSvg());
+        }
+        else {
+            isDark = true;
+            $("#darkmode svg").replaceWith(feather.icons.sun.toSvg());
+        }
+
+        $(this).toggleClass("is-dark");
+        $(this).toggleClass("is-warning");
+    });
+});

@@ -4,19 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="https://gitbykoga.github.io/style.b10920b9d6869db3226c3fb7880aef476c2b0c27e245a7eff834e6c14b984784.css">
+    <link rel="stylesheet" href="https://gitbykoga.github.io/mystyles.155c9087ea9625ff323ea5701f447f515fd08469d8b9fc66e77eb653f7ce6f7a.css">
     
     
     <title>byKoga</title>
 </head><body class="has-spaced-navbar-fixed-top"><nav id="navmain" class="navbar is-fixed-top is-transparent has-shadow" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-    
     <div id="navmenu" class="navbar-menu px-4 py-0">
         <div id="navstart" class="navbar-start">
             <a class="navbar-item" href="/art">art</a>
@@ -25,11 +17,13 @@
             <a class="navbar-item" href="/journal">journal</a>
         </div>
 
-        <a id="navbrand" class="navbar-item has-text-black is-size-5 has-text-weight-bold has-text-centered is-flex is-justify-content-center" href="/">byKoga</a>
+        <a id="navbrand"
+            class="navbar-item has-text-black is-size-5 has-text-centered is-flex is-justify-content-center"
+            href="/">byKoga</a>
 
         <div id="navend" class="navbar-end">
-            <a class="navbar-item" href="/#recent">recent</a>
             <a class="navbar-item" href="/#links">links</a>
+            <a class="navbar-item" href="/#recent">recent</a>
             <a class="navbar-item" href="/#about">about</a>
             <a class="navbar-item" href="/#portfolio">portfolio</a>
             <a class="navbar-item" href="/#contact">contact</a>
@@ -37,12 +31,55 @@
     </div>
 </nav>
 
+<nav id="navmobile" class="navbar is-fixed-top is-transparent has-shadow" role="navigation" aria-label="main navigation">
+    <div id="navmenu" class="navbar-menu px-4 py-0">
+        <div id="navstart" class="navbar-start navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+                Content
+            </a>
+
+            <div class="navbar-dropdown">
+                <a class="navbar-item" href="/art">art</a>
+                <a class="navbar-item" href="/games">games</a>
+                <a class="navbar-item" href="/design">design</a>
+                <a class="navbar-item" href="/journal">journal</a>
+            </div>
+        </div>
+
+        <a id="navbrand"
+            class="navbar-item has-text-black is-size-5 has-text-centered is-flex is-justify-content-center"
+            href="/">byKoga</a>
+
+        <div id="navend" class="navbar-end navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+                Info
+            </a>
+        
+            <div class="navbar-dropdown is-right">
+                <a class="navbar-item" href="/#links">links</a>
+                <a class="navbar-item" href="/#recent">recent</a>
+                <a class="navbar-item" href="/#about">about</a>
+                <a class="navbar-item" href="/#portfolio">portfolio</a>
+                <a class="navbar-item" href="/#contact">contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar is-transparent" id="darkmode">
+    <a class="button is-small is-rounded is-borderless is-warning">
+        <span class="icon is-small">
+            <i data-feather="moon"></i>
+        </span>
+    </a>
+</nav>
+
 <div id="content">
 <h1 class="title">Homepage</h1>
 <p><p>This is the homepage</p>
-<h1 id="recent">recent</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas urna lacus, facilisis quis erat non, molestie eleifend nisi. Suspendisse arcu ex, tristique sed viverra eu, vehicula eu nulla. Pellentesque id tincidunt risus. Ut sem mi, interdum non nunc nec, dignissim rhoncus eros. Morbi commodo odio a diam tincidunt aliquet. Mauris est dui, vehicula nec euismod at, semper iaculis tortor. Vestibulum eu mi vitae nunc interdum dapibus id vel purus. Nulla sit amet lacus turpis. Etiam hendrerit non turpis sit amet lacinia. In accumsan ullamcorper mi tempus sodales. In efficitur tempus mauris eget semper. Vestibulum tristique nec nulla nec sodales.</p>
 <h1 id="links">links</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas urna lacus, facilisis quis erat non, molestie eleifend nisi. Suspendisse arcu ex, tristique sed viverra eu, vehicula eu nulla. Pellentesque id tincidunt risus. Ut sem mi, interdum non nunc nec, dignissim rhoncus eros. Morbi commodo odio a diam tincidunt aliquet. Mauris est dui, vehicula nec euismod at, semper iaculis tortor. Vestibulum eu mi vitae nunc interdum dapibus id vel purus. Nulla sit amet lacus turpis. Etiam hendrerit non turpis sit amet lacinia. In accumsan ullamcorper mi tempus sodales. In efficitur tempus mauris eget semper. Vestibulum tristique nec nulla nec sodales.</p>
+<h1 id="recent">recent</h1>
 <p>Phasellus molestie a libero at rutrum. Curabitur eu lectus leo. Nulla lectus nulla, bibendum at ex eget, hendrerit rhoncus magna. Cras venenatis quis est vel facilisis. Curabitur sit amet feugiat elit. Nunc id consequat sapien, at fringilla est. Ut ultricies fringilla mauris non posuere. Suspendisse auctor aliquam tempus. Sed ullamcorper tincidunt est at mollis. Aliquam et felis nibh. Phasellus tempus a nisi nec dignissim. Cras sit amet augue ligula.</p>
 <h1 id="about">about</h1>
 <p>Suspendisse luctus ante ut viverra ullamcorper. Curabitur ornare laoreet orci, bibendum laoreet nulla pulvinar a. Morbi quis metus maximus, consectetur quam at, tincidunt tellus. Suspendisse mattis, turpis eu efficitur tincidunt, nisl diam pellentesque diam, vitae finibus felis est id ex. Aliquam tincidunt ultrices leo, vel facilisis risus convallis in. Sed sed consectetur mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas nibh eros, sed dictum diam fringilla vel. Etiam efficitur diam maximus, pharetra urna id, finibus libero.</p>

@@ -7,10 +7,10 @@ draft: false
 
 This is the homepage
 
-# recent
+# links
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas urna lacus, facilisis quis erat non, molestie eleifend nisi. Suspendisse arcu ex, tristique sed viverra eu, vehicula eu nulla. Pellentesque id tincidunt risus. Ut sem mi, interdum non nunc nec, dignissim rhoncus eros. Morbi commodo odio a diam tincidunt aliquet. Mauris est dui, vehicula nec euismod at, semper iaculis tortor. Vestibulum eu mi vitae nunc interdum dapibus id vel purus. Nulla sit amet lacus turpis. Etiam hendrerit non turpis sit amet lacinia. In accumsan ullamcorper mi tempus sodales. In efficitur tempus mauris eget semper. Vestibulum tristique nec nulla nec sodales.
 
-# links
+# recent
 Phasellus molestie a libero at rutrum. Curabitur eu lectus leo. Nulla lectus nulla, bibendum at ex eget, hendrerit rhoncus magna. Cras venenatis quis est vel facilisis. Curabitur sit amet feugiat elit. Nunc id consequat sapien, at fringilla est. Ut ultricies fringilla mauris non posuere. Suspendisse auctor aliquam tempus. Sed ullamcorper tincidunt est at mollis. Aliquam et felis nibh. Phasellus tempus a nisi nec dignissim. Cras sit amet augue ligula.
 
 # about

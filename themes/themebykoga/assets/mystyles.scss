@@ -3,13 +3,21 @@
 $navbar-breakpoint: 0;
 
 //$navbar-background-color: $yellow;
+$shadow-box: 0px 0px 25px 0px;
+$shadow-box-color: rgba($black, .25);
 $navbar-height: 1.5rem;
-$navbar-box-shadow-size: 0 2px 4px 0px;
-$navbar-box-shadow-color: $grey-light;
+$navbar-box-shadow-size: $shadow-box;
+$navbar-box-shadow-color: $shadow-box-color;
 $navbar-item-active-color: $black;
+$navbar-dropdown-item-active-color: $black;
 $navbar-item-hover-color: $text;
+$navbar-dropdown-item-hover-color: $text;
 
 @import "bulma/bulma.sass";
+
+
+
+
 
 // SITE OVERALL STUFF
 body {
@@ -18,23 +26,32 @@ body {
 
 #content {
     @include touch {
-        padding: 2rem 1rem 0rem;
+        padding: 1.5rem 1.5rem 0rem;
     }
 
-    padding: 7rem 18vw 0rem;
+    padding: 2.5rem 18vw 0rem;
 }
+
+
+
+
 
 // NAVBAR
-#navmain {
+#navmain, #navmobile {
     margin: 1rem;
-
-    @include touch {
-        overflow: scroll;
-    }
-
-    //border: 3px solid $yellow;
     border-radius: 4px
 }
+#navmain {
+    @include touch {
+        display: none !important;
+    }
+}
+#navmobile {
+    @include desktop {
+        display: none !important;
+    }
+}
+
 /*#navstart, #navend {
     @include touch {
         display: none !important;
@@ -56,41 +73,33 @@ body {
     text-shadow: 0.5px 0px 0px $text, -0.5px 0px 0px $text;
 }
 
-/*#navleft, #navright {
-    @include desktop {
-        display: none !important;
-    }
-
-    margin: 1rem 0rem;
-}
-#navleft .navbar-item, #navright .navbar-item {
-    padding: 0.75rem 0.25rem;
-}
-#navleft {
-    box-shadow: 0 -2px 4px 0 $grey-light;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);    
-}
-#navright {
-    box-shadow: 0 2px 4px 0 $grey-light;
-    writing-mode: vertical-rl;  
+#navbrand {
+    font-weight: 900;
 }
 
-.is-fixed-left {
-    left: 0;
-    top: 0;
+#darkmode {
     position: fixed;
     bottom: 0;
-    z-index: $navbar-fixed-z;
-}
-
-.is-fixed-right {
     right: 0;
-    top: 0;
-    position: fixed;
-    bottom: 0;
-    z-index: $navbar-fixed-z;
-}*/
+    z-index: 10;
+
+    margin: 1rem
+}
+
+#darkmode a {
+    border: 0;
+    box-shadow: $shadow-box $shadow-box-color;
+}
+.is-dark-mode {
+    
+}
+.is-light-mode {
+
+}
+
+
+
+
 
 // HASH STUFF
 h1:before { 
