@@ -87,5 +87,7 @@ $(function () {
 
         $(this).toggleClass("is-dark");
         $(this).toggleClass("is-warning");
+
+        $("body").toggleClass("darkmode")
     });
 });

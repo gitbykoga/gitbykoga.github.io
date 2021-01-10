@@ -70,7 +70,9 @@ body {
     text-shadow: 0.5px 0px 0px $black, -0.5px 0px 0px $black;
 }
 .navbar-item:not(.is-active):hover {
-    text-shadow: 0.5px 0px 0px $text, -0.5px 0px 0px $text;
+    @include desktop {
+        text-shadow: 0.5px 0px 0px $text, -0.5px 0px 0px $text;
+    }
 }
 
 #navbrand {
