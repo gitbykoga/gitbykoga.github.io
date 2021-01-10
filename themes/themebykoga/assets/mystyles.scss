@@ -14,6 +14,7 @@ $navbar-item-hover-color: $text;
 $navbar-dropdown-item-hover-color: $text;
 
 @import "bulma/bulma.sass";
+//@import "../../../node_modules/bulma-prefers-dark/bulma-prefers-dark.sass";
 
 
 
@@ -28,8 +29,9 @@ body {
     @include touch {
         padding: 1.5rem 1.5rem 0rem;
     }
-
     padding: 2.5rem 18vw 0rem;
+
+    min-height: 100vh;
 }
 
 
@@ -68,6 +70,8 @@ body {
 }
 .navbar-item.is-active {
     text-shadow: 0.5px 0px 0px $black, -0.5px 0px 0px $black;
+    //font-style: italic;
+    text-decoration: underline;
 }
 .navbar-item:not(.is-active):hover {
     @include desktop {
@@ -84,6 +88,7 @@ body {
     bottom: 0;
     right: 0;
     z-index: 10;
+    background-color: transparent !important;
 
     margin: 1rem
 }
@@ -92,11 +97,8 @@ body {
     border: 0;
     box-shadow: $shadow-box $shadow-box-color;
 }
-.is-dark-mode {
-    
-}
-.is-light-mode {
-
+.darkmode-layer--simple {
+    z-index: 100;
 }
 
 

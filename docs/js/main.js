@@ -72,6 +72,13 @@ function uiNavigation(currentHash) {
     }
 }
 
+/*const darkmode = new Darkmode({
+    time: '0.5s'
+});*/
+openLight = new OpenLight("auto");
+openLight.init();
+openLight.addOverrideByClassName("darkover");
+
 var isDark = false;
 
 $(function () {
@@ -87,7 +94,7 @@ $(function () {
 
         $(this).toggleClass("is-dark");
         $(this).toggleClass("is-warning");
-
-        $("body").toggleClass("darkmode")
+        //darkmode.toggle();
+        openLight.toggleMode();
     });
 });
