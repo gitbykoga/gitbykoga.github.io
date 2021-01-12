@@ -51,7 +51,7 @@ function uiNavigation(currentHash) {
 
     if (closestHash != currentHash && closestHash != "") {
         currentHash = closestHash;
-
+        
         if (history.pushState) {
             history.pushState(null, null, '#' + currentHash);
         }
@@ -98,3 +98,23 @@ $(function () {
         openLight.toggleMode();
     });
 });
+
+(function ($) {
+    $("a[href*=\\#]:not([href=\\#])").click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash),
+                headerHeight = 100; // Get fixed header height
+
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+            if (target.length) {
+                $('html,body').stop().dequeue().animate({
+                    scrollTop: target.offset().top - headerHeight
+                }, 500);
+                return false;
+            }
+        }
+    });
+})(jQuery);

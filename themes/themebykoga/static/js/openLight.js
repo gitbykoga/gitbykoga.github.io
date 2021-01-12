@@ -250,7 +250,7 @@ class OpenLight {
             document.getElementsByTagName('h4'),
             document.getElementsByTagName('h5'),
             document.getElementsByTagName('h6'),
-            document.getElementsByTagName('a'),
+            document.getElementsByClassName('navbar-item'),
             document.getElementsByTagName('strong'),
             document.getElementsByTagName('span')
         ];

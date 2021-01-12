@@ -14,7 +14,6 @@ $navbar-item-hover-color: $text;
 $navbar-dropdown-item-hover-color: $text;
 
 @import "bulma/bulma.sass";
-//@import "../../../node_modules/bulma-prefers-dark/bulma-prefers-dark.sass";
 
 
 
@@ -26,10 +25,20 @@ body {
 }
 
 #content {
-    @include touch {
+    /*@include mobile {
         padding: 1.5rem 1.5rem 0rem;
     }
-    padding: 2.5rem 18vw 0rem;
+    @include tablet-only {
+        padding: 1.5rem 5rem 0rem;
+    }
+    @include desktop-only {
+        padding: 2.5rem 11rem 0rem;
+    }
+    @include widescreen-only {
+        padding: 2.5rem 15rem 0rem;
+    }
+
+    padding: 2.5rem 17rem 0rem;*/
 
     min-height: 100vh;
 }
@@ -53,12 +62,6 @@ body {
         display: none !important;
     }
 }
-
-/*#navstart, #navend {
-    @include touch {
-        display: none !important;
-    }
-}*/
 
 #navmenu {
     display: grid;
@@ -99,17 +102,4 @@ body {
 }
 .darkmode-layer--simple {
     z-index: 100;
-}
-
-
-
-
-
-// HASH STUFF
-h1:before { 
-    display: block; 
-    content: " "; 
-    margin-top: -100px; 
-    height: 100px; 
-    visibility: hidden; 
 }
