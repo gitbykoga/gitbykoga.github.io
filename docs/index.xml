@@ -8,25 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Jan 2021 14:42:08 -0300</lastBuildDate><atom:link href="https://gitbykoga.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>https://gitbykoga.github.io/about/</link>
-      <pubDate>Thu, 07 Jan 2021 22:49:26 -0300</pubDate>
-      
-      <guid>https://gitbykoga.github.io/about/</guid>
-      <description>About me:
-Hey! My name is André Hiroshi Koga, better known as byKoga</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://gitbykoga.github.io/contact/</link>
-      <pubDate>Thu, 07 Jan 2021 22:46:12 -0300</pubDate>
-      
-      <guid>https://gitbykoga.github.io/contact/</guid>
-      <description>Contact me! Mail: mailbykoga@gmail.com</description>
-    </item>
-    
-    <item>
       <title>Dark Mode</title>
       <link>https://gitbykoga.github.io/design/dark-mode/</link>
       <pubDate>Thu, 07 Jan 2021 22:03:39 -0300</pubDate>
