@@ -9,20 +9,12 @@
 
 <div id="home-recent" class="section">
     <div class="container">
-    {{ index $content_parts 1 | safe.HTML}}
+        {{ index $content_parts 1 | safe.HTML}}
     </div>
 
-    <div class="tile is-ancestor">
-        {{- range ( where site.RegularPages "Type" "post" | first 10 ) }}
-        <div class="tile is-parent">
-            <div class="tile is-child box">
-                <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                {{ partial "metadata.html" . }}
-                <a class="summary" href="{{ .RelPermalink }}">
-                    <p>{{ .Summary }}</p>
-                </a>
-            </div>
-        </div>
+    <div id="home-posts" class="columns is-mobile my-2 is-centered is-multiline">
+        {{- range ( where site.RegularPages "Type" "post" | first 8 | after 0 ) }}
+        {{ partial "postcard.html" . }}
         {{- end }}
     </div>
 </div>

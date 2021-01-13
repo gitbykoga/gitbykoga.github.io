@@ -105,3 +105,21 @@ body {
 .darkmode-layer--simple {
     z-index: 100;
 }
+
+
+
+
+
+// HOME
+#home-posts {
+    @include desktop {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+.postcard {
+    @include touch {
+        padding: 1rem 0.5rem;
+    }
+    padding: 1.5rem;
+}

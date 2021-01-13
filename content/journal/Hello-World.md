@@ -3,7 +3,7 @@ title: "Hello World"
 type: "post"
 date: 2021-01-06T23:22:59-03:00
 draft: true
-categories: ["Blog"]
+categories: ["Journal"]
 ---
 
 Hello World!
