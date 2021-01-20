@@ -200,6 +200,9 @@ $card-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.2), 0 0px 0 1px rgba($
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+.home-postcard {
+    margin: 0.25rem;
+}
 .postcard-cat {
     position: absolute;
     z-index: 2;
