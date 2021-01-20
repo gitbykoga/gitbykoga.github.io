@@ -10,6 +10,6 @@ thumb: "images/starry-sky.png"
 alt: "This is the alt"
 ---
 
-{{< imgproc path="images/starry-sky.png" method="Resize" options="300x jpg q75 Lanczos Smart"  alt="Wowie!" >}}
+{{< imgproc path="images/starry-sky.png" method="Resize" size="960x" options="jpg q75 Lanczos Smart"  alt="Wowie!" >}}
 
 So, I've been learning digital art with Krita for the past couple of months!

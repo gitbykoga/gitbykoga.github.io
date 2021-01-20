@@ -1,15 +1,18 @@
 {{ $image := $.Page.Resources.GetMatch (.Get "path") }}
 
+{{ $size := .Get "size"}}
 {{ $options := .Get "options"}}
+{{ $added := print $size " " $options}}
+{{ $lowres := print $size " jpg q10"}}
 {{ $method := .Get "method" }}
 
 {{ if eq $method "Fill" }}
-    {{ .Scratch.Set "modified-image" ($image.Fill $options) }}
+    {{ .Scratch.Set "modified-image" ($image.Fill $added) }}
 {{ else if eq $method "Fit" }}
-    {{ .Scratch.Set "modified-image" ($image.Fit $options) }}
+    {{ .Scratch.Set "modified-image" ($image.Fit $added) }}
 {{ else if eq $method "Resize" }}
-    {{ .Scratch.Set "modified-image" ($image.Resize $options) }}
-    {{ .Scratch.Set "lowres-image" ($image.Resize "300x jpg q10") }}
+    {{ .Scratch.Set "modified-image" ($image.Resize $added) }}
+    {{ .Scratch.Set "lowres-image" ($image.Resize $lowres) }}
 {{ end }}
 
 <img class="lazy" data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Get "alt" }}'>

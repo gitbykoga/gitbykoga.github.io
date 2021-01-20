@@ -23,7 +23,7 @@
                     {{ with .Params.categories }}
                     {{ range . }}
                     {{ $href := print (absURL "") (urlize .) }}
-                    <a class="postcard-cat has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
                     {{ end }}
                     {{ end }}
                 </div>

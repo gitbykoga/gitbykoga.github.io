@@ -36,16 +36,21 @@ class OpenLight {
 
         //Corresponding colors for forground and background of light mode and dark mode (these are just default colors)
         this.openLightColors = {
-        darkBackgroundStyle: "rgb(30, 30, 38)",
-        lightBackgroundStyle: "rgb(255, 255, 255)",
-        darkForegroundStyle: "rgb(240, 240, 250)",
-        lightForegroundStyle: "rgb(30, 30, 40)"
+            darkBackgroundStyle: "rgb(30, 30, 38)",
+            lightBackgroundStyle: "rgb(255, 255, 255)",
+            darkForegroundStyle: "rgb(240, 240, 250)",
+            lightForegroundStyle: "rgb(30, 30, 40)",
+            darkLinkStyle: "#72a1ff",
+            lightLinkStyle: "#3273DC"
         }
 
         //Background and foreground HTML elements
         this.backgrounds = [];
 
         this.foregrounds = [];
+        
+        // Custom link elements
+        this.links = [];
 
     }
 
@@ -80,6 +85,22 @@ class OpenLight {
 
         } else {
             this.foregrounds.push(document.getElementsByTagName(tag));
+        }
+    }
+
+    addLinkTag(tag) {
+        var elems = document.getElementsByTagName(tag);
+
+        if (this.changeType == this.changeTypes.MANUAL) {
+            console.error("Sorry, you cannot add tags in manual mode");
+            return;
+        }
+
+        if (this.links.includes(elems)) {
+            return;
+
+        } else {
+            this.links.push(document.getElementsByTagName(tag));
         }
     }
 
@@ -256,6 +277,10 @@ class OpenLight {
             document.getElementsByTagName('span')
         ];
 
+        this.links = [
+            document.getElementsByClassName('link'),
+        ];
+
         //Get rid of elements that don't exist in array
         for(var i=0;i<this.backgrounds.length;i++){
             if(this.backgrounds[i].length==0){
@@ -267,6 +292,13 @@ class OpenLight {
         for(var i=0;i<this.foregrounds.length;i++){
             if(this.foregrounds[i].length==0){
                 this.foregrounds.splice(i,1);
+                i--;
+            }
+        }
+
+        for (var i = 0; i < this.links.length; i++) {
+            if (this.links[i].length == 0) {
+                this.links.splice(i, 1);
                 i--;
             }
         }
@@ -286,6 +318,15 @@ class OpenLight {
                 if(this.arrayCompare(i,j,this.foregrounds)){
                     this.foregrounds[i][j].style.color = this.openLightColors.lightForegroundStyle; //Change color
                     this.foregrounds[i][j].style.transitionDuration= this.transitionTime; //Add smooth transition
+                }
+            }
+        }
+
+        for (var i = 0; i < this.links.length; i++) {
+            for (var j = 0; j < this.links[i].length; j++) {
+                if (this.arrayCompare(i, j, this.links)) {
+                    this.links[i][j].style.color = this.openLightColors.lightLinkStyle; //Change color
+                    this.links[i][j].style.transitionDuration = this.transitionTime; //Add smooth transition
                 }
             }
         }
@@ -309,6 +350,14 @@ class OpenLight {
                 }
             }
         }
+
+        for (var i = 0; i < this.links.length; i++) {
+            for (var j = 0; j < this.links[i].length; j++) {
+                if (this.arrayCompare(i, j, this.links)) {
+                    this.links[i][j].style.color = this.openLightColors.darkLinkStyle;
+                }
+            }
+        }
     }
 
     //Automatically change the page to light mode
@@ -326,6 +375,14 @@ class OpenLight {
             for(var j=0;j<this.foregrounds[i].length;j++){
                 if(this.arrayCompare(i,j,this.foregrounds)){
                     this.foregrounds[i][j].style.color = this.openLightColors.lightForegroundStyle;
+                }
+            }
+        }
+
+        for (var i = 0; i < this.links.length; i++) {
+            for (var j = 0; j < this.links[i].length; j++) {
+                if (this.arrayCompare(i, j, this.links)) {
+                    this.links[i][j].style.color = this.openLightColors.lightLinkStyle;
                 }
             }
         }

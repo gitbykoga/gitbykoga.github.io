@@ -76,8 +76,8 @@ function uiNavigation(currentHash) {
     time: '0.5s'
 });*/
 openLight = new OpenLight("auto");
-openLight.init();
 openLight.addOverrideByClassName("darkover");
+openLight.init();
 
 var isDark = readCookie("openlightcookie") === "dark";
 
