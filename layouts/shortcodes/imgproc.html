@@ -12,4 +12,4 @@
     {{ .Scratch.Set "lowres-image" ($image.Resize "300x jpg q10") }}
 {{ end }}
 
-<img data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Get "alt" }}'>
+<img class="lazy" data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Get "alt" }}'>
