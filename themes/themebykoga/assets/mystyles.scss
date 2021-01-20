@@ -4,7 +4,7 @@ $navbar-breakpoint: 0;
 
 //$navbar-background-color: $yellow;
 $shadow-box: 0px 0px 25px 0px;
-$shadow-box-color: rgba($black, .25);
+$shadow-box-color: rgba($black, .35);
 $navbar-height: 1.5rem;
 $navbar-box-shadow-size: $shadow-box;
 $navbar-box-shadow-color: $shadow-box-color;
@@ -14,6 +14,7 @@ $navbar-item-hover-color: $text;
 $navbar-dropdown-item-hover-color: $text;
 
 $container-max-width: $desktop;
+$card-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.2), 0 0px 0 1px rgba($scheme-invert, 0.08);
 
 @import "bulma/bulma.sass";
 
@@ -22,10 +23,6 @@ $container-max-width: $desktop;
 
 
 // SITE OVERALL STUFF
-body {
-    visibility: hidden;
-}
-
 #content {
     /*@include mobile {
         padding: 1.5rem 1.5rem 0rem;
@@ -116,10 +113,39 @@ body {
         margin-left: 3rem;
         margin-right: 3rem;
     }
+
+    @include mobile {
+        grid-template-columns: repeat(auto-fill, minmax(40%,1fr));
+        grid-auto-rows: 1fr;
+    }
+
+    display: grid;
+    gap: 0px;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+    grid-auto-rows: 1px;
 }
 .postcard {
+    position: relative;
+
     @include touch {
-        padding: 1rem 0.5rem;
+        padding: 0.5rem 0.7rem;
     }
     padding: 1.5rem;
+}
+#postcard-cat {
+    position: absolute;
+    z-index: 2;
+}
+#postcard-link
+{
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
 }

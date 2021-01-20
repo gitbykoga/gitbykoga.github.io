@@ -1,4 +1,4 @@
-# Remember the line to build: hugo -D -d docs --cleanDestinationDir
+# Remember the line to build: hugo -D -d docs --cleanDestinationDir --gc
 # Remember the line to server: hugo server -D -w
 
 baseURL = "https://gitbykoga.github.io/"
@@ -7,3 +7,15 @@ title = "byKoga"
 theme = "themebykoga"
 
 disableKinds = ["taxonomyTerm", "taxonomy"]
+
+[imaging]
+    resampleFilter = "box"
+    quality = 75
+    anchor = "smart"
+    bgColor = "#ffffff"
+
+[imaging.exif]
+    includeFields = ""
+    excludeFields = ""
+    disableDate = false
+    disableLatLong = false

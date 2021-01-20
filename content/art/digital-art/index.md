@@ -4,8 +4,10 @@ type: "post"
 categories: ["Art"]
 date: 2021-01-07T22:03:09-03:00
 draft: true
+thumb: "images/starry-sky.png"
+alt: "This is the alt"
 ---
 
-{{< img src="img/starry-sky.png" alt="Starry Sky Digital Art" >}}
+{{< imgproc path="images/starry-sky.png" method="Resize" options="300x jpg q75 Lanczos Smart"  alt="Wowie!" >}}
 
 So, I've been learning digital art with Krita for the past couple of months!

@@ -12,10 +12,11 @@
         {{ index $content_parts 1 | safe.HTML}}
     </div>
 
-    <div id="home-posts" class="columns is-mobile my-2 is-centered is-multiline">
-        {{- range ( where site.RegularPages "Type" "post" | first 8 | after 0 ) }}
+    <div id="home-posts" class="mt-3">
+        {{ $amount := 12 }}
+        {{ range $i,$p := where site.RegularPages "Type" "post" | first $amount }}
         {{ partial "postcard.html" . }}
-        {{- end }}
+        {{ end }}
     </div>
 </div>
 

@@ -1,0 +1,15 @@
+{{ $image := $.Page.Resources.GetMatch (.Get "path") }}
+
+{{ $options := .Get "options"}}
+{{ $method := .Get "method" }}
+
+{{ if eq $method "Fill" }}
+    {{ .Scratch.Set "modified-image" ($image.Fill $options) }}
+{{ else if eq $method "Fit" }}
+    {{ .Scratch.Set "modified-image" ($image.Fit $options) }}
+{{ else if eq $method "Resize" }}
+    {{ .Scratch.Set "modified-image" ($image.Resize $options) }}
+    {{ .Scratch.Set "lowres-image" ($image.Resize "300x jpg q10") }}
+{{ end }}
+
+<img data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Get "alt" }}'>

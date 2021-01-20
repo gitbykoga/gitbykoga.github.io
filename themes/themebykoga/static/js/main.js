@@ -1,5 +1,5 @@
 $().ready(function () {
-    $("body").css({ visibility: 'visible' })
+    resizeAllGridItems();
 });
 
 $(function () {
@@ -99,7 +99,7 @@ $(function () {
     });
 });
 
-(function ($) {
+$(function () {
     $("a[href*=\\#]:not([href=\\#])").click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
             || location.hostname == this.hostname) {
@@ -117,4 +117,17 @@ $(function () {
             }
         }
     });
-})(jQuery);
+});
+
+function resizeAllGridItems() {
+    var grid = $("#home-posts");
+    var rowHeight = parseFloat(grid.css('grid-auto-rows'));
+    var rowGap = parseFloat(grid.css('row-gap'));
+
+    $(".postcard-wrapper").each(function () {
+        var rowSpan = Math.ceil(($(this).find(".home-postcard").outerHeight(true) + rowGap) / (rowHeight + rowGap));
+        $(this).css('grid-row-end', 'span ' + rowSpan);
+    });
+}
+
+window.addEventListener("resize", resizeAllGridItems);
