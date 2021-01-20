@@ -1,6 +1,6 @@
 <div class="postcard-wrapper">
     <div class="home-postcard card m-3">
-        <a href="{{ .Permalink }}" id="postcard-link"></a>
+        <a href="{{ .Permalink }}" class="postcard-link">{{ .Title }}</a>
     
         {{ if .Params.thumb }}
         <div class="card-image">
@@ -18,12 +18,12 @@
                 <div class="media-content mb-5">
                     {{ $dateTime := .PublishDate.Format "2006-01-02" }}
                     {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-                    <h6 class="is-lowercase" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}</h6>
-                    <h3 class="is-italic has-text-weight-bold">{{ .Title }}</h3>
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}</p>
+                    <h1 class="is-size-5 is-italic has-text-weight-bold">{{ .Title }}</h1>
                     {{ with .Params.categories }}
                     {{ range . }}
                     {{ $href := print (absURL "") (urlize .) }}
-                    <a id="postcard-cat" class="has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
+                    <a class="postcard-cat has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
                     {{ end }}
                     {{ end }}
                 </div>

@@ -79,21 +79,48 @@ openLight = new OpenLight("auto");
 openLight.init();
 openLight.addOverrideByClassName("darkover");
 
-var isDark = false;
+var isDark = readCookie("openlightcookie") === "dark";
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        //console.log(c.substring(nameEQ.length, c.length));
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
 
 $(function () {
+    if (isDark) {
+        $("#darkmode a").addClass("is-dark");
+        $("#darkmode a").removeClass("is-warning");
+        $("#darkmode svg").replaceWith(feather.icons.sun.toSvg());
+    }
+    else {
+        $("#darkmode a").addClass("is-warning");
+        $("#darkmode a").removeClass("is-dark");
+        $("#darkmode svg").replaceWith(feather.icons.moon.toSvg());
+    }
+
     $("#darkmode a").click(function () {
         if (isDark) {
             isDark = false;
             $("#darkmode svg").replaceWith(feather.icons.moon.toSvg());
+
+            $(this).addClass("is-warning");
+            $(this).removeClass("is-dark");
         }
         else {
             isDark = true;
             $("#darkmode svg").replaceWith(feather.icons.sun.toSvg());
+
+            $(this).removeClass("is-warning");
+            $(this).addClass("is-dark");
         }
 
-        $(this).toggleClass("is-dark");
-        $(this).toggleClass("is-warning");
         //darkmode.toggle();
         openLight.toggleMode();
     });

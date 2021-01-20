@@ -19,3 +19,6 @@ disableKinds = ["taxonomyTerm", "taxonomy"]
     excludeFields = ""
     disableDate = false
     disableLatLong = false
+
+[params]
+     Description = "A blog, portfolio, and personal website! [byKoga]"
