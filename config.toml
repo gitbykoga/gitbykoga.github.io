@@ -2,7 +2,7 @@
 # To server: hugo server -D -w
 # To create new post: hugo new --kind post category-folder/subfolder
 
-baseURL = "https://gitbykoga.github.io/"
+baseURL = "https://bykoga.com/"
 languageCode = "en-us"
 title = "byKoga"
 theme = "themebykoga"
