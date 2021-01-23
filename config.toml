@@ -1,5 +1,6 @@
-# Remember the line to build: hugo -D -d docs --cleanDestinationDir --gc
-# Remember the line to server: hugo server -D -w
+# To build: hugo -D -d docs --cleanDestinationDir --gc
+# To server: hugo server -D -w
+# To create new post: hugo new --kind post category-folder/subfolder
 
 baseURL = "https://gitbykoga.github.io/"
 languageCode = "en-us"

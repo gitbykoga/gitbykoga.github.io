@@ -1,8 +1,7 @@
 {{ define "main" }}
 {{.Content}}
-<p>This is a list</p>
 <ul class="all-posts">
-    {{range .Site.RegularPages}}
+    {{range .Pages}}
     <li><a href="{{.Permalink}}">{{.Title}}</a></li>
     {{end}}
 </ul>
