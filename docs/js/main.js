@@ -19,23 +19,23 @@ function setNavigation() {
     });
 }
 
+var currentHash = "#links"
+
 if (window.location.pathname.substring(0, 1) === "/#" || window.location.pathname === "/") 
 {
     // SET THE HASH
     $(function () {
-        var currentHash = "#recent"
-
         $(document).scroll(function () {
-            uiNavigation(currentHash);
+            uiNavigation();
         });
 
         $().ready(function () {
-            uiNavigation(currentHash);
+            uiNavigation();
         });
     });
 }
 
-function uiNavigation(currentHash) {
+function uiNavigation() {
     var minDist = $(window).height() * 0.8;
     var closestHash = "";
 
@@ -49,9 +49,11 @@ function uiNavigation(currentHash) {
         }
     });
 
-    if (closestHash != currentHash && closestHash != "") {
+    if (closestHash !== currentHash && closestHash !== "") {
         currentHash = closestHash;
-        
+
+        //console.log(closestHash + " " + currentHash);
+
         if (history.pushState) {
             history.pushState(null, null, '#' + currentHash);
         }
