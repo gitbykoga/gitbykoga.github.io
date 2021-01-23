@@ -11,7 +11,7 @@ function setNavigation() {
     path = path.replace(/\/$/, "");
     path = decodeURIComponent(path);
 
-    $("#navstart .navbar-item").each(function () {
+    $(".navbar-start .navbar-item").each(function () {
         var href = $(this).attr('href');
         if (path.substring(0, href.length) === href) {
             $(this).addClass('is-active');
@@ -19,23 +19,23 @@ function setNavigation() {
     });
 }
 
-var currentHash = "#links"
+var currentHash = "links"
 
 if (window.location.pathname.substring(0, 1) === "/#" || window.location.pathname === "/") 
 {
     // SET THE HASH
     $(function () {
         $(document).scroll(function () {
-            uiNavigation();
+            uiNavigation(false);
         });
 
         $().ready(function () {
-            uiNavigation();
+            uiNavigation(true);
         });
     });
 }
 
-function uiNavigation() {
+function uiNavigation(first) {
     var minDist = $(window).height() * 0.8;
     var closestHash = "";
 
@@ -49,19 +49,20 @@ function uiNavigation() {
         }
     });
 
-    if (closestHash !== currentHash && closestHash !== "") {
+    if (first || closestHash !== currentHash && closestHash !== "") {
+        console.log(closestHash + " " + currentHash);
         currentHash = closestHash;
 
-        //console.log(closestHash + " " + currentHash);
-
         if (history.pushState) {
+            console.log("pushed");
             history.pushState(null, null, '#' + currentHash);
         }
         else {
+            console.log("hash");
             location.hash = '#' + currentHash;
         }
 
-        $("#navend .navbar-item").each(function () {
+        $(".navbar-end .navbar-item").each(function () {
             var href = $(this).attr('href');
 
             if ("/#" + currentHash === href) {
