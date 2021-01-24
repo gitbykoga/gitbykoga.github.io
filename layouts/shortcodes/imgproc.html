@@ -15,4 +15,8 @@
     {{ .Scratch.Set "lowres-image" ($image.Resize $lowres) }}
 {{ end }}
 
-<img class="lazy" data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Get "alt" }}'>
+{{ if eq (.Get "link") "true" }}
+    <a href='{{ .Get "path" }}'><img class="lazy" data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Get "alt" }}'></a>
+{{ else }}
+    <img class="lazy" data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Get "alt" }}'>
+{{ end }}

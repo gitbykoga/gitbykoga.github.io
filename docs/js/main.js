@@ -50,17 +50,10 @@ function uiNavigation(first) {
     });
 
     if (first || closestHash !== currentHash && closestHash !== "") {
-        console.log(closestHash + " " + currentHash);
+        //console.log(closestHash + " " + currentHash);
         currentHash = closestHash;
-
-        if (history.pushState) {
-            console.log("pushed");
-            history.pushState(null, null, '#' + currentHash);
-        }
-        else {
-            console.log("hash");
-            location.hash = '#' + currentHash;
-        }
+        
+        location.replace("#" + currentHash);
 
         $(".navbar-end .navbar-item").each(function () {
             var href = $(this).attr('href');
