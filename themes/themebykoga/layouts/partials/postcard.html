@@ -19,17 +19,19 @@
                     {{ $dateTime := .PublishDate.Format "2006-01-02" }}
                     {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
                     <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}</p>
-                    <h1 class="is-size-5 is-italic has-text-weight-bold">{{ .Title }}</h1>
+                    <h1 class="is-size-5 has-text-weight-bold">{{ .Title }}</h1>
                     {{ with .Params.categories }}
                     {{ range . }}
                     {{ $href := print (absURL "") (urlize .) }}
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="{{ $href }}">{{ . }}</a>
                     {{ end }}
                     {{ end }}
                 </div>
             </div>
             <div class="content">
-                {{ .Summary }}
+                <p>
+                    {{ .Summary }}
+                </p>
             </div>
         </div>
     </div>

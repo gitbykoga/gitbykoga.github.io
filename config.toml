@@ -6,7 +6,7 @@ baseURL = "https://bykoga.com/"
 languageCode = "en-us"
 title = "byKoga"
 theme = "themebykoga"
-
+Paginate = 20
 disableKinds = ["taxonomyTerm", "taxonomy"]
 
 [imaging]

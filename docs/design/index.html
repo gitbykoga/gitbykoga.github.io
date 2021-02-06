@@ -12,90 +12,154 @@
     <link rel="preload" href="/fonts/space-mono-v6-latin-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/space-mono-v6-latin-700italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://bykoga.com/mystyles.9946b978270d5113277907ce768fd73e9d3e38f99c91fcb48220da5371aad022.css">
+    <link rel="stylesheet" href="https://bykoga.com/mystyles.283f71d0596c4c2462603569fca3ea245c5696932a96229fd4b787b43c6a142f.css">
 
     
     
-    <title>byKoga | Homepage</title>
-</head><body class="has-spaced-navbar-fixed-top"><nav id="navmain" class="navbar is-fixed-top is-transparent has-shadow" role="navigation" aria-label="main navigation">
+    <title>byKoga | Design</title>
+</head><body class="has-spaced-navbar-fixed-top"><nav id="navmain" class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-menu px-4 py-0">
         <div class="navbar-start">
-            <a class="navbar-item" href="/art">art</a>
-            <a class="navbar-item" href="/games">games</a>
-            <a class="navbar-item" href="/design">design</a>
-            <a class="navbar-item" href="/journal">journal</a>
+            <a class="navbar-item no-color" href="/art"><strong>art</strong></a>
+            <a class="navbar-item no-color" href="/games"><strong>games</strong></a>
+            <a class="navbar-item no-color" href="/design"><strong>design</strong></a>
+            <a class="navbar-item no-color" href="/journal"><strong>journal</strong></a>
         </div>
 
-        <a
-            class="navbar-item is-size-5 has-text-weight-bold"
-            href="/">byKoga</a>
+        <a class="navbar-item navbar-logo p-0" href="/">
+            <img src="/logoblack.png">
+        </a>
 
         <div class="navbar-end">
-            <a class="navbar-item" href="/#links">links</a>
-            <a class="navbar-item" href="/#recent">recent</a>
-            <a class="navbar-item" href="/#about">about</a>
-            <a class="navbar-item" href="/#portfolio">portfolio</a>
-            <a class="navbar-item" href="/#contact">contact</a>
+            <a class="navbar-item no-color" href="/#links"><strong>links</strong></a>
+            <a class="navbar-item no-color" href="/#recent"><strong>recent</strong></a>
+            <a class="navbar-item no-color" href="/#about"><strong>about</strong></a>
+            <a class="navbar-item no-color" href="/#portfolio"><strong>portfolio</strong></a>
+            <a class="navbar-item no-color" href="/#contact"><strong>contact</strong></a>
         </div>
     </div>
 </nav>
 
-<nav id="navmobile" class="navbar is-fixed-top is-transparent has-shadow" role="navigation" aria-label="main navigation">
+<nav id="navmobile" class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-menu px-4 py-0">
         <div class="navbar-start navbar-item has-dropdown is-hoverable">
-            <button class="navbar-link is-size-6">
-                Content
+            <button class="navbar-link is-size-6 no-bg">
+                <strong>content</strong>
             </button>
 
             <div class="navbar-dropdown">
-                <a class="navbar-item" href="/art">art</a>
-                <a class="navbar-item" href="/games">games</a>
-                <a class="navbar-item" href="/design">design</a>
-                <a class="navbar-item" href="/journal">journal</a>
+                <a class="navbar-item no-color" href="/art"><strong>art</strong></a>
+                <a class="navbar-item no-color" href="/games"><strong>games</strong></a>
+                <a class="navbar-item no-color" href="/design"><strong>design</strong></a>
+                <a class="navbar-item no-color" href="/journal"><strong>journal</strong></a>
             </div>
         </div>
-
-        <a
-            class="navbar-item is-size-5 has-text-centered is-flex is-justify-content-center has-text-weight-bold"
-            href="/">byKoga</a>
+        
+        <a class="navbar-item navbar-logo px-0" href="/">
+            <img src="/logoblack.png">
+        </a>
 
         <div class="navbar-end navbar-item has-dropdown is-hoverable">
-            <button class="navbar-link is-size-6">
-                Info
+            <button class="navbar-link is-size-6 no-bg">
+                <strong>info</strong>
             </button>
         
             <div class="navbar-dropdown is-right">
-                <a class="navbar-item" href="/#links">links</a>
-                <a class="navbar-item" href="/#recent">recent</a>
-                <a class="navbar-item" href="/#about">about</a>
-                <a class="navbar-item" href="/#portfolio">portfolio</a>
-                <a class="navbar-item" href="/#contact">contact</a>
+                <a class="navbar-item no-color" href="/#links"><strong>links</strong></a>
+                <a class="navbar-item no-color" href="/#recent"><strong>recent</strong></a>
+                <a class="navbar-item no-color" href="/#about"><strong>about</strong></a>
+                <a class="navbar-item no-color" href="/#portfolio"><strong>portfolio</strong></a>
+                <a class="navbar-item no-color" href="/#contact"><strong>contact</strong></a>
             </div>
         </div>
     </div>
 </nav>
 
-<div id="darkmode" class="darkover">
-    <a class="button is-small is-rounded is-borderless is-dark">
-        <span class="icon is-small">
-            <i data-feather="moon"></i>
+<div id="mode-toggle">
+    <a class="button is-small is-borderless link">
+        <span class="icon is-small mode-none">
+            <i class="mode-none" data-feather="moon"></i>
         </span>
     </a>
 </div>
 
 <div id="content">
-<p>This is the homepage</p>
 
-<ul class="all-posts">
+
+<section id="list-description" class="section">
+    <div class="container">
+        <h1 id="design">Design</h1>
+<p>So this is the description of the Design section!</p>
+
+    </div>
+</section>
+
+<section id="list-recent" class="section">
+    <div class="container">
+        
+    </div>
+
+    <div id="grid-posts" class="mt-3" data-infinite-scroll='{ "path": ".pagination-next", "append" : ".postcard-wrapper", "history": false, "checkLastPage": true, "hideNav": ".pagination"}'>
+        
+        <div class="postcard-wrapper">
+    <div class="home-postcard card">
+        <a href="https://bykoga.com/design/dark-mode/" class="postcard-link">Dark Mode</a>
     
-    <li><a href="https://bykoga.com/design/dark-mode/">Dark Mode</a></li>
+        
     
-</ul>
+        <div class="card-content postcard">
+            <div class="media mb-3">
+                <div class="media-content mb-5">
+                    
+                    
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Jan 7, 2021</p>
+                    <h1 class="is-size-5 has-text-weight-bold">Dark Mode</h1>
+                    
+                    
+                    
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/design">Design</a>
+                    
+                    
+                </div>
+            </div>
+            <div class="content">
+                <p>
+                    Dark mode is indeed great!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+        
+    </div>
+
+    <nav class="level pagination  is-not-displayed ">
+        <a href="" aria-label="Prev"
+            class="level-item button pagination-prev"  disabled >
+
+            <span aria-hidden="true">&laquo;</span>
+
+        </a>
+        <a href="" aria-label="Next"
+            class="level-item button pagination-next"  disabled >
+
+            <span aria-hidden="true">&raquo;</span>
+
+        </a>
+    </nav>
+</section>
+
+<section id="list-end" class="section">
+    <div class="container">
+        
+    </div>
+</section>
+
 
         </div><footer class="footer">
-    <div class="container has-text-centered">
-        <p><b><a class="link" href="/">byKoga</a></b> is maintained with <span class="is-primary">♥</span> by <strong>André Koga</strong></p>
-        <p>Copyright © 2020 - 2021</p>
+    <div class="container has-text-centered no-bg">
+        <p class="no-bg"><b class="no-bg"><a class="link no-bg" href="/">byKoga</a></b> is maintained with <span class="has-text-danger no-bg">♥</span> by <strong class="no-bg">André Koga</strong></p>
+        <p class="no-bg">Copyright © 2020 - 2021</p>
     </div>
 </footer><script src="/js/jquery.min.js"></script>
 
@@ -103,10 +167,15 @@
 <script src="/js/feather.min.js"></script>
 <script src="/js/main.js"></script>
 <script src="/js/lazyload.min.js"></script>
+<script src="/js/infinite-scroll.pkgd.min.js"></script>
 <script>
     feather.replace();
     var lazyLoadInstance = new LazyLoad({
         
+    });
+
+    $('#grid-posts').on('append.infiniteScroll', function () {
+        resizeAllGridItems();
     });
 </script></body>
 </html>

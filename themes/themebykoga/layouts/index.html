@@ -1,41 +1,41 @@
 {{ define "main" }}
 {{ $content_parts := split .Content "-split-" }}
 
-<div id="home-links" class="section">
+<section id="home-links" class="section">
     <div class="container">
         {{ index $content_parts 0 | safe.HTML}}
     </div>
-</div>
+</section>
 
-<div id="home-recent" class="section">
+<section id="home-recent" class="section">
     <div class="container">
         {{ index $content_parts 1 | safe.HTML}}
     </div>
 
-    <div id="home-posts" class="mt-3">
-        {{ $amount := 12 }}
-        {{ range $i,$p := where site.RegularPages "Type" "post" | first $amount }}
+    <div id="grid-posts" class="mt-3">
+        {{ $amount := 20 }}
+        {{ range where site.RegularPages "Type" "post" | first $amount }}
         {{ partial "postcard.html" . }}
         {{ end }}
     </div>
-</div>
+</section>
 
-<div id="home-about" class="section">
+<section id="home-about" class="section">
     <div class="container">
         {{ index $content_parts 2 | safe.HTML}}
     </div>
-</div>
+</section>
 
-<div id="home-portfolio" class="section">
+<section id="home-portfolio" class="section">
     <div class="container">
         {{ index $content_parts 3 | safe.HTML}}
     </div>
-</div>
+</section>
 
-<div id="home-contact" class="section">
+<section id="home-contact" class="section">
     <div class="container">
         {{ index $content_parts 4 | safe.HTML}}
     </div>
-</div>
+</section>
 
 {{ end }}

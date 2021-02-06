@@ -34,7 +34,7 @@ class OpenLight {
         this.modeForegroundId = "lightDarkF" ;
 
 
-        //Corresponding colors for forground and background of light mode and dark mode (these are just default colors)
+        //Corresponding colors for foreground and background of light mode and dark mode (these are just default colors)
         this.openLightColors = {
             darkBackgroundStyle: "rgb(30, 30, 38)",
             lightBackgroundStyle: "rgb(255, 255, 255)",
@@ -235,7 +235,7 @@ class OpenLight {
         }
 
         console.log("OpenLight initialized with mode "+this.changeType+"!");
-        console.log("This site uses OpenLight version "+this.version+" for dark mode toggling!");
+        console.log("This site uses an altered OpenLight version "+this.version+" for dark mode toggling!");
     }
 
 
@@ -307,8 +307,8 @@ class OpenLight {
         for(var i=0;i<this.backgrounds.length;i++){
             for(var j=0;j<this.backgrounds[i].length;j++){
                 if(this.arrayCompare(i,j,this.backgrounds)){
-                    this.backgrounds[i][j].style.backgroundColor = this.openLightColors.lightBackgroundStyle; //Change  color
-                    this.backgrounds[i][j].style.transitionDuration= this.transitionTime; //Add smooth transition
+                    this.backgrounds[i][j].style.transitionDuration = this.transitionTime; //Add smooth transition
+                    this.backgrounds[i][j].classList.add("mode-light");
                 }
             }
         }
@@ -316,8 +316,8 @@ class OpenLight {
         for(var i=0;i<this.foregrounds.length;i++){
             for(var j=0;j<this.foregrounds[i].length;j++){
                 if(this.arrayCompare(i,j,this.foregrounds)){
-                    this.foregrounds[i][j].style.color = this.openLightColors.lightForegroundStyle; //Change color
-                    this.foregrounds[i][j].style.transitionDuration= this.transitionTime; //Add smooth transition
+                    this.foregrounds[i][j].style.transitionDuration = this.transitionTime; //Add smooth transition
+                    this.foregrounds[i][j].classList.add("mode-light");
                 }
             }
         }
@@ -325,8 +325,8 @@ class OpenLight {
         for (var i = 0; i < this.links.length; i++) {
             for (var j = 0; j < this.links[i].length; j++) {
                 if (this.arrayCompare(i, j, this.links)) {
-                    this.links[i][j].style.color = this.openLightColors.lightLinkStyle; //Change color
                     this.links[i][j].style.transitionDuration = this.transitionTime; //Add smooth transition
+                    this.links[i][j].classList.add("mode-light");
                 }
             }
         }
@@ -338,7 +338,8 @@ class OpenLight {
         for(var i=0;i<this.backgrounds.length;i++){
             for(var j=0;j<this.backgrounds[i].length;j++){
                 if(this.arrayCompare(i,j,this.backgrounds)){
-                    this.backgrounds[i][j].style.backgroundColor = this.openLightColors.darkBackgroundStyle;
+                    this.backgrounds[i][j].classList.remove("mode-light");
+                    this.backgrounds[i][j].classList.add("mode-dark");
                 }
             }
         }
@@ -346,7 +347,8 @@ class OpenLight {
         for(var i=0;i<this.foregrounds.length;i++){
             for(var j=0;j<this.foregrounds[i].length;j++){
                 if(this.arrayCompare(i,j,this.foregrounds)){
-                    this.foregrounds[i][j].style.color = this.openLightColors.darkForegroundStyle;
+                    this.foregrounds[i][j].classList.remove("mode-light");
+                    this.foregrounds[i][j].classList.add("mode-dark");
                 }
             }
         }
@@ -354,7 +356,8 @@ class OpenLight {
         for (var i = 0; i < this.links.length; i++) {
             for (var j = 0; j < this.links[i].length; j++) {
                 if (this.arrayCompare(i, j, this.links)) {
-                    this.links[i][j].style.color = this.openLightColors.darkLinkStyle;
+                    this.links[i][j].classList.remove("mode-light");
+                    this.links[i][j].classList.add("mode-dark");
                 }
             }
         }
@@ -366,7 +369,8 @@ class OpenLight {
         for(var i=0;i<this.backgrounds.length;i++){
             for(var j=0;j<this.backgrounds[i].length;j++){
                 if(this.arrayCompare(i,j,this.backgrounds)){
-                    this.backgrounds[i][j].style.backgroundColor = this.openLightColors.lightBackgroundStyle;
+                    this.backgrounds[i][j].classList.add("mode-light");
+                    this.backgrounds[i][j].classList.remove("mode-dark");
                 }
             }
         }
@@ -374,7 +378,8 @@ class OpenLight {
         for(var i=0;i<this.foregrounds.length;i++){
             for(var j=0;j<this.foregrounds[i].length;j++){
                 if(this.arrayCompare(i,j,this.foregrounds)){
-                    this.foregrounds[i][j].style.color = this.openLightColors.lightForegroundStyle;
+                    this.foregrounds[i][j].classList.add("mode-light");
+                    this.foregrounds[i][j].classList.remove("mode-dark");
                 }
             }
         }
@@ -382,7 +387,8 @@ class OpenLight {
         for (var i = 0; i < this.links.length; i++) {
             for (var j = 0; j < this.links[i].length; j++) {
                 if (this.arrayCompare(i, j, this.links)) {
-                    this.links[i][j].style.color = this.openLightColors.lightLinkStyle;
+                    this.links[i][j].classList.add("mode-light");
+                    this.links[i][j].classList.remove("mode-dark");
                 }
             }
         }

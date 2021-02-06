@@ -53,7 +53,12 @@ function uiNavigation(first) {
         //console.log(closestHash + " " + currentHash);
         currentHash = closestHash;
         
-        location.replace("#" + currentHash);
+        if (history.replaceState) {
+            history.replaceState(null, null, '#' + currentHash);
+        }
+        else {
+            location.hash = '#myhash';
+        }
 
         $(".navbar-end .navbar-item").each(function () {
             var href = $(this).attr('href');
@@ -72,10 +77,10 @@ function uiNavigation(first) {
     time: '0.5s'
 });*/
 openLight = new OpenLight("auto");
-openLight.addOverrideByClassName("darkover");
+openLight.addOverrideByClassName("mode-none");
 openLight.init();
 
-var isDark = readCookie("openlightcookie") === "dark";
+/*var isDark = readCookie("openlightcookie") === "dark";
 
 function readCookie(name) {
     var nameEQ = name + "=";
@@ -120,30 +125,38 @@ $(function () {
         //darkmode.toggle();
         openLight.toggleMode();
     });
+});*/
+
+$("#mode-toggle a").click(function () {
+    openLight.toggleMode();
 });
 
-$(function () {
-    $("a[href*=\\#]:not([href=\\#])").click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-            || location.hostname == this.hostname) {
+$("a[href*=\\#]:not([href=\\#])").click(function () {
+    animateHashtag(this);
+    sessionStorage.setItem('recentThis', this);
+});
 
-            var target = $(this.hash),
-                headerHeight = 100; // Get fixed header height
+function animateHashtag(param)
+{
+    if (location.pathname.replace(/^\//, '') == param.pathname.replace(/^\//, '')
+        || location.hostname == param.hostname) {
 
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        var target = $(param.hash),
+            headerHeight = 100; // Get fixed header height
 
-            if (target.length) {
-                $('html,body').stop().dequeue().animate({
-                    scrollTop: target.offset().top - headerHeight
-                }, 500);
-                return false;
-            }
+        target = target.length ? target : $('[name=' + param.hash.slice(1) + ']');
+
+        if (target.length) {
+            $('html,body').stop().dequeue().animate({
+                scrollTop: target.offset().top - headerHeight
+            }, 500);
+            return false;
         }
-    });
-});
+    }
+}
 
 function resizeAllGridItems() {
-    var grid = $("#home-posts");
+    var grid = $("#grid-posts");
     var rowHeight = parseFloat(grid.css('grid-auto-rows'));
     var rowGap = parseFloat(grid.css('row-gap'));
 

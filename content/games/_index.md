@@ -1,8 +1,10 @@
 ---
+title: "Games"
 type: "page"
-title: "Homepage"
+layout: "gameslist"
 date: 2021-01-07T14:42:08-03:00
 draft: false
 ---
 
-This is the homepage
+# Games
+So this is the description of the Games section!

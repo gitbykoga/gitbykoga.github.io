@@ -1,65 +1,65 @@
-<nav id="navmain" class="navbar is-fixed-top is-transparent has-shadow" role="navigation" aria-label="main navigation">
+<nav id="navmain" class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-menu px-4 py-0">
         <div class="navbar-start">
-            <a class="navbar-item" href="/art">art</a>
-            <a class="navbar-item" href="/games">games</a>
-            <a class="navbar-item" href="/design">design</a>
-            <a class="navbar-item" href="/journal">journal</a>
+            <a class="navbar-item no-color" href="/art"><strong>art</strong></a>
+            <a class="navbar-item no-color" href="/games"><strong>games</strong></a>
+            <a class="navbar-item no-color" href="/design"><strong>design</strong></a>
+            <a class="navbar-item no-color" href="/journal"><strong>journal</strong></a>
         </div>
 
-        <a
-            class="navbar-item is-size-5 has-text-weight-bold"
-            href="/">{{ .Site.Title }}</a>
+        <a class="navbar-item navbar-logo p-0" href="/">
+            <img src="/logoblack.png">
+        </a>
 
         <div class="navbar-end">
-            <a class="navbar-item" href="/#links">links</a>
-            <a class="navbar-item" href="/#recent">recent</a>
-            <a class="navbar-item" href="/#about">about</a>
-            <a class="navbar-item" href="/#portfolio">portfolio</a>
-            <a class="navbar-item" href="/#contact">contact</a>
+            <a class="navbar-item no-color" href="/#links"><strong>links</strong></a>
+            <a class="navbar-item no-color" href="/#recent"><strong>recent</strong></a>
+            <a class="navbar-item no-color" href="/#about"><strong>about</strong></a>
+            <a class="navbar-item no-color" href="/#portfolio"><strong>portfolio</strong></a>
+            <a class="navbar-item no-color" href="/#contact"><strong>contact</strong></a>
         </div>
     </div>
 </nav>
 
-<nav id="navmobile" class="navbar is-fixed-top is-transparent has-shadow" role="navigation" aria-label="main navigation">
+<nav id="navmobile" class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-menu px-4 py-0">
         <div class="navbar-start navbar-item has-dropdown is-hoverable">
-            <button class="navbar-link is-size-6">
-                Content
+            <button class="navbar-link is-size-6 no-bg">
+                <strong>content</strong>
             </button>
 
             <div class="navbar-dropdown">
-                <a class="navbar-item" href="/art">art</a>
-                <a class="navbar-item" href="/games">games</a>
-                <a class="navbar-item" href="/design">design</a>
-                <a class="navbar-item" href="/journal">journal</a>
+                <a class="navbar-item no-color" href="/art"><strong>art</strong></a>
+                <a class="navbar-item no-color" href="/games"><strong>games</strong></a>
+                <a class="navbar-item no-color" href="/design"><strong>design</strong></a>
+                <a class="navbar-item no-color" href="/journal"><strong>journal</strong></a>
             </div>
         </div>
-
-        <a
-            class="navbar-item is-size-5 has-text-centered is-flex is-justify-content-center has-text-weight-bold"
-            href="/">{{ .Site.Title }}</a>
+        
+        <a class="navbar-item navbar-logo px-0" href="/">
+            <img src="/logoblack.png">
+        </a>
 
         <div class="navbar-end navbar-item has-dropdown is-hoverable">
-            <button class="navbar-link is-size-6">
-                Info
+            <button class="navbar-link is-size-6 no-bg">
+                <strong>info</strong>
             </button>
         
             <div class="navbar-dropdown is-right">
-                <a class="navbar-item" href="/#links">links</a>
-                <a class="navbar-item" href="/#recent">recent</a>
-                <a class="navbar-item" href="/#about">about</a>
-                <a class="navbar-item" href="/#portfolio">portfolio</a>
-                <a class="navbar-item" href="/#contact">contact</a>
+                <a class="navbar-item no-color" href="/#links"><strong>links</strong></a>
+                <a class="navbar-item no-color" href="/#recent"><strong>recent</strong></a>
+                <a class="navbar-item no-color" href="/#about"><strong>about</strong></a>
+                <a class="navbar-item no-color" href="/#portfolio"><strong>portfolio</strong></a>
+                <a class="navbar-item no-color" href="/#contact"><strong>contact</strong></a>
             </div>
         </div>
     </div>
 </nav>
 
-<div id="darkmode" class="darkover">
-    <a class="button is-small is-rounded is-borderless is-dark">
-        <span class="icon is-small">
-            <i data-feather="moon"></i>
+<div id="mode-toggle">
+    <a class="button is-small is-borderless link">
+        <span class="icon is-small mode-none">
+            <i class="mode-none" data-feather="moon"></i>
         </span>
     </a>
 </div>

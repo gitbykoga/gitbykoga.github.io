@@ -10,10 +10,10 @@ draft: true
 # Organization
 layout: ""
 categories: [""]
-tags: [""]
+tags: ["post"]
 
 # Thumbnail / Featured
 summary: ""
-thumb: ""
-alt: ""
+thumb: "images/Placeholder.jpg"
+alt: "This is the placeholder"
 ---
