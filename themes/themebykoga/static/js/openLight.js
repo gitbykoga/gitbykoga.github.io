@@ -251,6 +251,7 @@ class OpenLight {
             document.getElementsByTagName('ul'),
             document.getElementsByTagName('ol'),
             document.getElementsByTagName('footer'),
+            document.getElementsByTagName('code')
         ];
 
         this.foregrounds = [

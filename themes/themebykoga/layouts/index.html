@@ -32,13 +32,15 @@
 </section>
 
 <section id="home-about" class="section mode-none">
-    <div class="container">
+    <div class="container py-6">
         <div class="columns">
-            <div class="column">
-                {{ index $content_parts 1 | safe.HTML}}
+            <div class="column is-one-third">
+                <div class="content has-text-white">
+                    {{ index $content_parts 1 | safe.HTML}}
+                </div>
             </div>
-            <div class="column">
-                <img src="" alt="">
+            <div class="column is-two-thirds">
+                <!--img src="logowhite.png" alt=""-->
             </div>
         </div>
     </div>

@@ -10,12 +10,12 @@ draft: false
 -split-
 
 # About
-Get ready to learn more about digital art, game development, web design, and more! Created for free, **byKOGA** started in 2020 with the intention of teaching high quality content for the next generation of tech users. Inspired by Brackeys, my goal is to create a positive community of passionate members. Interested? Check the links in the bottom-left corner!
+Here you'll learn more about digital art, game development, web design, and more! Created for free, **byKOGA** started in 2020 with the intention of teaching high quality content for the next generation of tech users. Inspired by Brackeys, my goal is to create a positive community of passionate members. Interested? Check the links in the bottom-left corner!
 
 -split-
 
 # Portfolio
-Sed aliquam risus maximus, luctus arcu vel, sagittis nisl. Nullam id sapien in est venenatis eleifend non non orci. Nullam iaculis cursus eleifend. Etiam sit amet turpis purus. Morbi luctus bibendum rhoncus. Integer a libero lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mollis velit nunc, vitae hendrerit libero lacinia vitae. Vivamus porttitor orci sit amet purus dictum congue quis in urna.
+`>> print(Hello World)`! I'm André Koga, a game developer, web designer, digital artist, sports lover, and a very hardworking person, 
 
 -split-
 

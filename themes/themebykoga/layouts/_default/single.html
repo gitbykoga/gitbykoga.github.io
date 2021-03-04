@@ -40,11 +40,13 @@
         <p class="is-size-5">{{ .Summary }}</p>
     </div>
 
-    {{ range $i, $content_split := $content_parts }}
-        <div id="single-body-{{ $i }}" class="content container">
-            {{ $content_split | safe.HTML}}
-        </div>
-    {{ end }}
+    <div class="content container">
+        {{ range $i, $content_split := $content_parts }}
+            <div id="single-body-{{ $i }}">
+                {{ $content_split | safe.HTML}}
+            </div>
+        {{ end }}
+    </div>
 </section>
 
 {{ end }}
