@@ -19,11 +19,11 @@
 </section-->
 
 <section id="home-recent" class="section">
-    <div class="container">
+    <div class="container py-4">
         {{ index $content_parts 0 | safe.HTML}}
     </div>
 
-    <div id="grid-posts" class="pt-3">
+    <div id="grid-posts" class="pb-6">
         {{ $amount := 20 }}
         {{ range where site.RegularPages "Type" "post" | first $amount }}
         {{ partial "postcard.html" . }}
@@ -32,30 +32,40 @@
 </section>
 
 <section id="home-about" class="section mode-none">
-    <div class="container py-6">
+    <div class="container py-4">
         <div class="columns">
+            <div class="column is-two-thirds">
+                <!--img src="logowhite.png" alt=""-->
+            </div>
             <div class="column is-one-third">
                 <div class="content has-text-white">
                     {{ index $content_parts 1 | safe.HTML}}
                 </div>
-            </div>
-            <div class="column is-two-thirds">
-                <!--img src="logowhite.png" alt=""-->
             </div>
         </div>
     </div>
 </section>
 
 <section id="home-portfolio" class="section">
-    <div class="container">
-        {{ index $content_parts 2 | safe.HTML}}
+    <div class="container py-4">
+        <div class="columns">
+            <div class="column">
+                <div class="content has-text-white">
+                    {{ index $content_parts 2 | safe.HTML}}
+                </div>
+            </div>
+            <div class="column">
+                <!--img src="logowhite.png" alt=""-->
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="home-contact" class="section">
-    <div class="container">
-        {{ index $content_parts 3 | safe.HTML}}
-    </div>
+<section id="home-contact" class="section p-0 no-bg">
+    <h1 id="contact"></h1>
+    <div class="typeform-widget mode-none no-bg" data-url="https://form.typeform.com/to/xx3gmnY8?typeform-medium=embed-snippet"
+        data-transparency="100" data-hide-headers="true" data-hide-footer="true" style="width: 100%; height: 90vh;"></div>
+    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
 </section>
 
 {{ end }}

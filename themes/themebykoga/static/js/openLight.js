@@ -251,7 +251,8 @@ class OpenLight {
             document.getElementsByTagName('ul'),
             document.getElementsByTagName('ol'),
             document.getElementsByTagName('footer'),
-            document.getElementsByTagName('code')
+            document.getElementsByTagName('code'),
+            document.getElementsByTagName('section')
         ];
 
         this.foregrounds = [
@@ -275,7 +276,8 @@ class OpenLight {
             document.getElementsByClassName('navbar-link'),
             document.getElementsByClassName('navbar-item'),
             document.getElementsByTagName('strong'),
-            document.getElementsByTagName('span')
+            document.getElementsByTagName('span'),
+            document.getElementsByClassName('mode-include'),
         ];
 
         this.links = [

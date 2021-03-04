@@ -15,11 +15,8 @@ Here you'll learn more about digital art, game development, web design, and more
 -split-
 
 # Portfolio
-`>> print(Hello World)`! I'm André Koga, a game developer, web designer, digital artist, sports lover, and a very hardworking person, 
+`>> print(Hello World)`! I'm André Koga, a game developer, web designer, digital artist, sports lover, and owner of two dogs.
 
 -split-
 
 # Contact
-Nullam in erat nibh. Aliquam fermentum elit nibh, in consequat augue tempus ut. Sed non tellus ac felis congue venenatis. Curabitur eu neque non diam fermentum faucibus quis in quam. Maecenas a ultrices turpis. In tempus risus at ipsum luctus venenatis. Pellentesque dignissim quam non sem congue dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus mauris quam, at convallis nulla tempus fringilla.
-
-Nullam in erat nibh. Aliquam fermentum elit nibh, in consequat augue tempus ut. Sed non tellus ac felis congue venenatis. Curabitur eu neque non diam fermentum faucibus quis in quam. Maecenas a ultrices turpis. In tempus risus at ipsum luctus venenatis. Pellentesque dignissim quam non sem congue dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus mauris quam, at convallis nulla tempus fringilla.
