@@ -13,344 +13,236 @@
     <link rel="preload" href="/fonts/space-mono-v6-latin-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/space-mono-v6-latin-700italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://bykoga.com/mystyles.283f71d0596c4c2462603569fca3ea245c5696932a96229fd4b787b43c6a142f.css">
+    <link rel="stylesheet" href="https://bykoga.com/mystyles.7bc39649e840b0459fb61f522e284c7588cf3e397e78b12092f7d3f061f1d293.css">
 
     
     
     <title>byKoga</title>
 </head><body class="has-spaced-navbar-fixed-top"><nav id="navmain" class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
-    <div class="navbar-menu px-4 py-0">
-        <div class="navbar-start">
-            <a class="navbar-item no-color" href="/art"><strong>art</strong></a>
-            <a class="navbar-item no-color" href="/games"><strong>games</strong></a>
-            <a class="navbar-item no-color" href="/design"><strong>design</strong></a>
-            <a class="navbar-item no-color" href="/journal"><strong>journal</strong></a>
+    <div class="navbar-menu">
+        <div class="navbar-start pl-4">
+            <a class="navbar-item no-color is-uppercase" href="/art"><strong>art</strong></a>
+            <a class="navbar-item no-color is-uppercase" href="/games"><strong>games</strong></a>
+            <a class="navbar-item no-color is-uppercase" href="/design"><strong>design</strong></a>
+            <a class="navbar-item no-color is-uppercase" href="/journal"><strong>journal</strong></a>
         </div>
 
         <a class="navbar-item navbar-logo p-0" href="/">
             <img src="/logoblack.png">
         </a>
 
-        <div class="navbar-end">
-            <a class="navbar-item no-color" href="/#links"><strong>links</strong></a>
-            <a class="navbar-item no-color" href="/#recent"><strong>recent</strong></a>
-            <a class="navbar-item no-color" href="/#about"><strong>about</strong></a>
-            <a class="navbar-item no-color" href="/#portfolio"><strong>portfolio</strong></a>
-            <a class="navbar-item no-color" href="/#contact"><strong>contact</strong></a>
+        <div class="navbar-end pr-4">
+            <a class="navbar-item no-color is-uppercase" href="/#posts"><strong>posts</strong></a>
+            <a class="navbar-item no-color is-uppercase" href="/#about"><strong>about</strong></a>
+            <a class="navbar-item no-color is-uppercase" href="/#portfolio"><strong>portfolio</strong></a>
+            <a class="navbar-item no-color is-uppercase" href="/#contact"><strong>contact</strong></a>
         </div>
     </div>
 </nav>
 
 <nav id="navmobile" class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
-    <div class="navbar-menu px-4 py-0">
-        <div class="navbar-start navbar-item has-dropdown is-hoverable">
+    <div class="navbar-menu">
+
+        <div class="navbar-start pl-4 navbar-item has-dropdown is-hoverable">
             <button class="navbar-link is-size-6 no-bg">
-                <strong>content</strong>
+                <strong class="is-uppercase">content</strong>
             </button>
 
             <div class="navbar-dropdown">
-                <a class="navbar-item no-color" href="/art"><strong>art</strong></a>
-                <a class="navbar-item no-color" href="/games"><strong>games</strong></a>
-                <a class="navbar-item no-color" href="/design"><strong>design</strong></a>
-                <a class="navbar-item no-color" href="/journal"><strong>journal</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/art"><strong>art</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/games"><strong>games</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/design"><strong>design</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/journal"><strong>journal</strong></a>
             </div>
         </div>
         
-        <a class="navbar-item navbar-logo px-0" href="/">
+        <a class="navbar-item navbar-logo p-0" href="/">
             <img src="/logoblack.png">
         </a>
 
-        <div class="navbar-end navbar-item has-dropdown is-hoverable">
+        <div class="navbar-end pr-4 navbar-item has-dropdown is-hoverable">
             <button class="navbar-link is-size-6 no-bg">
-                <strong>info</strong>
+                <strong class="is-uppercase">info</strong>
             </button>
         
             <div class="navbar-dropdown is-right">
-                <a class="navbar-item no-color" href="/#links"><strong>links</strong></a>
-                <a class="navbar-item no-color" href="/#recent"><strong>recent</strong></a>
-                <a class="navbar-item no-color" href="/#about"><strong>about</strong></a>
-                <a class="navbar-item no-color" href="/#portfolio"><strong>portfolio</strong></a>
-                <a class="navbar-item no-color" href="/#contact"><strong>contact</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/#posts"><strong>posts</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/#about"><strong>about</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/#portfolio"><strong>portfolio</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/#contact"><strong>contact</strong></a>
             </div>
         </div>
     </div>
 </nav>
 
-<div id="mode-toggle">
-    <a class="button is-small is-borderless link">
+<div id="bottom-left" class="m-4">
+    <div class="dropdown is-up is-hoverable mode-none">
+        <div class="dropdown-trigger">
+            <button class="button is-small" aria-haspopup="true">
+                <p class="has-text-dark has-text-weight-bold">LINKS</p>
+            </button>
+        </div>
+        <div class="dropdown-menu">
+            <div class="dropdown-content column panel-block px-0">
+
+                <div class="no-bg dropdown-item px-0 py-2 is-flex">
+                    <div class="tags has-addons no-bg">
+                        <a id="twitter" target="_blank" class="m-0 link tag has-text-weight-bold is-uppercase"
+                        href="https://twitter.com/madebyKoga" title="Daily posts about my game and art projects!">twitter</a>
+                        <span class="m-0 tag">updates</span>
+                    </div>
+                </div>
+
+                <div class="no-bg dropdown-item px-0 py-2 is-flex">
+                    <div class="tags has-addons no-bg">
+                        <a id="instagram" target="_blank" class="m-0 link tag has-text-weight-bold is-uppercase"
+                        href="https://www.instagram.com/artbykoga" title="My artwork, everything art related is here!">instagram</a>
+                        <span class="m-0 tag">art</span>
+                    </div>
+                </div>
+
+                <div class="no-bg dropdown-item px-0 py-2 is-flex">
+                    <div class="tags has-addons no-bg">
+                        <a id="discord" target="_blank" class="m-0 link tag has-text-weight-bold is-uppercase"
+                        href="https://discord.gg/WgCJjNMgVG" title="My server where we chat about a bunch of things. Come join!">discord</a>
+                        <span class="m-0 tag">server</span>
+                    </div>
+                </div>
+
+                <div class="no-bg dropdown-item px-0 py-2 is-flex">
+                    <div class="tags has-addons no-bg">
+                        <a id="itchio" target="_blank" class="m-0 link tag has-text-weight-bold is-uppercase"
+                        href="https://bykoga.itch.io" title="All of my published games!">itchio</a>
+                        <span class="m-0 tag">games</span>
+                    </div>
+                </div>
+
+                <div class="no-bg dropdown-item px-0 py-2 is-flex">
+                    <div class="tags has-addons no-bg">
+                        <a id="github" target="_blank" class="m-0 link tag has-text-weight-bold is-uppercase"
+                        href="https://github.com/gitbykoga" title="My repositories with some useful code">github</a>
+                        <span class="m-0 tag">code</span>
+                    </div>
+                </div>
+
+                <div class="no-bg dropdown-item px-0 py-2 is-flex">
+                    <div class="tags has-addons no-bg">
+                        <a id="mail" target="_blank" class="m-0 link tag has-text-weight-bold is-uppercase"
+                        onClick="javascript:window.open('mailto:mailbykoga@gmail.com', 'mail');event.preventDefault()"
+                        href="mailto:mailbykoga@gmail.com" title="This link might not work!">email</a>
+                        <span class="m-0 tag">mail</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a id="toggle-mode" class="button is-small is-borderless link">
         <span class="icon is-small mode-none">
             <i class="mode-none" data-feather="moon"></i>
         </span>
     </a>
-</div>
-
-<div id="content">
+</div><div id="content">
 
 
-<section id="home-links" class="section">
-    <div class="container">
-        <h1 id="links">links</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas urna lacus, facilisis quis erat non, molestie eleifend nisi. Suspendisse arcu ex, tristique sed viverra eu, vehicula eu nulla. Pellentesque id tincidunt risus. Ut sem mi, interdum non nunc nec, dignissim rhoncus eros. Morbi commodo odio a diam tincidunt aliquet. Mauris est dui, vehicula nec euismod at, semper iaculis tortor. Vestibulum eu mi vitae nunc interdum dapibus id vel purus. Nulla sit amet lacus turpis. Etiam hendrerit non turpis sit amet lacinia. In accumsan ullamcorper mi tempus sodales. In efficitur tempus mauris eget semper. Vestibulum tristique nec nulla nec sodales.</p>
-<p>
-    </div>
-</section>
+
 
 <section id="home-recent" class="section">
     <div class="container">
-        </p>
-<h1 id="recent">recent</h1>
-<p>Suspendisse luctus ante ut viverra ullamcorper. Curabitur ornare laoreet orci, bibendum laoreet nulla pulvinar a. Morbi quis metus maximus, consectetur quam at, tincidunt tellus. Suspendisse mattis, turpis eu efficitur tincidunt, nisl diam pellentesque diam, vitae finibus felis est id ex. Aliquam tincidunt ultrices leo, vel facilisis risus convallis in. Sed sed consectetur mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas nibh eros, sed dictum diam fringilla vel. Etiam efficitur diam maximus, pharetra urna id, finibus libero.</p>
+        <h1 id="posts">Posts</h1>
 <p>
     </div>
 
-    <div id="grid-posts" class="mt-3">
+    <div id="grid-posts" class="pt-3">
         
         
         <div class="postcard-wrapper">
     <div class="home-postcard card">
-        <a href="https://bykoga.com/journal/at-the-beach/" class="postcard-link">At the Beach</a>
+        
     
         
         <div class="card-image">
             
             
             
-            <figure class="image">
-                <img class="lazy" data-src='https://bykoga.com/journal/at-the-beach/images/bridge_hu6ac96a1af254ceb080d2c956c96c61ce_2489195_256x0_resize_q75_lanczos.jpg' src='https://bykoga.com/journal/at-the-beach/images/bridge_hu6ac96a1af254ceb080d2c956c96c61ce_2489195_256x0_resize_q10_box.jpg' alt='This is a beach duh'>
-            </figure>
+            <a href="https://bykoga.com/art/clip-studio-paint/">
+                <figure class="image">
+                    <img class="lazy" data-src='https://bykoga.com/art/clip-studio-paint/images/clip-studio-paint_hu259629f31ce01b1135c9f07b62d03d36_145779_256x0_resize_q75_lanczos.jpeg' src='https://bykoga.com/art/clip-studio-paint/images/clip-studio-paint_hu259629f31ce01b1135c9f07b62d03d36_145779_256x0_resize_q10_box.jpeg' alt='This is the placeholder'>
+                </figure>
+            </a>
         </div>
         
     
         <div class="card-content postcard">
-            <div class="media mb-3">
-                <div class="media-content mb-5">
-                    
-                    
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Feb 6, 2021</p>
-                    <h1 class="is-size-5 has-text-weight-bold">At the Beach</h1>
+            <div class="media mb-2">
+                <div class="media-content">
                     
                     
                     
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/journal">journal</a>
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/art">/art</a>
                     
                     
+                    
+                    <br>
+                    <a href="https://bykoga.com/art/clip-studio-paint/"><h1 class="link postcard-title is-size-5 has-text-weight-bold">Clip Studio Paint</h1></a>
+                    
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                        
+                        
+                        
+                        <a class="my-1 tag tag-color link has-text-weight-bold is-lowercase" href="https://bykoga.com/tags/clip-studio-paint">#clip-studio-paint</a>
+                        
+                        
+                        <a class="my-1 tag tag-color link has-text-weight-bold is-lowercase" href="https://bykoga.com/tags/tutorial">#tutorial</a>
+                        
+                        
+                        <a class="my-1 tag tag-color link has-text-weight-bold is-lowercase" href="https://bykoga.com/tags/digital-art">#digital-art</a>
+                        
+                        
+                    </div>
                 </div>
             </div>
-            <div class="content">
-                <p>
-                    The beachh!
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        <div class="postcard-wrapper">
-    <div class="home-postcard card">
-        <a href="https://bykoga.com/journal/gifted-people/" class="postcard-link">Gifted People</a>
-    
-        
-    
-        <div class="card-content postcard">
-            <div class="media mb-3">
-                <div class="media-content mb-5">
+            <a href="https://bykoga.com/art/clip-studio-paint/">
+                <div class="content">
+                    <p>
+                        The summary!
+                    </p>
+
                     
                     
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Jan 23, 2021</p>
-                    <h1 class="is-size-5 has-text-weight-bold">Gifted People</h1>
-                    
-                    
-                    
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/journal">Journal</a>
-                    
-                    
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Mar 2, 2021
+                    </p>
                 </div>
-            </div>
-            <div class="content">
-                <p>
-                    
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        <div class="postcard-wrapper">
-    <div class="home-postcard card">
-        <a href="https://bykoga.com/art/krita/" class="postcard-link">Krita</a>
-    
-        
-    
-        <div class="card-content postcard">
-            <div class="media mb-3">
-                <div class="media-content mb-5">
-                    
-                    
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Jan 23, 2021</p>
-                    <h1 class="is-size-5 has-text-weight-bold">Krita</h1>
-                    
-                    
-                    
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/art">Art</a>
-                    
-                    
-                </div>
-            </div>
-            <div class="content">
-                <p>
-                    I&rsquo;ve been drawing with Krita for a year now, and this is my veredict
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        <div class="postcard-wrapper">
-    <div class="home-postcard card">
-        <a href="https://bykoga.com/design/dark-mode/" class="postcard-link">Dark Mode</a>
-    
-        
-    
-        <div class="card-content postcard">
-            <div class="media mb-3">
-                <div class="media-content mb-5">
-                    
-                    
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Jan 7, 2021</p>
-                    <h1 class="is-size-5 has-text-weight-bold">Dark Mode</h1>
-                    
-                    
-                    
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/design">Design</a>
-                    
-                    
-                </div>
-            </div>
-            <div class="content">
-                <p>
-                    Dark mode is indeed great!
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        <div class="postcard-wrapper">
-    <div class="home-postcard card">
-        <a href="https://bykoga.com/games/hyper-color/" class="postcard-link">Hyper Color</a>
-    
-        
-    
-        <div class="card-content postcard">
-            <div class="media mb-3">
-                <div class="media-content mb-5">
-                    
-                    
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Jan 7, 2021</p>
-                    <h1 class="is-size-5 has-text-weight-bold">Hyper Color</h1>
-                    
-                    
-                    
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/games">Games</a>
-                    
-                    
-                </div>
-            </div>
-            <div class="content">
-                <p>
-                    Hyper color is a innovative platform game&hellip;
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        <div class="postcard-wrapper">
-    <div class="home-postcard card">
-        <a href="https://bykoga.com/art/digital-art/" class="postcard-link">Digital Art</a>
-    
-        
-        <div class="card-image">
-            
-            
-            
-            <figure class="image">
-                <img class="lazy" data-src='https://bykoga.com/art/digital-art/images/starry-sky_hua383c4fa0c3ac99139e60beb9776c03e_2372610_256x0_resize_q75_bgffffff_lanczos_2.jpg' src='https://bykoga.com/art/digital-art/images/starry-sky_hua383c4fa0c3ac99139e60beb9776c03e_2372610_256x0_resize_q10_bgffffff_box_2.jpg' alt='This is the alt'>
-            </figure>
+            </a>
         </div>
         
-    
-        <div class="card-content postcard">
-            <div class="media mb-3">
-                <div class="media-content mb-5">
-                    
-                    
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Jan 7, 2021</p>
-                    <h1 class="is-size-5 has-text-weight-bold">Digital Art</h1>
-                    
-                    
-                    
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/art">Art</a>
-                    
-                    
-                </div>
-            </div>
-            <div class="content">
-                <p>
-                    Wow this is so interesting!
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        <div class="postcard-wrapper">
-    <div class="home-postcard card">
-        <a href="https://bykoga.com/journal/hello-world/" class="postcard-link">Hello World</a>
-    
-        
-    
-        <div class="card-content postcard">
-            <div class="media mb-3">
-                <div class="media-content mb-5">
-                    
-                    
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Jan 6, 2021</p>
-                    <h1 class="is-size-5 has-text-weight-bold">Hello World</h1>
-                    
-                    
-                    
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/journal">Journal</a>
-                    
-                    
-                </div>
-            </div>
-            <div class="content">
-                <p>
-                    Hello World! This is my first post
-byKoga
-                </p>
-            </div>
-        </div>
     </div>
 </div>
         
     </div>
 </section>
 
-<section id="home-about" class="section">
+<section id="home-about" class="section mode-none">
     <div class="container">
-        </p>
-<h1 id="about">about</h1>
-<p>Suspendisse luctus ante ut viverra ullamcorper. Curabitur ornare laoreet orci, bibendum laoreet nulla pulvinar a. Morbi quis metus maximus, consectetur quam at, tincidunt tellus. Suspendisse mattis, turpis eu efficitur tincidunt, nisl diam pellentesque diam, vitae finibus felis est id ex. Aliquam tincidunt ultrices leo, vel facilisis risus convallis in. Sed sed consectetur mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas nibh eros, sed dictum diam fringilla vel. Etiam efficitur diam maximus, pharetra urna id, finibus libero.</p>
+        <div class="columns">
+            <div class="column">
+                </p>
+<h1 id="about">About</h1>
+<p>Get ready to learn more about digital art, game development, web design, and more! Created for free, <strong>byKOGA</strong> started in 2020 with the intention of teaching high quality content for the next generation of tech users. Inspired by Brackeys, my goal is to create a positive community of passionate members. Interested? Check the links in the bottom-left corner!</p>
 <p>
+            </div>
+            <div class="column">
+                <img src="" alt="">
+            </div>
+        </div>
     </div>
 </section>
 
 <section id="home-portfolio" class="section">
     <div class="container">
         </p>
-<h1 id="portfolio">portfolio</h1>
+<h1 id="portfolio">Portfolio</h1>
 <p>Sed aliquam risus maximus, luctus arcu vel, sagittis nisl. Nullam id sapien in est venenatis eleifend non non orci. Nullam iaculis cursus eleifend. Etiam sit amet turpis purus. Morbi luctus bibendum rhoncus. Integer a libero lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent mollis velit nunc, vitae hendrerit libero lacinia vitae. Vivamus porttitor orci sit amet purus dictum congue quis in urna.</p>
 <p>
     </div>
@@ -359,7 +251,7 @@ byKoga
 <section id="home-contact" class="section">
     <div class="container">
         </p>
-<h1 id="contact">contact</h1>
+<h1 id="contact">Contact</h1>
 <p>Nullam in erat nibh. Aliquam fermentum elit nibh, in consequat augue tempus ut. Sed non tellus ac felis congue venenatis. Curabitur eu neque non diam fermentum faucibus quis in quam. Maecenas a ultrices turpis. In tempus risus at ipsum luctus venenatis. Pellentesque dignissim quam non sem congue dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus mauris quam, at convallis nulla tempus fringilla.</p>
 <p>Nullam in erat nibh. Aliquam fermentum elit nibh, in consequat augue tempus ut. Sed non tellus ac felis congue venenatis. Curabitur eu neque non diam fermentum faucibus quis in quam. Maecenas a ultrices turpis. In tempus risus at ipsum luctus venenatis. Pellentesque dignissim quam non sem congue dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus mauris quam, at convallis nulla tempus fringilla.</p>
 
@@ -367,9 +259,9 @@ byKoga
 </section>
 
 
-        </div><footer class="footer">
+        </div><footer class="footer mt-6">
     <div class="container has-text-centered no-bg">
-        <p class="no-bg"><b class="no-bg"><a class="link no-bg" href="/">byKoga</a></b> is maintained with <span class="has-text-danger no-bg">♥</span> by <strong class="no-bg">André Koga</strong></p>
+        <p class="no-bg"><b class="no-bg"><a class="link no-bg" href="/">byKOGA</a></b> is maintained with <span class="has-text-danger no-bg">♥</span> by <strong class="no-bg">André Koga</strong></p>
         <p class="no-bg">Copyright © 2020 - 2021</p>
     </div>
 </footer><script src="/js/jquery.min.js"></script>

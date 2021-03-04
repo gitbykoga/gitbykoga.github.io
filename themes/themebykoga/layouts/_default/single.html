@@ -4,7 +4,7 @@
 {{ $imageurl := print .Params.thumb }}
 {{ $image := .Resources.GetMatch $imageurl }}
 {{ if $image }}
-    {{ $lowres := $image.Fill "1920x318 jpg q90 Lanczos Smart"}}
+    {{ $lowres := $image.Fill "1920x1080 jpg q90 Lanczos Smart"}}
 
     <div id="single-hero" style="background-image: url('{{ $lowres.Permalink | safeHTML }}')">
     </div>
@@ -16,7 +16,7 @@
     <div id="single-header" class="container pb-6">
         {{ $dateTime := .PublishDate.Format "2006-01-02" }}
         {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-        <div class="field is-grouped is-grouped-multiline">
+        <div class="single-links is-flex">
             <div class="category">
                 {{ with .Params.categories }}
                 {{ range . }}
@@ -25,11 +25,11 @@
                 {{ end }}
                 {{ end }}
             </div>
-            <div class="tags px-4">
+            <div class="tags">
                 {{ with .Params.tags }}
                 {{ range . }}
-                {{ $href := print (absURL "/t/") (urlize .) }}
-                <a class="tag is-light link is-size-6 has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
+                {{ $href := print (absURL "/tags/") (urlize .) }}
+                <a class="tag tag-color link is-size-6 has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
                 {{ end }}
                 {{ end }}
             </div>
@@ -37,11 +37,11 @@
         <hr>
         <p class="is-size-6 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}</p>
         <h1 class="is-size-2 has-text-weight-bold">{{ .Title }}</h1>
-        <p class="is-size-6">{{ .Summary }}</p>
+        <p class="is-size-5">{{ .Summary }}</p>
     </div>
 
     {{ range $i, $content_split := $content_parts }}
-        <div id="single-body-{{ $i }}" class="container pt-6">
+        <div id="single-body-{{ $i }}" class="content container">
             {{ $content_split | safe.HTML}}
         </div>
     {{ end }}

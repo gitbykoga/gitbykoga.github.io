@@ -10,7 +10,7 @@ draft: true
 # Organization
 layout: ""
 categories: [""]
-tags: ["post"]
+tags: []
 
 # Thumbnail / Featured
 summary: ""

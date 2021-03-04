@@ -1,38 +1,58 @@
 <div class="postcard-wrapper">
     <div class="home-postcard card">
-        <a href="{{ .Permalink }}" class="postcard-link">{{ .Title }}</a>
+        <!--a href="{{ .Permalink }}" class="postcard-link">{{ .Title }}</a-->
     
         {{ if .Params.thumb }}
         <div class="card-image">
             {{ $image := $.Page.Resources.GetMatch .Params.thumb }}
             {{ .Scratch.Set "modified-image" ($image.Resize "256x jpg q75 Lanczos Smart") }}
             {{ .Scratch.Set "lowres-image" ($image.Resize "256x jpg q10") }}
-            <figure class="image">
-                <img class="lazy" data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Params.alt }}'>
-            </figure>
+            <a href="{{ .Permalink }}">
+                <figure class="image">
+                    <img class="lazy" data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Params.alt }}'>
+                </figure>
+            </a>
         </div>
         {{ end }}
     
         <div class="card-content postcard">
-            <div class="media mb-3">
-                <div class="media-content mb-5">
-                    {{ $dateTime := .PublishDate.Format "2006-01-02" }}
-                    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}</p>
-                    <h1 class="is-size-5 has-text-weight-bold">{{ .Title }}</h1>
+            <div class="media mb-2">
+                <div class="media-content">
                     {{ with .Params.categories }}
                     {{ range . }}
                     {{ $href := print (absURL "") (urlize .) }}
-                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="{{ $href }}">{{ . }}</a>
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="{{ $href }}">/{{ . }}</a>
                     {{ end }}
                     {{ end }}
+                    
+                    <br>
+                    <a href="{{ .Permalink }}"><h1 class="link postcard-title is-size-5 has-text-weight-bold">{{ .Title }}</h1></a>
+                    
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                        {{ with .Params.tags }}
+                        {{ range . }}
+                        {{ $href := print (absURL "/tags/") (urlize .) }}
+                        <a class="my-1 tag tag-color link has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
+                        {{ end }}
+                        {{ end }}
+                    </div>
                 </div>
             </div>
-            <div class="content">
-                <p>
-                    {{ .Summary }}
-                </p>
-            </div>
+            <a href="{{ .Permalink }}">
+                <div class="content">
+                    <p>
+                        {{ .Summary }}
+                    </p>
+
+                    {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+                    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}
+                    </p>
+                </div>
+            </a>
         </div>
+        <!--footer class="card-footer">
+            <a class="link card-footer-item has-text-weight-bold" href="{{ .Permalink }}">Read more</a>
+        </footer-->
     </div>
 </div>

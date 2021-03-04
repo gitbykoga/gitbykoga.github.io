@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on byKoga</title>
+    <link>https://bykoga.com/tags/</link>
+    <description>Recent content in Tags on byKoga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Mar 2021 17:04:15 -0300</lastBuildDate><atom:link href="https://bykoga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>clip-studio-paint</title>
+      <link>https://bykoga.com/tags/clip-studio-paint/</link>
+      <pubDate>Tue, 02 Mar 2021 17:04:15 -0300</pubDate>
+      
+      <guid>https://bykoga.com/tags/clip-studio-paint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://bykoga.com/tags/tutorial/</link>
+      <pubDate>Tue, 02 Mar 2021 17:04:15 -0300</pubDate>
+      
+      <guid>https://bykoga.com/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>digital-art</title>
+      <link>https://bykoga.com/tags/digital-art/</link>
+      <pubDate>Tue, 02 Mar 2021 16:31:47 -0300</pubDate>
+      
+      <guid>https://bykoga.com/tags/digital-art/</guid>
+      <description>#digital-art All about my digital art process, drawings, and posts!</description>
+    </item>
+    
+  </channel>
+</rss>

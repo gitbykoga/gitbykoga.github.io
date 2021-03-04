@@ -1,5 +1,6 @@
 $().ready(function () {
     resizeAllGridItems();
+    allAutoScrolls();
 });
 
 $(function () {
@@ -23,6 +24,9 @@ var currentHash = "links"
 
 if (window.location.pathname.substring(0, 1) === "/#" || window.location.pathname === "/") 
 {
+    //console.log(location.href.replace(/(.+\w\/)(.+)/, "/$2"));
+    var path = location.href.replace(/(.+\w\/)(.+)/, "/$2");
+
     // SET THE HASH
     $(function () {
         $(document).scroll(function () {
@@ -31,6 +35,12 @@ if (window.location.pathname.substring(0, 1) === "/#" || window.location.pathnam
 
         $().ready(function () {
             uiNavigation(true);
+
+            setTimeout(() => {
+                var button = $('a[href="' + path + '"]');
+                animateHashtag(button[0], 250);
+                sessionStorage.setItem('recentThis', button[0]);
+            }, 1);
         });
     });
 }
@@ -127,16 +137,19 @@ $(function () {
     });
 });*/
 
-$("#mode-toggle a").click(function () {
+$("#toggle-mode").click(function () {
+    //console.log("hy");
     openLight.toggleMode();
 });
 
 $("a[href*=\\#]:not([href=\\#])").click(function () {
-    animateHashtag(this);
+    //console.log(this)
+
+    animateHashtag(this, 500);
     sessionStorage.setItem('recentThis', this);
 });
 
-function animateHashtag(param)
+function animateHashtag(param, speed)
 {
     if (location.pathname.replace(/^\//, '') == param.pathname.replace(/^\//, '')
         || location.hostname == param.hostname) {
@@ -149,7 +162,7 @@ function animateHashtag(param)
         if (target.length) {
             $('html,body').stop().dequeue().animate({
                 scrollTop: target.offset().top - headerHeight
-            }, 500);
+            }, speed);
             return false;
         }
     }
@@ -167,3 +180,60 @@ function resizeAllGridItems() {
 }
 
 window.addEventListener("resize", resizeAllGridItems);
+
+// Horizontal Scroll
+jQuery(function (e) { e.fn.hScroll = function (l) { l = l || 120, e(this).bind("DOMMouseScroll mousewheel", function (t) { var i = t.originalEvent, n = i.detail ? i.detail * -l : i.wheelDelta, o = e(this).scrollLeft(); o += n > 0 ? -l : l, e(this).scrollLeft(o), t.preventDefault() }) } })
+
+$(document).ready(function () {
+    $(".is-hor-scroll").hScroll(25); // You can pass (optionally) scrolling amount
+});
+
+// Auto Scroll
+function allAutoScrolls() {
+    $(".is-auto-scroll").each(function () {
+        if ($(this)[0].clientWidth < $(this)[0].scrollWidth) {
+            $(this).scroll();
+            loopAnimation($(this), true, 0);
+
+            $(this).hover(function () {
+                $(this).dequeue().stop();
+            }, function () {
+                loopAnimation($(this), true, 0);
+            });
+        }        
+    });
+}
+
+function loopAnimation(chosen, goRight, prevVal) {
+    if (goRight == true)
+    {
+        chosen.animate({
+            scrollLeft: '+=100'
+        }, 2500, "linear",
+            function () {
+                if (chosen.scrollLeft() - prevVal < 95) {
+                    //console.log("reached end!");
+                    loopAnimation(chosen, false, chosen.scrollLeft());
+                }
+                else
+                {
+                    loopAnimation(chosen, true, chosen.scrollLeft());
+                }
+            });
+    }
+    else
+    {
+        chosen.animate({
+            scrollLeft: '-=100'
+        }, 2500, "linear",
+            function () {
+                if (chosen.scrollLeft() == 0) {
+                    //console.log("reached start!");
+                    loopAnimation(chosen, true, chosen.scrollLeft());
+                }
+                else {
+                    loopAnimation(chosen, false, chosen.scrollLeft());
+                }
+            });
+    }
+}

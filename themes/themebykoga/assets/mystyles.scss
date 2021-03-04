@@ -55,6 +55,13 @@
        url('/fonts/space-mono-v6-latin-700italic.svg#SpaceMono') format('svg'); /* Legacy iOS */
 }
 
+$primary: #ff0055;
+$primary-l: #ff5c7f;
+$primary-d: #c50052;
+$secondary: #24ffbd;
+$secondary-l: #75ffca;
+$secondary-d: #00cbb0;
+
 @import "bulma/sass/utilities/_all";
 
 $navbar-breakpoint: 0;
@@ -84,7 +91,9 @@ $card-radius: 0;
 h1 {
     font-size: 2em;
     font-style: italic;
+    text-transform: uppercase;
 }
+
 
 #content {
     /*@include mobile {
@@ -107,8 +116,41 @@ h1 {
 .is-not-displayed {
     display: none;
 }
-.tag {
+.link:not(:hover) {
     text-decoration: none !important;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+#itchio {
+    background-color: #FF5F5F;
+    color: white;
+}
+
+#instagram {
+    background-color: #FE258D;
+    color: white;
+}
+
+#twitter {
+    background-color: #1C9CEB;
+    color: white;
+}
+
+#github {
+    background-color: #7C007C;
+    color: white;
+}
+
+#discord {
+    background-color: #7289DA;
+    color: white;
+}
+
+#mail {
+    background-color: #E34133;
+    color: white;
 }
 
 
@@ -124,15 +166,46 @@ $light-fg: $text !default;
 $link-light: #72a1ff;
 
 // DARK / LIGHT MODES
-.mode-light:not(.no-bg) {
+.mode-light {
     background-color: $white;
+
+    .no-bg {
+        background-color: transparent;
+    }
 }
-.mode-dark:not(.no-bg) {
+.mode-dark {
     background-color: $dark-bg;
+
+    .no-bg {
+        background-color: transparent;
+    }
+}
+
+hr {
+    &.mode-light {
+        display: block; height: 1px;
+        border: 0; border-top: 1px solid yellow;
+        margin: 1em 0; padding: 0;
+
+        background-color: yellow;
+        border-color: yellow;
+        color: yellow;
+        
+    }
+
+    &.mode-dark {
+        color: $grey-lighter;
+        text-decoration-color: $grey-lighter;
+    }
 }
 
 .no-bg {
     background-color: transparent;
+}
+
+strong {
+   color: inherit;
+   font-weight: $strong-weight;
 }
 
 span, h1, h2, h3, h4, h5, h6, p, i, em, b, button, .no-color {
@@ -175,16 +248,6 @@ span, h1, h2, h3, h4, h5, h6, p, i, em, b, button, .no-color {
     }
 }
 
-strong {
-    &.mode-light {
-        color: $text-strong;
-    }
-
-    &.mode-dark {
-        color: $white-ter;
-    }
-}
-
 a:not(.no-color) {
     &.mode-light {
         color: $link;
@@ -195,39 +258,102 @@ a:not(.no-color) {
     }
 }
 
-#mode-toggle {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-    background-color: transparent !important;
+.tag-color {
+    &.mode-light {
+        background-color: $light;
+    }
 
-    margin: 1rem;
+    &.mode-dark {
+        background-color: $darker-bg;
+    }
+}
 
-    z-index: 100;
+#toggle-mode {
+    border: none;
 
-    &.mode-light a {
+    &.mode-light {
+        box-shadow: $outline-box rgba($black, .5);
         background-color: $dark-bg;
         color: $dark-fg;
     }
 
-    &.mode-dark a {
-        background-color: $yellow;
+    &.mode-dark {
+        box-shadow: $outline-box rgba($white, .5);
+        background-color: $white;
         color: $light-fg;
     }
+}
 
-    a {
+#bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: transparent !important;
+
+    z-index: 100;
+
+    .dropdown-menu, .dropdown-content {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .dropdown-item .tags {
+        box-shadow: $outline-box rgba($black, .5);
+    }
+
+    button {
         border: none;
 
-        &.mode-light {
-            box-shadow: $outline-box rgba($black, .5);
-        }
-
-        &.mode-dark {
-            box-shadow: $outline-box rgba($yellow, .5);
-        }
+        box-shadow: $outline-box rgba($black, .5);
+        background-color: $secondary;
     }
 }
+
+
+
+
+
+
+
+// SCROLLBAR AND SELECTION COLORS
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+$selection-text: rgb(143, 197, 248);
+
+::-moz-selection { /* Code for Firefox */
+  color: $white;
+  background: $selection-text;
+}
+
+::selection {
+  color: $white;
+  background: $selection-text;
+}
+
+
+
+
+
 
 
 
@@ -263,11 +389,21 @@ a:not(.no-color) {
     }
 
     &.mode-dark {
-        box-shadow: 0px 0px 0px 1px rgba($yellow, .6), 0px 0px 25px 0px rgba($yellow, .35);
+        box-shadow: 0px 0px 0px 1px rgba($primary, .6), 0px 0px 25px 0px rgba($primary, .35);
     }
 }
 .navbar-item {
     font-weight: 500;
+
+    strong {
+        &.mode-dark {
+            color: $grey-lighter;
+        }
+
+        &.mode-light {
+            color: $text;
+        }
+    }
 
     &.is-active {
         text-decoration: underline;
@@ -306,11 +442,11 @@ a:not(.no-color) {
 
 .footer {
     &.mode-light {
-        background-color: $white-ter;
+        background-color: $white-ter !important;
     }
     &.mode-dark {
-        box-shadow: 0px 0px 0px 1px rgba($yellow, .6), 0px 0px 25px 0px rgba($yellow, .35);
-        background-color: $darker-bg;
+        box-shadow: 0px 0px 0px 1px rgba($primary, .6), 0px 0px 25px 0px rgba($primary, .35) !important;
+        background-color: $darker-bg !important;
     }
 }
 
@@ -355,6 +491,10 @@ a:not(.no-color) {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+
+    .media-content {
+        overflow: hidden;
+    }
 }
 .home-postcard {
     margin: 0.3rem;
@@ -367,31 +507,57 @@ a:not(.no-color) {
         box-shadow: 0px 0px 0px 1px rgba($white, .4), 0px 0px 10px 5px rgba($black, .35);
     }
 }
-.postcard-cat {
-    position: absolute;
-    z-index: 2;
+.postcard-tags {
+    //position: absolute;
+    //z-index: 2;
+    //width: calc(100% - 3rem);
+
+    //padding-bottom: 5px;
+
+    //@include touch {
+    //    width: calc(100% - 1.4rem);
+    //}
+
+    white-space: nowrap;
+
+    overflow-x: auto;
 }
-.postcard-link
-{
-    position: absolute;
+// .postcard-link
+// {
+//     position: absolute;
 
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
 
-    z-index: 1;
-    color: transparent !important;
-    outline: none !important;
+//     z-index: 1;
+//     color: transparent !important;
+//     outline: none !important;
 
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+//     -webkit-touch-callout: none; /* iOS Safari */
+//     -webkit-user-select: none; /* Safari */
+//      -khtml-user-select: none; /* Konqueror HTML */
+//        -moz-user-select: none; /* Old versions of Firefox */
+//         -ms-user-select: none; /* Internet Explorer/Edge */
+//             user-select: none; /* Non-prefixed version, currently
+//                                   supported by Chrome, Edge, Opera and Firefox */
+// }
+
+#home-about {
+    background-color: $primary-l;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 // SINGLE PAGE
 #single-hero {
@@ -413,5 +579,23 @@ a:not(.no-color) {
 
     @include touch {
         height: calc(30vh - 3.5rem);
+    }
+}
+
+.single-links {
+    flex-flow: row;
+
+    .tags {
+        padding-top: 0;
+        padding-left: 1rem;
+    }
+
+    @include touch {
+        flex-flow: column;
+
+        .tags {
+            padding-left: 0;
+            padding-top: 0.5rem;
+        }
     }
 }

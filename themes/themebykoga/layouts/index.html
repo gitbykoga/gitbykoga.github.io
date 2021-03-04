@@ -1,18 +1,29 @@
 {{ define "main" }}
 {{ $content_parts := split .Content "-split-" }}
 
-<section id="home-links" class="section">
+<!--section id="home-links" class="section">
     <div class="container">
         {{ index $content_parts 0 | safe.HTML}}
     </div>
-</section>
+    <div class="container pt-3">
+        <div class="tags">
+            <a id="itchio" class="link tag has-text-weight-bold is-lowercase" href="https://bykoga.itch.io"
+                title="All of my published games!">itchio</a>
+            <a id="twitter" class="link tag has-text-weight-bold is-lowercase" href="https://twitter.com/madebyKoga" title="Daily posts about my game and art projects!">twitter</a>
+            <a id="instagram" class="link tag has-text-weight-bold is-lowercase" href="https://www.instagram.com/artbykoga" title="My artwork, everything art related is here!">instagram</a>
+            <a id="github" class="link tag has-text-weight-bold is-lowercase" href="https://github.com/gitbykoga" title="My repositories with some useful code">github</a>
+            <a id="discord" class="link tag has-text-weight-bold is-lowercase" href="https://discord.gg/WgCJjNMgVG" title="My server where we chat about a bunch of things. Come join!">discord</a>
+            <a id="mail" class="link tag has-text-weight-bold is-lowercase" onClick="javascript:window.open('mailto:mailbykoga@gmail.com', 'mail');event.preventDefault()" href="mailto:mailbykoga@gmail.com" title="This link might not work!">email</a>
+        </div>
+    </div>
+</section-->
 
 <section id="home-recent" class="section">
     <div class="container">
-        {{ index $content_parts 1 | safe.HTML}}
+        {{ index $content_parts 0 | safe.HTML}}
     </div>
 
-    <div id="grid-posts" class="mt-3">
+    <div id="grid-posts" class="pt-3">
         {{ $amount := 20 }}
         {{ range where site.RegularPages "Type" "post" | first $amount }}
         {{ partial "postcard.html" . }}
@@ -20,21 +31,28 @@
     </div>
 </section>
 
-<section id="home-about" class="section">
+<section id="home-about" class="section mode-none">
     <div class="container">
-        {{ index $content_parts 2 | safe.HTML}}
+        <div class="columns">
+            <div class="column">
+                {{ index $content_parts 1 | safe.HTML}}
+            </div>
+            <div class="column">
+                <img src="" alt="">
+            </div>
+        </div>
     </div>
 </section>
 
 <section id="home-portfolio" class="section">
     <div class="container">
-        {{ index $content_parts 3 | safe.HTML}}
+        {{ index $content_parts 2 | safe.HTML}}
     </div>
 </section>
 
 <section id="home-contact" class="section">
     <div class="container">
-        {{ index $content_parts 4 | safe.HTML}}
+        {{ index $content_parts 3 | safe.HTML}}
     </div>
 </section>
 

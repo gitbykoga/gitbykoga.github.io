@@ -111,11 +111,11 @@ class OpenLight {
 
 
     //Check if HTML element has a className which is overrided
-    arrayCompare(x,y,array){
-        for(var i = 0;i<this.overridedClasses.length;i++){
-
-            if(array[x][y].classList.contains(this.overridedClasses[i])){
-                return false;//Is in the the overrided classes
+    arrayCompare(x, y, array) {
+        for (var i = 0; i < this.overridedClasses.length; i++){
+            if (array[x][y].classList.contains(this.overridedClasses[i]) ||
+                array[x][y].closest('.' + this.overridedClasses[i]) != null) {
+                return false;//Is in the overrided classes
             }
         }
         return true;//Is not in the overrided classes
