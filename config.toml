@@ -9,6 +9,9 @@ languageCode = "en-us"
 title = "byKoga"
 theme = "themebykoga"
 
+[markup.goldmark.renderer]
+    unsafe = true
+
 # Remove tags and categories, I'll create the tags page manually
 # disableKinds = ["taxonomy", "term"]
 # ignoreErrors = ["error-disable-taxonomy"] # you will get a console error message without this

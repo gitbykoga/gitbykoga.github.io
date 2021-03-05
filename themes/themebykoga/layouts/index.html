@@ -18,9 +18,11 @@
     </div>
 </section-->
 
-<section id="home-recent" class="section">
+<section id="home-recent" class="home section">
     <div class="container py-4">
-        {{ index $content_parts 0 | safe.HTML}}
+        <div class="content">
+            {{ index $content_parts 0| safe.HTML}}
+        </div>
     </div>
 
     <div id="grid-posts" class="pb-6">
@@ -31,7 +33,7 @@
     </div>
 </section>
 
-<section id="home-about" class="section mode-none">
+<section id="home-about" class="home section mode-none">
     <div class="container py-4">
         <div class="columns">
             <div class="column is-two-thirds">
@@ -46,26 +48,47 @@
     </div>
 </section>
 
-<section id="home-portfolio" class="section">
+<section id="home-portfolio" class="home section">
     <div class="container py-4">
         <div class="columns">
+            <div class="column is-narrow is-flex is-justify-content-center">
+                {{ $imageurl := "eu.jpg" }}
+                {{ $image := .Resources.GetMatch $imageurl }}
+                {{ if $image }}
+                    {{ $lowres := $image.Fill "200x200 jpg q90 Lanczos Smart"}}
+                    <div class="img is-align-self-flex-end" style="background-image: url('{{ $lowres.Permalink | safeHTML }}')"></div>
+                {{ end }}
+            </div>
             <div class="column">
-                <div class="content has-text-white">
+                <div class="content">
                     {{ index $content_parts 2 | safe.HTML}}
                 </div>
             </div>
-            <div class="column">
-                <!--img src="logowhite.png" alt=""-->
+        </div>
+        <div class="columns">
+            <div class="column is-7">
+                <div class="content">
+                    {{ index $content_parts 3 | safe.HTML}}
+                </div>
+            </div>
+            <div class="column is-5">
+                <div class="content">
+                    {{ index $content_parts 4 | safe.HTML}}
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="home-contact" class="section p-0 no-bg">
-    <h1 id="contact"></h1>
-    <div class="typeform-widget mode-none no-bg" data-url="https://form.typeform.com/to/xx3gmnY8?typeform-medium=embed-snippet"
-        data-transparency="100" data-hide-headers="true" style="width: 100%; height: 90vh;"></div>
-    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+<section id="home-contact" class="home section pb-0">
+    <div class="container">
+        <div class="content">
+            {{ index $content_parts 5 | safe.HTML}}
+        </div>
+    </div>
 </section>
+<div class="typeform-widget mode-none" data-url="https://form.typeform.com/to/xx3gmnY8?typeform-medium=embed-snippet" data-transparency="100" style="width: 100%; height: 70vh;"></div>
+<script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+
 
 {{ end }}

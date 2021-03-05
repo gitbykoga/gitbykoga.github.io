@@ -5,18 +5,147 @@ date: 2021-01-07T14:42:08-03:00
 draft: false
 ---
 
-# Posts
+# POSTS
 
 -split-
 
-# About
+# ABOUT
 Here you'll learn more about digital art, game development, web design, and more! Created for free, **byKOGA** started in 2020 with the intention of teaching high quality content for the next generation of tech users. Inspired by Brackeys, my goal is to create a positive community of passionate members. Interested? Check the links in the bottom-left corner!
 
 -split-
 
-# Portfolio
-`>> print(Hello World)`! I'm André Koga, a game developer, web designer, digital artist, sports lover, and owner of two dogs.
+# RESUME
+`> print('Hello World!');`
+
+I'm <span class="marked mode-none">***André Koga***</span>, a 18yr old Brazilian startup founder, game developer, web designer, digital artist, sports lover, scientific Olympiads medalist, and owner of two dogs. Nice to meet you!
+
+[Want to send a message?](/#contact)
 
 -split-
 
-# Contact
+<hr style="background-color:#0ebba4"/>
+
+###### <span style="color:#0ebba4">EDUCATION</span>
+#### <ins><span class="marked mode-none">Accepted in Multiple International Universities</span></ins>
+* **University of Toronto, Mississauga - Studies in Computer Science, Mathematics, and Statistics**
+* **University of British Columbia - Bachelor of Applied Science Program**
+
+
+#### <ins>Colégio Farias Brito, Fortaleza, Ceará - High School</ins>
+**Average Grade: 9.9/10 - Top 1% Student**
+Was recruited by the school due to excellent performance on Scientific Olympiads and awarded with a full-ride; participated in an honors class due to the olympiads.
+
+#### <ins>Colégio Mater Amabilis, Guarulhos, São Paulo - 9th grade</ins>
+**Average Grade: 9.7/10 - 2nd Best Student**
+
+<hr style="background-color:#0ebba4"/>
+
+###### <span style="color:#0ebba4">LEADERSHIPS</span>
+#### <ins><span class="marked mode-none">Founder of Nery</span>, a Medical Start-Up - 12th grade</ins>
+One of the 3 founders. Reinvested the money from the prize of the MIT Hackmed Brasil Competition (2nd place) to support the operation. Contributes UI/UX knowledge to strengthen and develop the users' interfaces and experiences on the app and website, creating a solid brand for the organization.
+
+#### <ins>Creator of byKOGA (formerly TTC) - 10th grade to current</ins>
+Initiator, designer, and blogger of the personal website and blog "byKOGA" (formerly known as The Thought Compiler).
+
+#### <ins>Developer of byKOGA (formerly Orion Core) - 6th grade to current</ins>
+Has been developing games since the 6th grade, which includes coding, graphics, sound design, game mechanics, and advertisement. Launched over 6 games on Google Play and Itch.io (itch.io), finished over 20 smaller games.
+
+<hr style="background-color:#0ebba4"/>
+
+###### <span style="color:#0ebba4">COMMUNITY</span>
+#### <ins><span class="marked mode-none">Vice-President of NOIC</span>, an Education NGO - 10th grade to 12th grade</ins>
+Supervises over 40 members; other responsibilities include redesigning the whole platform interface and brand, managing the website contents, and organizing major events (such as online meetings, livestreams and Q&A with our content creators, and fundraising - supervised 2 fundraising events until now). The [website](https://www.noic.com.br) has released over a thousand classes and posts and drawn over almost 2 million viewers, 40 thousand monthly. The monthly views doubled after the platform redesign.
+
+<hr style="background-color:#0ebba4"/>
+
+###### <span style="color:#0ebba4">SKILLS</span>
+* ***<ins>Arts</ins> ->*** digital and traditional art (drawing, painting)
+* ***<ins>Linguistics</ins> ->*** English and Portuguese
+* ***<ins>Game Development</ins> ->*** game jams, Itch.io, Google Play
+* ***<ins>Leadership</ins> ->*** NOIC's vice-president, Nery co-founder
+* ***<ins>Problem-solving</ins> ->*** Scientific Olympiads, Chess
+* ***<ins>Programming</ins> ->*** C#, JS, Python, PHP, CSS and HTML, Markdown, and more
+* ***<ins>Scientific Knowledge</ins> ->*** math, CS, physics
+* ***<ins>Web Design</ins> ->*** The Thought Compiler, NOIC, Nery, byKOGA
+* ***<ins>Writer</ins> ->*** byKOGA's posts, "Em Cartaz"
+* ***<ins>Influencer</ins> ->*** byKOGA's Twitter, Instagram art account
+* ***<ins>Video Editor</ins> ->*** YouTube video-game highlights
+
+-split-
+
+<hr style="background-color:#0ebba4"/>
+
+###### <span style="color:#0ebba4">AWARDS</span>
+*(8th to current - awards from 6th and 7th are available upon request)*
+
+
+
+#### **-> <ins>2016 - 8th grade</ins>**
+**National:**
+* **GOLD** - Math, [<span class="link">Mat. do Poliedro</span>](https://www.sistemapoliedro.com.br/omp/)
+* **GOLD** - Math, [<span class="link">Sem Fronteiras Nac.</span>](http://matematicasemfronteiras.org/index.html)
+* **GOLD** - Math, [<span class="link">Canguru de Mat.</span>](https://www.cangurudematematicabrasil.com.br/)
+* **GOLD** - A&A, [<span class="link">Brazilian of A&A</span>](http://www.oba.org.br/site/)
+* **GOLD** - Phys., [<span class="link">Brazilian of Phys.</span>](http://www.sbfisica.org.br/v1/olimpiada/2020/)
+* **SILVER**  - RBT, [<span class="link">Brazilian of Robot.</span>](http://www.obr.org.br/)
+* **BRONZE**  - Math, [<span class="link">Brazilian of Math</span>](https://www.obm.org.br/)
+* **BRONZE**  - CS, [<span class="link">Brazilian of CS</span>](https://olimpiada.ic.unicamp.br/)
+* **BRONZE**  - Chem., [<span class="link">Brazilian of Chem.</span>](https://www.obquimica.org/olimpiadas/index/)
+
+**State:**
+* **GOLD** - Math, [<span class="link">Sem Fronteiras Reg.</span>](http://matematicasemfronteiras.org/index.html)
+* **GOLD** - Math, [<span class="link">Mat. da Unicamp</span>](http://www.opf.pro.br/)
+
+
+
+#### **-> <ins>2017 - 9th grade</ins>**
+**International:**
+* **<span class="marked mode-none">SILVER</span>** - Math, [<span class="link">OMCPLP</span>](http://omcplp.obmep.org.br/)
+* **<span class="marked mode-none">BRONZE</span>** - Math, [<span class="link">OMR</span>](http://www.oma.org.ar/internacional/omr.htm)
+
+**National:**
+* **GOLD** - Math, [<span class="link">OBMEP</span>](http://www.obmep.org.br/)
+* **GOLD** - Math, [<span class="link">Mat. do Poliedro</span>](https://www.sistemapoliedro.com.br/omp/)
+* **GOLD** - Math, [<span class="link">Canguru de Mat.</span>](https://www.cangurudematematicabrasil.com.br/)
+* **GOLD** - Math, [<span class="link">Sem Fronteiras Nac.</span>](http://matematicasemfronteiras.org/index.html)
+* **SILVER** - Phys., [<span class="link">Brazilian of Phys.</span>](http://www.sbfisica.org.br/v1/olimpiada/2020/)
+* **SILVER** - RBT, [<span class="link">Brazilian of Robot.</span>](http://www.obr.org.br/)
+* **HM** - Chem., [<span class="link">Brazilian of Chem.</span>](https://www.obquimica.org/olimpiadas/index/olimpiada-brasileira-de-quimica-junior)
+
+
+**State:**
+* **GOLD** - Math, [<span class="link">Sem Fronteiras Reg.</span>](http://matematicasemfronteiras.org/index.html)
+* **GOLD** - Math, [<span class="link">Paulista of Math</span>](http://www.opm.mat.br/)
+* **GOLD** - Math, [<span class="link">Mat. da Unicamp</span>](http://www.opf.pro.br/)
+* **SILVER** - Physics, [<span class="link">Paulista of Physics</span>](http://www.opf.pro.br/)
+
+
+
+
+#### **-> <ins>2018 - 10th grade</ins>**
+**National:**
+* **GOLD** - Math, [<span class="link">Canguru de Mat.</span>](https://www.cangurudematematicabrasil.com.br/)
+* **SILVER** - A&A, [<span class="link">Brazilian of A&A</span>](http://www.oba.org.br/site/)
+* **BRONZE** - Math, [<span class="link">Brazilian of Math</span>](https://www.obm.org.br/)
+* **HM** - Phys., [<span class="link">Brazilian of Phys.</span>](http://www.sbfisica.org.br/v1/olimpiada/2020/)
+
+**State:**
+* **SILVER** - Math, [<span class="link">Paulista of Math</span>](http://www.opm.mat.br/)
+
+
+
+#### **-> <ins>2019 - 11th grade</ins>**
+**National:**
+* **GOLD** - Math, [<span class="link">Canguru de Mat.</span>](https://www.cangurudematematicabrasil.com.br/)
+* **BRONZE** - Math, [<span class="link">OBMEP</span>](http://www.obmep.org.br/)
+* **HM** - Math, [<span class="link">Brazilian of Math</span>](https://www.obm.org.br/)
+
+
+
+#### **-> <ins>2020 - 12th grade</ins>**
+**National:**
+* **<span class="marked mode-none">2ND PLACE</span>** - [<span class="link">MIT Hackmed Hackathon</span>](https://hackingmedicine.mit.edu)
+
+-split-
+
+# CONTACT

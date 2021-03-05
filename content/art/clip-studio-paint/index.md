@@ -29,3 +29,5 @@ Yup
 
 ### Sidenote
 Important reminder!
+
+{{< imgproc path="images/clip-studio-paint.jpeg" size="x300" options="1920x1080 jpg q90 Lanczos Smart" method="Fill">}}

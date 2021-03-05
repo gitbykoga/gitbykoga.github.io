@@ -61,9 +61,86 @@ $primary-d: #c50052;
 $primary-dd: #910044;
 $secondary: #24ffbd;
 $secondary-l: #75ffca;
-$secondary-d: #00cbb0;
+$secondary-d: #0ebba4;
+$secondary-dd:#0b6f7c;
+
+$yellow-marker: rgba(255, 255, 0, 0.5);
+
+#bykoga {
+    background-color: $primary;
+    color: white;
+}
+
+#youtube {
+    background-color: #FF0000;
+    color: white;
+}
+
+#itchio {
+    background-color: #FF5F5F;
+    color: white;
+}
+
+#instagram {
+    background-color: #FE258D;
+    color: white;
+}
+
+#twitter {
+    background-color: #1C9CEB;
+    color: white;
+}
+
+#behance {
+    background-color: #000;
+    color: #F7F7F7;
+}
+
+#reddit {
+    background-color: #FF4500;
+    color: white;
+}
+
+#facebook {
+    background-color: #0166E2;
+    color: white;
+}
+
+#github {
+    background-color: #7C007C;
+    color: white;
+}
+
+#discord {
+    background-color: #7289DA;
+    color: white;
+}
+
+#linkedin {
+    background-color: #2764AC;
+    color: #F7F7F7;
+}
+
+#mail {
+    background-color: #E34133;
+    color: white;
+}
 
 @import "bulma/sass/utilities/_all";
+
+.marked {
+    background-color: $yellow-marker;
+}
+
+$less-dark-bg: #3c405f !default;
+$dark-bg: #1E1E26 !default;
+$darker-bg: #16161d !default;
+$light-bg: $white !default;
+
+$dark-fg: $grey-lighter !default;
+$light-fg: $text !default;
+
+$link-light: #72a1ff;
 
 $navbar-breakpoint: 0;
 
@@ -95,11 +172,6 @@ $card-radius: 0px;
     }
 }
 
-h1 {
-    font-size: 2em;
-    font-style: italic;
-    text-transform: uppercase;
-}
 
 
 #content {
@@ -129,48 +201,6 @@ h1 {
 .link:hover {
     text-decoration: underline;
 }
-
-#itchio {
-    background-color: #FF5F5F;
-    color: white;
-}
-
-#instagram {
-    background-color: #FE258D;
-    color: white;
-}
-
-#twitter {
-    background-color: #1C9CEB;
-    color: white;
-}
-
-#github {
-    background-color: #7C007C;
-    color: white;
-}
-
-#discord {
-    background-color: #7289DA;
-    color: white;
-}
-
-#mail {
-    background-color: #E34133;
-    color: white;
-}
-
-
-
-$less-dark-bg: #3c405f !default;
-$dark-bg: #1E1E26 !default;
-$darker-bg: #16161d !default;
-$light-bg: $white !default;
-
-$dark-fg: $grey-lighter !default;
-$light-fg: $text !default;
-
-$link-light: #72a1ff;
 
 // DARK / LIGHT MODES
 .mode-light:not(.no-bg) {
@@ -214,7 +244,7 @@ code {
     border-radius: 3px;
 }
 
-span, h1, h2, h3, h4, h5, h6, p, i, em, b, button, .no-color {
+span, h1, h2, h3, h4, h5, h6, p, i, em, b, button, li, ul, ol, .no-color {
     &.mode-light {
         color: $text;
         text-decoration-color: $text;
@@ -255,11 +285,11 @@ span, h1, h2, h3, h4, h5, h6, p, i, em, b, button, .no-color {
 }
 
 a:not(.no-color) {
-    &.mode-light {
+    &.mode-light, span.mode-light {
         color: $link;
     }
 
-    &.mode-dark {
+    &.mode-dark, span.mode-dark {
         color: $link-light;
     }
 }
@@ -554,6 +584,11 @@ $selection-text: rgb(143, 197, 248);
 //                                   supported by Chrome, Edge, Opera and Firefox */
 // }
 
+.home {
+    h1, h2, h3, h4, h5, h6 {
+        font-style: italic;
+    }
+}
 #home-about {
     background-image: linear-gradient(45deg, transparent 20%, $primary-d 25%, transparent 25%), 
                     linear-gradient(-45deg, transparent 20%, $primary-d 25%, transparent 25%), 
@@ -566,30 +601,32 @@ $selection-text: rgb(143, 197, 248);
 
     text-shadow: 2px 0px 2px $primary-dd;
 }
-#home-contact {
-    display: block;
-    position: relative;
-    z-index: 1;
+#home-portfolio {
+    .img {
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        border-radius: 100rem;
+        
+        margin-bottom: 1rem;
+
+        @include touch {
+            margin-bottom: 0rem;
+        }
+    }
 }
-#home-contact.mode-light::after {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url("/people.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-#home-contact.mode-dark::after {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(200, 200, 200, 0.6), rgba(0, 0, 0, 0.3)), url("/people.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-#home-contact::after {
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-}
+.typeform-widget {
+        background-image: linear-gradient(45deg, transparent 20%, $secondary-d 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 20%, $secondary-d 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 75%, $secondary-d 80%, transparent 0),
+                    radial-gradient($secondary-d 2px, transparent 0);
+        background-size: 30px 30px, 30px 30px;
+        background-color: transparentize($secondary-d, $amount: 0.35);
+
+        animation: pan-right 20s infinite ease-in-out;
+
+        text-shadow: 2px 0px 2px $secondary-dd;
+    }
 @keyframes pan-right 
 {
     0% {
