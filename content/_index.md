@@ -6,11 +6,31 @@ draft: false
 ---
 
 <!--- HOME -->
-<span class="is-size-2">`> print('Hello World!')`</span>
+<span style="font-size: calc(1rem + 2vw)">`Welcome to byKOGA 👋`</span>
 
-# Welcome to byKOGA!
+<span class="is-size-5">**Delivering quality content - <span class="marked mode-none">*for free*</span>**</span>
+<hr style="background-color:#c50052"/>
+
+<p id="home-paddingleft">byKOGA is a mix of helpful guides, casual posts, and, overall, quality content from a guy that loves to help
+</p>
+
+<p id="home-paddingleft">We explore <ins>digital art</ins>, <ins>game development</ins>, <ins>web design</ins>, and many other interesting topics!</p>
+
+<p id="home-paddingleft">Feel free to explore this website - be my guest ✌
+</p>
+
+***André Koga***
+
+<hr style="background-color:#c50052"/>
+
+***Some options to help you get started:***
+
+<a class="button has-text-weight-bold is-secondary has-shadow" href="#posts">Check all the posts</a>
+<a id="toggle-mode" class="mode-toggle button has-text-weight-bold link no-underline has-shadow" title="Dark mode!">Dark mode</a>
 
 -split-
+
+<span class="is-size-4">`Latest Post:`</span>
 
 -split-
 
@@ -20,7 +40,7 @@ Here you'll learn more about digital art, game development, web design, and more
 -split-
 
 # RESUME
-`> print('Nice to meet you!');`
+`> print('Hello World!');`
 
 I'm <span class="marked mode-none">***André Koga***</span>, a 18yr old Brazilian startup founder, game developer, web designer, digital artist, sports lover, scientific Olympiads medalist, and owner of two dogs. Nice to meet you!
 

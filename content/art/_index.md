@@ -11,8 +11,12 @@ draft: false
 layout: ""
 ---
 
-# ART
-So this is the description of this section!
+<hr class="art-bg"/>
+
+# <span class="is-size-1 art-fg" style="font-style: normal">🎨/ART</span>
+I started drawing when I was around 8. Since then, I've been drawing daily/weekly, exploring different styles, materials, and techniques. In 2020, I bought a Wacom tablet, downloaded Krita, and began learning digital art. I also started uploading my art in my [<span class="link">instagram account</link>](https://www.instagram.com/artbykoga).
+
+In this section, I'll be sharing everything I've learned in the last years, including tips & tricks, useful links, and content about my art journey.
 
 -split-
 

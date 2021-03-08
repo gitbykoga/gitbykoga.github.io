@@ -25,28 +25,26 @@
     </div>
 
     <!-- Hero content: will be in the middle -->
-    <div class="hero-body columns is-flex is-align-items-stretch p-0 m-0">
-        <div class="column is-6">
-            <div class="p-6 m-0"></div>
-            <div class="container">
-                <div class="content has-text-right">
+    <div class="hero-body columns is-multiline is-flex is-align-items-stretch p-0 m-0">
+        <div id="home-lefthalf" class="column section is-6">
+            <div class="container py-6">
+                <div id="home-leftcontent" class="content no-bg">
                     {{ index $content_parts 0 | safe.HTML}}
                 </div>
             </div>
         </div>
-        {{- range ( where site.RegularPages "Type" "post" | first 1 ) }}
-        {{ $image := .Page.Resources.GetMatch .Params.thumb }}
-        {{ .Scratch.Set "modified-image" ($image.Fit "960x1080 jpg q75 Lanczos Smart") }}
-        <div id="home-righthalf" class="column is-6 is-relative is-flex is-flex-direction-column is-justify-items-flex-end no-bg">
-            <div id="home-bg" class="is-overlay" style='background-image: url({{ (.Scratch.Get "modified-image").Permalink }})'></div>
-            <div class="container no-bg">
-                hey
-                <div class="content">
-                    {{ index $content_parts 1 | safe.HTML}}
+        {{ range (first 1 (where .Site.Pages "Type" "post")) }}
+            {{ $image := .Page.Resources.GetMatch .Params.thumb }}
+            {{ .Scratch.Set "modified-image" ($image.Fit "960x1080 jpg q80 Lanczos Smart") }}
+            <div id="home-righthalf" class="column section pb-5 is-6 is-clipped is-relative is-flex is-flex-direction-column is-justify-items-flex-end no-bg">
+                <a href="{{ .Permalink }}" id="home-bg" class="is-overlay" style='background-image: url({{ (.Scratch.Get "modified-image").Permalink }})'></a>
+                <div class="container no-bg m-0 pt-6" style="pointer-events: none">
+                    <div class="content has-text-left is-flex mode-none">
+                        {{ index $content_parts 1 | safe.HTML}}
+                    </div>
                 </div>
+                {{ partial "postcard-noimage.html" . }}
             </div>
-            {{ partial "postcard-noimage.html" . }}
-        </div>
         {{ end }}
     </div>
 
@@ -114,7 +112,7 @@
         </div>
     </div>
 </section>
-<div class="typeform-widget mode-none" data-url="https://form.typeform.com/to/xx3gmnY8?typeform-medium=embed-snippet" data-transparency="100" style="width: 100%; height: 70vh;"></div>
+<div class="typeform-widget mode-none" data-url="https://form.typeform.com/to/xx3gmnY8?typeform-medium=embed-snippet" data-transparency="100" style="width: 100%; height: 85vh;"></div>
 <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
 
 <section id="home-recent" class="home section">
@@ -126,7 +124,7 @@
 
     <div id="grid-posts" class="mt-3"
         data-infinite-scroll='{ "path": ".pagination-next", "append" : ".postcard-wrapper", "history": false, "checkLastPage": true, "hideNav": ".pagination"}'>
-        {{ range .Paginator.Pages }}
+        {{ range $i, $pagination := .Paginator.Pages }}
         {{ partial "postcard.html" . }}
         {{ end }}
     </div>

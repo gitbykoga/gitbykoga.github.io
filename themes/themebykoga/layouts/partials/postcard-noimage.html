@@ -1,4 +1,4 @@
-<div class="postcard-wrapper no-bg">
+<div id="postcard-noimage" class="postcard-wrapper no-bg">
     <div class="home-postcard no-bg card">
         <!--a href="{{ .Permalink }}" class="postcard-link">{{ .Title }}</a-->
         <div class="card-content postcard">
@@ -14,7 +14,7 @@
                     <br>
                     <a href="{{ .Permalink }}"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">{{ .Title }}</h1></a>
                     
-                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll is-clipped">
                         {{ with .Params.tags }}
                         {{ range . }}
                         {{ $href := print (absURL "/tags/") (urlize .) }}
@@ -31,7 +31,7 @@
                     </p>
 
                     {{ $dateTime := .PublishDate.Format "2006-01-02" }}
-                    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+                    {{ $dateFormat := .Site.Params.dateFormat | default "15:04 - Jan 2, 2006" }}
                     <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}
                     </p>
                 </div>
@@ -46,6 +46,16 @@
     openLight.updateModeAuto();
     
     $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        delayResize();
         openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
     });
+
+    setTimeout(() => {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    }, 200);
 </script>

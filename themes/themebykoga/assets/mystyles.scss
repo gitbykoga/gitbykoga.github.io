@@ -64,7 +64,27 @@ $secondary-l: #75ffca;
 $secondary-d: #0ebba4;
 $secondary-dd:#0b6f7c;
 
-$yellow-marker: rgba(255, 255, 0, 0.5);
+$journal: #af4081;
+.journal-bg { background-color: $journal !important; }
+.journal-fg { color: $journal !important; }
+
+$art: #63449c;
+.art-bg { background-color: $art !important; }
+.art-fg { color: $art !important; }
+
+$games: #377196;
+.games-bg { background-color: $games !important; }
+.games-fg { color: $games !important; }
+
+$design: #409486;
+.design-bg { background-color: $design !important; }
+.design-fg { color: $design !important; }
+
+$yellow-marker: rgba(255, 255, 0, 0.8);
+
+.no-underline {
+    text-decoration: none !important;
+}
 
 #bykoga {
     background-color: $primary;
@@ -132,8 +152,15 @@ $yellow-marker: rgba(255, 255, 0, 0.5);
 
 @import "bulma/sass/utilities/_all";
 
+.is-secondary {
+    background-color: $secondary !important;
+    border-color: transparent !important;
+    color: $dark;
+}
+
 .marked {
     background-color: $yellow-marker;
+    color: $black;
 }
 
 $less-dark-bg: hsl(235, 20%, 23%) !default;
@@ -165,9 +192,20 @@ $container-max-width: $desktop;
 $card-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.2), 0 0px 0 1px rgba($scheme-invert, 0.08);
 $card-radius: 0px;
 
+.has-shadow {
+    box-shadow: 0px 0px 10px 0px rgba(10,10,10,0.5) !important;
+}
+
 @import "bulma/bulma.sass";
 
-
+@mixin red-bg-1 {
+    background-image: linear-gradient(45deg, transparent 20%, $primary-d 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 20%, $primary-d 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 75%, $primary-d 80%, transparent 0),
+                    radial-gradient($primary-d 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+    background-color: transparentize($primary-d, $amount: 0.35);
+}
 
 // SITE OVERALL STUFF
 .content {
@@ -343,10 +381,7 @@ a:not(.no-color) {
     }
 
     button {
-        border: none;
-
         box-shadow: $outline-box rgba($black, .5);
-        background-color: $secondary;
     }
 }
 
@@ -594,26 +629,56 @@ $selection-text: rgb(143, 197, 248);
     }
 }
 #home-bg {
+    box-shadow: 60px 0px 40px -50px inset $dark-bg;
+
     background-size: cover;
     background-position: center;
 
-    opacity: 0.6;
+    opacity: 1;
+}
+#home-leftcontent {
+    text-align: right;
+
+    @include mobile {
+        text-align: left;
+    }
+}
+#home-paddingleft {
+    padding-left: 10%;
+
+    @include touch {
+        padding-left: inherit;
+    }
+}
+#home-lefthalf {
+    @include touch {
+        margin: 0;
+    }
+
+    .tags {
+        box-shadow: $outline-box rgba($black, .5);
+
+        margin: 0rem 0.5rem;
+    }
 }
 #home-righthalf {
-    box-shadow: $shadow-box inset black;
+    @include mobile {
+        min-width: 100vw;
+    }
+}
+#grid-posts {
+    #postcard-noimage {
+        display: none;
+    }
 }
 #home-about {
-    background-image: linear-gradient(45deg, transparent 20%, $primary-d 25%, transparent 25%), 
-                    linear-gradient(-45deg, transparent 20%, $primary-d 25%, transparent 25%), 
-                    linear-gradient(-45deg, transparent 75%, $primary-d 80%, transparent 0),
-                    radial-gradient($primary-d 2px, transparent 0);
-    background-size: 30px 30px, 30px 30px;
-    background-color: transparentize($primary-d, $amount: 0.35);
+    @include red-bg-1();
 
     animation: pan-right 20s infinite ease-in-out;
 
     text-shadow: 2px 0px 2px $primary-dd;
 }
+
 #home-portfolio {
     .img {
         height: 200px;
@@ -629,17 +694,12 @@ $selection-text: rgb(143, 197, 248);
     }
 }
 .typeform-widget {
-        background-image: linear-gradient(45deg, transparent 20%, $primary-d 25%, transparent 25%), 
-                    linear-gradient(-45deg, transparent 20%, $primary-d 25%, transparent 25%), 
-                    linear-gradient(-45deg, transparent 75%, $primary-d 80%, transparent 0),
-                    radial-gradient($primary-d 2px, transparent 0);
-        background-size: 30px 30px, 30px 30px;
-        background-color: transparentize($primary-d, $amount: 0.35);
+    @include red-bg-1();
 
-        animation: pan-right 20s infinite ease-in-out;
+    animation: pan-right 20s infinite ease-in-out;
 
-        text-shadow: 2px 0px 2px $primary-dd;
-    }
+    text-shadow: 2px 0px 2px $primary-dd;
+}
 @keyframes pan-right 
 {
     0% {

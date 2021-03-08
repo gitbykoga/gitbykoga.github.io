@@ -44,8 +44,8 @@
                         {{ .Summary }}
                     </p>
 
-                    {{ $dateTime := .PublishDate.Format "2006-01-02" }}
-                    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+                    {{ $dateTime := .PublishDate.Format "2006-01-02 15:04 -0700" }}
+                    {{ $dateFormat := .Site.Params.dateFormat | default "15:04 - Jan 2, 2006" }}
                     <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}
                     </p>
                 </div>
@@ -65,4 +65,11 @@
         allAutoScrolls();
         $(".is-hor-scroll").hScroll(25);
     });
+
+    setTimeout(() => {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    }, 200);
 </script>

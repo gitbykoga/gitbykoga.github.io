@@ -17,7 +17,7 @@
 <section id="single-content" class="section">
     <div id="single-header" class="container pb-6">
         {{ $dateTime := .PublishDate.Format "2006-01-02" }}
-        {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+        {{ $dateFormat := .Site.Params.dateFormat | default "15:04 - Jan 2, 2006" }}
         <div class="single-links is-flex">
             <div class="category">
                 {{ with .Params.categories }}

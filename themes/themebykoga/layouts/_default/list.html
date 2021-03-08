@@ -3,15 +3,20 @@
 
 {{ partial "topspace.html" . }}
 
-<section id="list-description" class="list section">
+<!--section id="list-description" class="list section">
     <div class="container py-4">
         <div class="content">
             {{ index $content_parts 0 | safe.HTML}}
         </div>
     </div>
-</section>
+</section-->
 
 <section id="list-recent" class="list section">
+    <div class="container py-4">
+        <div class="content">
+            {{ index $content_parts 0 | safe.HTML}}
+        </div>
+    </div>
     <!--div class="container">
         {{ index $content_parts 1 | safe.HTML}}
     </div-->
