@@ -20,7 +20,7 @@ function setNavigation() {
     });
 }
 
-var currentHash = "links"
+var currentHash = "wtf"
 
 if (window.location.pathname.substring(0, 1) === "/#" || window.location.pathname === "/") 
 {
@@ -86,8 +86,7 @@ function uiNavigation(first) {
 /*const darkmode = new Darkmode({
     time: '0.5s'
 });*/
-openLight = new OpenLight("auto");
-openLight.addOverrideByClassName("mode-none");
+
 openLight.init();
 
 /*var isDark = readCookie("openlightcookie") === "dark";
@@ -155,7 +154,7 @@ function animateHashtag(param, speed)
         || location.hostname == param.hostname) {
 
         var target = $(param.hash),
-            headerHeight = 100; // Get fixed header height
+            headerHeight = 95; // Get fixed header height
 
         target = target.length ? target : $('[name=' + param.hash.slice(1) + ']');
 
@@ -166,6 +165,12 @@ function animateHashtag(param, speed)
             return false;
         }
     }
+}
+
+function delayResize() {
+    setTimeout(() => {
+        resizeAllGridItems();
+    }, 50);
 }
 
 function resizeAllGridItems() {
@@ -179,14 +184,17 @@ function resizeAllGridItems() {
     });
 }
 
-window.addEventListener("resize", resizeAllGridItems);
-
 // Horizontal Scroll
-jQuery(function (e) { e.fn.hScroll = function (l) { l = l || 120, e(this).bind("DOMMouseScroll mousewheel", function (t) { var i = t.originalEvent, n = i.detail ? i.detail * -l : i.wheelDelta, o = e(this).scrollLeft(); o += n > 0 ? -l : l, e(this).scrollLeft(o), t.preventDefault() }) } })
-
-$(document).ready(function () {
-    $(".is-hor-scroll").hScroll(25); // You can pass (optionally) scrolling amount
-});
+$(function (e) {
+    e.fn.hScroll = function (l) {
+        l = l || 120, e(this).bind(
+            "DOMMouseScroll mousewheel",
+            function (t) {
+                var i = t.originalEvent, n = i.detail ? i.detail * -l : i.wheelDelta, o = e(this).scrollLeft(); o += n > 0 ? -l : l, e(this).scrollLeft(o), t.preventDefault()
+            }
+        )
+    }
+})
 
 // Auto Scroll
 function allAutoScrolls() {
@@ -208,10 +216,10 @@ function loopAnimation(chosen, goRight, prevVal) {
     if (goRight == true)
     {
         chosen.animate({
-            scrollLeft: '+=100'
-        }, 2500, "linear",
+            scrollLeft: '+=25'
+        }, 500, "linear",
             function () {
-                if (chosen.scrollLeft() - prevVal < 95) {
+                if (chosen.scrollLeft() - prevVal < 24.5) {
                     //console.log("reached end!");
                     loopAnimation(chosen, false, chosen.scrollLeft());
                 }
@@ -224,8 +232,8 @@ function loopAnimation(chosen, goRight, prevVal) {
     else
     {
         chosen.animate({
-            scrollLeft: '-=100'
-        }, 2500, "linear",
+            scrollLeft: '-=25'
+        }, 500, "linear",
             function () {
                 if (chosen.scrollLeft() == 0) {
                     //console.log("reached start!");

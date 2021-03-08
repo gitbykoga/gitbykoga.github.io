@@ -136,6 +136,16 @@ class OpenLight {
 
     }
 
+    updateModeManual() {
+
+        if (this.mode == this.dark) {
+            this.darkModeManual();
+        } else {
+            this.lightModeManual();
+        }
+
+    }
+
     //Manually change the page to light mode
     lightModeManual(){
         var backgroundElem = document.getElementsByClassName(this.modeBackgroundId);
@@ -405,6 +415,15 @@ class OpenLight {
         } else {
             this.mode=this.dark;
             this.darkModeAuto();
+        }
+
+    }
+
+    updateModeAuto() {
+        if (this.mode == this.dark) {
+            this.darkModeAuto();
+        } else {
+            this.lightModeAuto();
         }
 
     }

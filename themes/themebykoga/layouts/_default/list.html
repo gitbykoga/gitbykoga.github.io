@@ -1,19 +1,24 @@
 {{ define "main" }}
 {{ $content_parts := split .Content "-split-" }}
 
-<section id="list-description" class="section">
-    <div class="container">
-        {{ index $content_parts 0 | safe.HTML}}
+{{ partial "topspace.html" . }}
+
+<section id="list-description" class="list section">
+    <div class="container py-4">
+        <div class="content">
+            {{ index $content_parts 0 | safe.HTML}}
+        </div>
     </div>
 </section>
 
-<section id="list-recent" class="section">
-    <div class="container">
+<section id="list-recent" class="list section">
+    <!--div class="container">
         {{ index $content_parts 1 | safe.HTML}}
-    </div>
+    </div-->
 
     <div id="grid-posts" class="mt-3" data-infinite-scroll='{ "path": ".pagination-next", "append" : ".postcard-wrapper", "history": false, "checkLastPage": true, "hideNav": ".pagination"}'>
-        {{ range .Paginator.Pages }}
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ range $paginator.Pages }}
         {{ partial "postcard.html" . }}
         {{ end }}
     </div>
@@ -34,10 +39,10 @@
     </nav>
 </section>
 
-<section id="list-end" class="section">
+<!--section id="list-end" class="section">
     <div class="container">
         {{ index $content_parts 2 | safe.HTML}}
     </div>
-</section>
+</section-->
 
 {{ end }}

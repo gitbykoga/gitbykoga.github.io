@@ -18,22 +18,48 @@
     </div>
 </section-->
 
-<section id="home-recent" class="home section">
-    <div class="container py-4">
-        <div class="content">
-            {{ index $content_parts 0| safe.HTML}}
-        </div>
+<section id="home-hero" class="home section hero is-fullheight p-0 m-0">
+    <h1 id="home"></h1>
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
     </div>
 
-    <div id="grid-posts" class="pb-6">
-        {{ $amount := 20 }}
-        {{ range where site.RegularPages "Type" "post" | first $amount }}
-        {{ partial "postcard.html" . }}
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body columns is-flex is-align-items-stretch p-0 m-0">
+        <div class="column is-6">
+            <div class="p-6 m-0"></div>
+            <div class="container">
+                <div class="content has-text-right">
+                    {{ index $content_parts 0 | safe.HTML}}
+                </div>
+            </div>
+        </div>
+        {{- range ( where site.RegularPages "Type" "post" | first 1 ) }}
+        {{ $image := .Page.Resources.GetMatch .Params.thumb }}
+        {{ .Scratch.Set "modified-image" ($image.Fit "960x1080 jpg q75 Lanczos Smart") }}
+        <div id="home-righthalf" class="column is-6 is-relative is-flex is-flex-direction-column is-justify-items-flex-end no-bg">
+            <div id="home-bg" class="is-overlay" style='background-image: url({{ (.Scratch.Get "modified-image").Permalink }})'></div>
+            <div class="container no-bg">
+                hey
+                <div class="content">
+                    {{ index $content_parts 1 | safe.HTML}}
+                </div>
+            </div>
+            {{ partial "postcard-noimage.html" . }}
+        </div>
         {{ end }}
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
     </div>
 </section>
 
 <section id="home-about" class="home section mode-none">
+    <!--div data-video="_FGCNCLXhIE" data-autoplay="0" data-loop="1" id="youtube-audio">
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script-->
     <div class="container py-4">
         <div class="columns">
             <div class="column is-two-thirds">
@@ -41,7 +67,7 @@
             </div>
             <div class="column is-one-third">
                 <div class="content has-text-white">
-                    {{ index $content_parts 1 | safe.HTML}}
+                    {{ index $content_parts 2 | safe.HTML}}
                 </div>
             </div>
         </div>
@@ -61,19 +87,19 @@
             </div>
             <div class="column">
                 <div class="content">
-                    {{ index $content_parts 2 | safe.HTML}}
+                    {{ index $content_parts 3 | safe.HTML}}
                 </div>
             </div>
         </div>
         <div class="columns">
             <div class="column is-7">
                 <div class="content">
-                    {{ index $content_parts 3 | safe.HTML}}
+                    {{ index $content_parts 4 | safe.HTML}}
                 </div>
             </div>
             <div class="column is-5">
                 <div class="content">
-                    {{ index $content_parts 4 | safe.HTML}}
+                    {{ index $content_parts 5 | safe.HTML}}
                 </div>
             </div>
         </div>
@@ -81,14 +107,45 @@
 </section>
 
 <section id="home-contact" class="home section pb-0">
+    <h1 id="contact"></h1>
     <div class="container">
         <div class="content">
-            {{ index $content_parts 5 | safe.HTML}}
+            {{ index $content_parts 6 | safe.HTML}}
         </div>
     </div>
 </section>
 <div class="typeform-widget mode-none" data-url="https://form.typeform.com/to/xx3gmnY8?typeform-medium=embed-snippet" data-transparency="100" style="width: 100%; height: 70vh;"></div>
 <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
 
+<section id="home-recent" class="home section">
+    <div class="container py-4">
+        <div class="content">
+            {{ index $content_parts 7 | safe.HTML}}
+        </div>
+    </div>
+
+    <div id="grid-posts" class="mt-3"
+        data-infinite-scroll='{ "path": ".pagination-next", "append" : ".postcard-wrapper", "history": false, "checkLastPage": true, "hideNav": ".pagination"}'>
+        {{ range .Paginator.Pages }}
+        {{ partial "postcard.html" . }}
+        {{ end }}
+    </div>
+
+    <nav
+        class="level pagination {{ if not .Paginator.HasPrev }}{{ if not .Paginator.HasNext }} is-not-displayed {{ end }}{{ end }}">
+        <a href="{{ if .Paginator.HasPrev }}{{ .Paginator.Prev.URL }}{{ end }}" aria-label="Prev"
+            class="level-item button pagination-prev" {{ if not .Paginator.HasPrev }} disabled {{ end }}>
+
+            <span aria-hidden="true">&laquo;</span>
+
+        </a>
+        <a href="{{ if .Paginator.HasNext }}{{ .Paginator.Next.URL }}{{ end }}" aria-label="Next"
+            class="level-item button pagination-next" {{ if not .Paginator.HasNext }} disabled {{ end }}>
+
+            <span aria-hidden="true">&raquo;</span>
+
+        </a>
+    </nav>
+</section>
 
 {{ end }}

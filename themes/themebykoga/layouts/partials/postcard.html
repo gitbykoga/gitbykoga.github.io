@@ -5,8 +5,8 @@
         {{ if .Params.thumb }}
         <div class="card-image">
             {{ $image := $.Page.Resources.GetMatch .Params.thumb }}
-            {{ .Scratch.Set "modified-image" ($image.Resize "256x jpg q75 Lanczos Smart") }}
-            {{ .Scratch.Set "lowres-image" ($image.Resize "256x jpg q10") }}
+            {{ .Scratch.Set "modified-image" ($image.Resize "256x192 jpg q75 Lanczos Smart") }}
+            {{ .Scratch.Set "lowres-image" ($image.Resize "256x192 jpg q50") }}
             <a href="{{ .Permalink }}">
                 <figure class="image">
                     <img class="lazy" data-src='{{ (.Scratch.Get "modified-image").Permalink }}' src='{{ (.Scratch.Get "lowres-image").Permalink }}' alt='{{ .Params.alt }}'>
@@ -56,3 +56,13 @@
         </footer-->
     </div>
 </div>
+<script>
+    openLight.updateModeAuto();
+    
+    $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    });
+</script>

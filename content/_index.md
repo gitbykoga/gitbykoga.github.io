@@ -5,7 +5,12 @@ date: 2021-01-07T14:42:08-03:00
 draft: false
 ---
 
-# POSTS
+<!--- HOME -->
+<span class="is-size-2">`> print('Hello World!')`</span>
+
+# Welcome to byKOGA!
+
+-split-
 
 -split-
 
@@ -15,20 +20,21 @@ Here you'll learn more about digital art, game development, web design, and more
 -split-
 
 # RESUME
-`> print('Hello World!');`
+`> print('Nice to meet you!');`
 
 I'm <span class="marked mode-none">***André Koga***</span>, a 18yr old Brazilian startup founder, game developer, web designer, digital artist, sports lover, scientific Olympiads medalist, and owner of two dogs. Nice to meet you!
 
-[Want to send a message?](/#contact)
+[<span class="link">Want to send a message?</span>](/#contact)
 
 -split-
 
-<hr style="background-color:#0ebba4"/>
+<hr style="background-color:#c50052"/>
 
-###### <span style="color:#0ebba4">EDUCATION</span>
+###### <span style="color:#c50052">EDUCATION</span>
 #### <ins><span class="marked mode-none">Accepted in Multiple International Universities</span></ins>
 * **University of Toronto, Mississauga - Studies in Computer Science, Mathematics, and Statistics**
 * **University of British Columbia - Bachelor of Applied Science Program**
+* **Purdue University - Computer Science in the College of Science at West Lafayette**
 
 
 #### <ins>Colégio Farias Brito, Fortaleza, Ceará - High School</ins>
@@ -38,9 +44,9 @@ Was recruited by the school due to excellent performance on Scientific Olympiads
 #### <ins>Colégio Mater Amabilis, Guarulhos, São Paulo - 9th grade</ins>
 **Average Grade: 9.7/10 - 2nd Best Student**
 
-<hr style="background-color:#0ebba4"/>
+<hr style="background-color:#c50052"/>
 
-###### <span style="color:#0ebba4">LEADERSHIPS</span>
+###### <span style="color:#c50052">LEADERSHIPS</span>
 #### <ins><span class="marked mode-none">Founder of Nery</span>, a Medical Start-Up - 12th grade</ins>
 One of the 3 founders. Reinvested the money from the prize of the MIT Hackmed Brasil Competition (2nd place) to support the operation. Contributes UI/UX knowledge to strengthen and develop the users' interfaces and experiences on the app and website, creating a solid brand for the organization.
 
@@ -50,22 +56,22 @@ Initiator, designer, and blogger of the personal website and blog "byKOGA" (form
 #### <ins>Developer of byKOGA (formerly Orion Core) - 6th grade to current</ins>
 Has been developing games since the 6th grade, which includes coding, graphics, sound design, game mechanics, and advertisement. Launched over 6 games on Google Play and Itch.io (itch.io), finished over 20 smaller games.
 
-<hr style="background-color:#0ebba4"/>
+<hr style="background-color:#c50052"/>
 
-###### <span style="color:#0ebba4">COMMUNITY</span>
+###### <span style="color:#c50052">COMMUNITY</span>
 #### <ins><span class="marked mode-none">Vice-President of NOIC</span>, an Education NGO - 10th grade to 12th grade</ins>
-Supervises over 40 members; other responsibilities include redesigning the whole platform interface and brand, managing the website contents, and organizing major events (such as online meetings, livestreams and Q&A with our content creators, and fundraising - supervised 2 fundraising events until now). The [website](https://www.noic.com.br) has released over a thousand classes and posts and drawn over almost 2 million viewers, 40 thousand monthly. The monthly views doubled after the platform redesign.
+Supervises over 40 members; other responsibilities include redesigning the whole platform interface and brand, managing the website contents, and organizing major events (such as online meetings, livestreams and Q&A with our content creators, and fundraising - supervised 2 fundraising events until now). The [<span class="link">website</span>](https://www.noic.com.br) has released over a thousand classes and posts and drawn over almost 2 million viewers, 40 thousand monthly. The monthly views doubled after the platform redesign.
 
-<hr style="background-color:#0ebba4"/>
+<hr style="background-color:#c50052"/>
 
-###### <span style="color:#0ebba4">SKILLS</span>
+###### <span style="color:#c50052">SKILLS</span>
 * ***<ins>Arts</ins> ->*** digital and traditional art (drawing, painting)
 * ***<ins>Linguistics</ins> ->*** English and Portuguese
 * ***<ins>Game Development</ins> ->*** game jams, Itch.io, Google Play
 * ***<ins>Leadership</ins> ->*** NOIC's vice-president, Nery co-founder
 * ***<ins>Problem-solving</ins> ->*** Scientific Olympiads, Chess
 * ***<ins>Programming</ins> ->*** C#, JS, Python, PHP, CSS and HTML, Markdown, and more
-* ***<ins>Scientific Knowledge</ins> ->*** math, CS, physics
+* ***<ins>Scientific Knowledge</ins> ->*** math, CS, physics, robotics, A&A
 * ***<ins>Web Design</ins> ->*** The Thought Compiler, NOIC, Nery, byKOGA
 * ***<ins>Writer</ins> ->*** byKOGA's posts, "Em Cartaz"
 * ***<ins>Influencer</ins> ->*** byKOGA's Twitter, Instagram art account
@@ -73,9 +79,9 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 
 -split-
 
-<hr style="background-color:#0ebba4"/>
+<hr style="background-color:#c50052"/>
 
-###### <span style="color:#0ebba4">AWARDS</span>
+###### <span style="color:#c50052">AWARDS</span>
 *(8th to current - awards from 6th and 7th are available upon request)*
 
 
@@ -117,7 +123,7 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 * **GOLD** - Math, [<span class="link">Sem Fronteiras Reg.</span>](http://matematicasemfronteiras.org/index.html)
 * **GOLD** - Math, [<span class="link">Paulista of Math</span>](http://www.opm.mat.br/)
 * **GOLD** - Math, [<span class="link">Mat. da Unicamp</span>](http://www.opf.pro.br/)
-* **SILVER** - Physics, [<span class="link">Paulista of Physics</span>](http://www.opf.pro.br/)
+* **SILVER** - Phys., [<span class="link">Paulista of Physics</span>](http://www.opf.pro.br/)
 
 
 
@@ -148,4 +154,8 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 
 -split-
 
-# CONTACT
+<!--- CONTACT -->
+
+-split-
+
+# POSTS

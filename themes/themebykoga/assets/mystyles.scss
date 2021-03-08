@@ -126,15 +126,19 @@ $yellow-marker: rgba(255, 255, 0, 0.5);
     color: white;
 }
 
+.is-size-0 {
+    font-size: 6rem !important;
+}
+
 @import "bulma/sass/utilities/_all";
 
 .marked {
     background-color: $yellow-marker;
 }
 
-$less-dark-bg: #3c405f !default;
-$dark-bg: #1E1E26 !default;
-$darker-bg: #16161d !default;
+$less-dark-bg: hsl(235, 20%, 23%) !default;
+$dark-bg: hsl(240, 12%, 8%) !default;
+$darker-bg: hsl(240, 15%, 6%) !default;
 $light-bg: $white !default;
 
 $dark-fg: $grey-lighter !default;
@@ -584,10 +588,19 @@ $selection-text: rgb(143, 197, 248);
 //                                   supported by Chrome, Edge, Opera and Firefox */
 // }
 
-.home {
+.home, .list {
     h1, h2, h3, h4, h5, h6 {
         font-style: italic;
     }
+}
+#home-bg {
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.6;
+}
+#home-righthalf {
+    box-shadow: $shadow-box inset black;
 }
 #home-about {
     background-image: linear-gradient(45deg, transparent 20%, $primary-d 25%, transparent 25%), 
@@ -606,7 +619,7 @@ $selection-text: rgb(143, 197, 248);
         height: 200px;
         width: 200px;
         background-repeat: no-repeat;
-        border-radius: 100rem;
+        border-radius: 3px;
         
         margin-bottom: 1rem;
 
@@ -616,16 +629,16 @@ $selection-text: rgb(143, 197, 248);
     }
 }
 .typeform-widget {
-        background-image: linear-gradient(45deg, transparent 20%, $secondary-d 25%, transparent 25%), 
-                    linear-gradient(-45deg, transparent 20%, $secondary-d 25%, transparent 25%), 
-                    linear-gradient(-45deg, transparent 75%, $secondary-d 80%, transparent 0),
-                    radial-gradient($secondary-d 2px, transparent 0);
+        background-image: linear-gradient(45deg, transparent 20%, $primary-d 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 20%, $primary-d 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 75%, $primary-d 80%, transparent 0),
+                    radial-gradient($primary-d 2px, transparent 0);
         background-size: 30px 30px, 30px 30px;
-        background-color: transparentize($secondary-d, $amount: 0.35);
+        background-color: transparentize($primary-d, $amount: 0.35);
 
         animation: pan-right 20s infinite ease-in-out;
 
-        text-shadow: 2px 0px 2px $secondary-dd;
+        text-shadow: 2px 0px 2px $primary-dd;
     }
 @keyframes pan-right 
 {

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on byKoga</title>
+    <link>https://bykoga.com/games/</link>
+    <description>Recent content in Games on byKoga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Mar 2021 12:28:33 -0300</lastBuildDate><atom:link href="https://bykoga.com/games/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -5,21 +5,21 @@ type: "page"
 date: 2021-03-02T17:04:12-03:00
 
 # Scheduling
-draft: true
+draft: false
 
 # Organization
 layout: ""
 ---
 
-# Art
+# ART
 So this is the description of this section!
 
 -split-
 
-# Posts
+# POSTS
 All of the posts
 
 -split-
 
-# Footnote
+# FOOTNOTE
 Don't know if the person will ever see this, but alright

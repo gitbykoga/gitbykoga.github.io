@@ -10,10 +10,55 @@
     <item>
       <title>Clip Studio Paint</title>
       <link>https://bykoga.com/art/clip-studio-paint/</link>
-      <pubDate>Tue, 02 Mar 2021 17:04:15 -0300</pubDate>
+      <pubDate>Mon, 08 Mar 2021 07:04:15 -0300</pubDate>
       
       <guid>https://bykoga.com/art/clip-studio-paint/</guid>
       <description>The summary!</description>
+    </item>
+    
+    <item>
+      <title>Test5</title>
+      <link>https://bykoga.com/art/test5/</link>
+      <pubDate>Sun, 07 Mar 2021 22:00:53 -0300</pubDate>
+      
+      <guid>https://bykoga.com/art/test5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test4</title>
+      <link>https://bykoga.com/art/test4/</link>
+      <pubDate>Sun, 07 Mar 2021 21:53:05 -0300</pubDate>
+      
+      <guid>https://bykoga.com/art/test4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test3</title>
+      <link>https://bykoga.com/art/test3/</link>
+      <pubDate>Sun, 07 Mar 2021 21:53:04 -0300</pubDate>
+      
+      <guid>https://bykoga.com/art/test3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test2</title>
+      <link>https://bykoga.com/art/test2/</link>
+      <pubDate>Sun, 07 Mar 2021 21:53:02 -0300</pubDate>
+      
+      <guid>https://bykoga.com/art/test2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test1</title>
+      <link>https://bykoga.com/art/test1/</link>
+      <pubDate>Sun, 07 Mar 2021 21:53:01 -0300</pubDate>
+      
+      <guid>https://bykoga.com/art/test1/</guid>
+      <description></description>
     </item>
     
   </channel>

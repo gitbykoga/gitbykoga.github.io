@@ -5,15 +5,10 @@ type: "page"
 date: {{ .Date }}
 
 # Scheduling
-draft: true
+draft: false
 
 # Organization
 layout: ""
-
-# Thumbnail / Featured
-summary: "aaa"
-thumb: "images/Placeholder.jpg"
-alt: "This is the placeholder"
 ---
 
 # Category

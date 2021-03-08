@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: hsl(240, 12%, 8%)">
     {{- partial "head.html" . -}}
-    <body class="has-spaced-navbar-fixed-top">
+    <body class="">
         {{- partial "header.html" . -}}
         <div id="content">
-        {{- block "main" . }}{{- end }}
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/openLight.js"></script>
+            <script>
+                openLight = new OpenLight("auto");
+                openLight.addOverrideByClassName("mode-none");
+            </script>
+            {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
         {{- partial "script.html" . -}}

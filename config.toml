@@ -9,6 +9,8 @@ languageCode = "en-us"
 title = "byKoga"
 theme = "themebykoga"
 
+Paginate = 5
+
 [markup.goldmark.renderer]
     unsafe = true
 
@@ -19,7 +21,6 @@ theme = "themebykoga"
     tag = "tags"
     category = "/:slug/"
 
-Paginate = 20
 
 [imaging]
     resampleFilter = "box"

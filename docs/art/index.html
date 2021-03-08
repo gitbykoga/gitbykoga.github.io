@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en" style="background-color: hsl(240, 12%, 8%)"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -12,12 +12,12 @@
     <link rel="preload" href="/fonts/space-mono-v6-latin-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/fonts/space-mono-v6-latin-700italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://bykoga.com/mystyles.74313f96fd94f02cfd4712f112e65beaf826d7517e39552940f9f5b9ae08aa40.css">
+    <link rel="stylesheet" href="https://bykoga.com/mystyles.30683dffcc19d0b5c5200e32c380c346e517687348e06f51d765847561210eb4.css">
 
     
     
     <title>byKoga | Art</title>
-</head><body class="has-spaced-navbar-fixed-top"><nav id="navmain" class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+</head><body class=""><nav id="navmain" class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-menu">
         <div class="navbar-start pl-4">
             <a class="navbar-item no-color is-uppercase" href="/art"><strong>art</strong></a>
@@ -31,10 +31,11 @@
         </a>
 
         <div class="navbar-end pr-4">
-            <a class="navbar-item no-color is-uppercase" href="/#posts"><strong>posts</strong></a>
+            <a class="navbar-item no-color is-uppercase" href="/#home"><strong>home</strong></a>
             <a class="navbar-item no-color is-uppercase" href="/#about"><strong>about</strong></a>
             <a class="navbar-item no-color is-uppercase" href="/#resume"><strong>resume</strong></a>
             <a class="navbar-item no-color is-uppercase" href="/#contact"><strong>contact</strong></a>
+            <a class="navbar-item no-color is-uppercase" href="/#posts"><strong>posts</strong></a>
         </div>
     </div>
 </nav>
@@ -65,10 +66,11 @@
             </button>
 
             <div class="navbar-dropdown is-right">
-                <a class="navbar-item no-color is-uppercase" href="/#posts"><strong>posts</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/#home"><strong>home</strong></a>
                 <a class="navbar-item no-color is-uppercase" href="/#about"><strong>about</strong></a>
                 <a class="navbar-item no-color is-uppercase" href="/#resume"><strong>resume</strong></a>
                 <a class="navbar-item no-color is-uppercase" href="/#contact"><strong>contact</strong></a>
+                <a class="navbar-item no-color is-uppercase" href="/#posts"><strong>posts</strong></a>
             </div>
         </div>
     </div>
@@ -204,25 +206,32 @@
         </span>
     </a>
 </div><div id="content">
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/openLight.js"></script>
+            <script>
+                openLight = new OpenLight("auto");
+                openLight.addOverrideByClassName("mode-none");
+            </script>
 
 
-<section id="list-description" class="section">
-    <div class="container">
-        <h1 id="art">Art</h1>
+<br>
+<br>
+
+<section id="list-description" class="list section">
+    <div class="container py-4">
+        <div class="content">
+            <h1 id="art">ART</h1>
 <p>So this is the description of this section!</p>
 <p>
+        </div>
     </div>
 </section>
 
-<section id="list-recent" class="section">
-    <div class="container">
-        </p>
-<h1 id="posts">Posts</h1>
-<p>All of the posts</p>
-<p>
-    </div>
+<section id="list-recent" class="list section">
+    
 
     <div id="grid-posts" class="mt-3" data-infinite-scroll='{ "path": ".pagination-next", "append" : ".postcard-wrapper", "history": false, "checkLastPage": true, "hideNav": ".pagination"}'>
+        
         
         <div class="postcard-wrapper">
     <div class="home-postcard card">
@@ -235,7 +244,7 @@
             
             <a href="https://bykoga.com/art/clip-studio-paint/">
                 <figure class="image">
-                    <img class="lazy" data-src='https://bykoga.com/art/clip-studio-paint/images/clip-studio-paint_hu259629f31ce01b1135c9f07b62d03d36_145779_256x0_resize_q75_lanczos.jpeg' src='https://bykoga.com/art/clip-studio-paint/images/clip-studio-paint_hu259629f31ce01b1135c9f07b62d03d36_145779_256x0_resize_q10_box.jpeg' alt='This is the placeholder'>
+                    <img class="lazy" data-src='https://bykoga.com/art/clip-studio-paint/images/clip-studio-paint_hu259629f31ce01b1135c9f07b62d03d36_145779_960x1080_fit_q75_lanczos.jpeg' src='https://bykoga.com/art/clip-studio-paint/images/clip-studio-paint_hu259629f31ce01b1135c9f07b62d03d36_145779_256x192_resize_q50_box.jpeg' alt='This is the placeholder'>
                 </figure>
             </a>
         </div>
@@ -278,7 +287,7 @@
 
                     
                     
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Mar 2, 2021
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Mar 8, 2021
                     </p>
                 </div>
             </a>
@@ -286,18 +295,276 @@
         
     </div>
 </div>
+<script>
+    openLight.updateModeAuto();
+    
+    $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    });
+</script>
+        
+        <div class="postcard-wrapper">
+    <div class="home-postcard card">
+        
+    
+        
+        <div class="card-image">
+            
+            
+            
+            <a href="https://bykoga.com/art/test5/">
+                <figure class="image">
+                    <img class="lazy" data-src='https://bykoga.com/art/test5/images/Placeholder_hu55abb3eeeed8036de84eaa250b6db7f9_632_256x192_resize_q75_lanczos.jpg' src='https://bykoga.com/art/test5/images/Placeholder_hu55abb3eeeed8036de84eaa250b6db7f9_632_256x192_resize_q50_box.jpg' alt='This is the placeholder'>
+                </figure>
+            </a>
+        </div>
+        
+    
+        <div class="card-content postcard">
+            <div class="media mb-2">
+                <div class="media-content">
+                    
+                    
+                    
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/art">/art</a>
+                    
+                    
+                    
+                    <br>
+                    <a href="https://bykoga.com/art/test5/"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">Test5</h1></a>
+                    
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://bykoga.com/art/test5/">
+                <div class="content">
+                    <p>
+                        
+                    </p>
+
+                    
+                    
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Mar 7, 2021
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+<script>
+    openLight.updateModeAuto();
+    
+    $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    });
+</script>
+        
+        <div class="postcard-wrapper">
+    <div class="home-postcard card">
+        
+    
+        
+        <div class="card-image">
+            
+            
+            
+            <a href="https://bykoga.com/art/test4/">
+                <figure class="image">
+                    <img class="lazy" data-src='https://bykoga.com/art/test4/images/Placeholder_hu55abb3eeeed8036de84eaa250b6db7f9_632_256x192_resize_q75_lanczos.jpg' src='https://bykoga.com/art/test4/images/Placeholder_hu55abb3eeeed8036de84eaa250b6db7f9_632_256x192_resize_q50_box.jpg' alt='This is the placeholder'>
+                </figure>
+            </a>
+        </div>
+        
+    
+        <div class="card-content postcard">
+            <div class="media mb-2">
+                <div class="media-content">
+                    
+                    
+                    
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/art">/art</a>
+                    
+                    
+                    
+                    <br>
+                    <a href="https://bykoga.com/art/test4/"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">Test4</h1></a>
+                    
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://bykoga.com/art/test4/">
+                <div class="content">
+                    <p>
+                        
+                    </p>
+
+                    
+                    
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Mar 7, 2021
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+<script>
+    openLight.updateModeAuto();
+    
+    $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    });
+</script>
+        
+        <div class="postcard-wrapper">
+    <div class="home-postcard card">
+        
+    
+        
+        <div class="card-image">
+            
+            
+            
+            <a href="https://bykoga.com/art/test3/">
+                <figure class="image">
+                    <img class="lazy" data-src='https://bykoga.com/art/test3/images/Placeholder_hu55abb3eeeed8036de84eaa250b6db7f9_632_256x192_resize_q75_lanczos.jpg' src='https://bykoga.com/art/test3/images/Placeholder_hu55abb3eeeed8036de84eaa250b6db7f9_632_256x192_resize_q50_box.jpg' alt='This is the placeholder'>
+                </figure>
+            </a>
+        </div>
+        
+    
+        <div class="card-content postcard">
+            <div class="media mb-2">
+                <div class="media-content">
+                    
+                    
+                    
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/art">/art</a>
+                    
+                    
+                    
+                    <br>
+                    <a href="https://bykoga.com/art/test3/"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">Test3</h1></a>
+                    
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://bykoga.com/art/test3/">
+                <div class="content">
+                    <p>
+                        
+                    </p>
+
+                    
+                    
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Mar 7, 2021
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+<script>
+    openLight.updateModeAuto();
+    
+    $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    });
+</script>
+        
+        <div class="postcard-wrapper">
+    <div class="home-postcard card">
+        
+    
+        
+        <div class="card-image">
+            
+            
+            
+            <a href="https://bykoga.com/art/test2/">
+                <figure class="image">
+                    <img class="lazy" data-src='https://bykoga.com/art/test2/images/Placeholder_hu55abb3eeeed8036de84eaa250b6db7f9_632_256x192_resize_q75_lanczos.jpg' src='https://bykoga.com/art/test2/images/Placeholder_hu55abb3eeeed8036de84eaa250b6db7f9_632_256x192_resize_q50_box.jpg' alt='This is the placeholder'>
+                </figure>
+            </a>
+        </div>
+        
+    
+        <div class="card-content postcard">
+            <div class="media mb-2">
+                <div class="media-content">
+                    
+                    
+                    
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/art">/art</a>
+                    
+                    
+                    
+                    <br>
+                    <a href="https://bykoga.com/art/test2/"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">Test2</h1></a>
+                    
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://bykoga.com/art/test2/">
+                <div class="content">
+                    <p>
+                        
+                    </p>
+
+                    
+                    
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">Mar 7, 2021
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+<script>
+    openLight.updateModeAuto();
+    
+    $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    });
+</script>
         
     </div>
 
-    <nav class="level pagination  is-not-displayed ">
+    <nav class="level pagination ">
         <a href="" aria-label="Prev"
             class="level-item button pagination-prev"  disabled >
 
             <span aria-hidden="true">&laquo;</span>
 
         </a>
-        <a href="" aria-label="Next"
-            class="level-item button pagination-next"  disabled >
+        <a href="/art/page/2/" aria-label="Next"
+            class="level-item button pagination-next" >
 
             <span aria-hidden="true">&raquo;</span>
 
@@ -305,14 +572,7 @@
     </nav>
 </section>
 
-<section id="list-end" class="section">
-    <div class="container">
-        </p>
-<h1 id="footnote">Footnote</h1>
-<p>Don&rsquo;t know if the person will ever see this, but alright</p>
 
-    </div>
-</section>
 
 
         </div><footer class="footer">
@@ -320,21 +580,15 @@
         <p class="no-bg"><b class="no-bg"><a class="link no-bg" href="/">byKOGA</a></b> is maintained with <span class="has-text-danger no-bg">♥</span> by <strong class="no-bg">André Koga</strong></p>
         <p class="no-bg">Copyright © 2020 - 2021</p>
     </div>
-</footer><script src="/js/jquery.min.js"></script>
-
-<script src="/js/openLight.js"></script>
+</footer>
 <script src="/js/feather.min.js"></script>
-<script src="/js/main.js"></script>
 <script src="/js/lazyload.min.js"></script>
 <script src="/js/infinite-scroll.pkgd.min.js"></script>
+<script src="/js/main.js"></script>
 <script>
     feather.replace();
     var lazyLoadInstance = new LazyLoad({
         
-    });
-
-    $('#grid-posts').on('append.infiniteScroll', function () {
-        resizeAllGridItems();
     });
 </script></body>
 </html>

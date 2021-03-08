@@ -1,0 +1,51 @@
+<div class="postcard-wrapper no-bg">
+    <div class="home-postcard no-bg card">
+        <!--a href="{{ .Permalink }}" class="postcard-link">{{ .Title }}</a-->
+        <div class="card-content postcard">
+            <div class="media mb-2">
+                <div class="media-content">
+                    {{ with .Params.categories }}
+                    {{ range . }}
+                    {{ $href := print (absURL "") (urlize .) }}
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="{{ $href }}">/{{ . }}</a>
+                    {{ end }}
+                    {{ end }}
+                    
+                    <br>
+                    <a href="{{ .Permalink }}"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">{{ .Title }}</h1></a>
+                    
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                        {{ with .Params.tags }}
+                        {{ range . }}
+                        {{ $href := print (absURL "/tags/") (urlize .) }}
+                        <a class="my-1 tag tag-color link has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <a href="{{ .Permalink }}">
+                <div class="content">
+                    <p>
+                        {{ .Summary }}
+                    </p>
+
+                    {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+                    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!--footer class="card-footer">
+            <a class="link card-footer-item has-text-weight-bold" href="{{ .Permalink }}">Read more</a>
+        </footer-->
+    </div>
+</div>
+<script>
+    openLight.updateModeAuto();
+    
+    $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        openLight.updateModeAuto();
+    });
+</script>

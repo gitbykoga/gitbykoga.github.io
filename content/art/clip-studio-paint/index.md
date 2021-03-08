@@ -2,10 +2,10 @@
 # Essential settings
 title: "Clip Studio Paint"
 type: "post"
-date: 2021-03-02T17:04:15-03:00
+date: 2021-03-08T07:04:15-03:00
 
 # Scheduling
-draft: true
+draft: false
 
 # Organization
 layout: ""
