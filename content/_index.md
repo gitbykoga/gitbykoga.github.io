@@ -54,9 +54,10 @@ I'm <span class="marked mode-none">***André Koga***</span>, a 18yr old Brazilia
 
 ###### <span style="color:#c50052">EDUCATION</span>
 #### <ins><span class="marked mode-none">Accepted in Multiple International Universities</span></ins>
-* **University of Toronto, Mississauga - Studies in Computer Science, Mathematics, and Statistics**
-* **University of British Columbia - Bachelor of Applied Science Program**
-* **Purdue University - Computer Science in the College of Science at West Lafayette**
+* **University of Toronto, Mississauga** - Studies in Computer Science, Mathematics, and Statistics
+* **University of British Columbia** - Bachelor of Applied Science Program
+* **Purdue University** - Computer Science in the College of Science at West Lafayette
+* **Georgia Institute of Technology** - Major at Computer Science
 
 
 #### <ins>Colégio Farias Brito, Fortaleza, Ceará - High School</ins>
@@ -87,16 +88,16 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 <hr style="background-color:#c50052"/>
 
 ###### <span style="color:#c50052">SKILLS</span>
-* ***<ins>Arts</ins> ->*** digital and traditional art (drawing, painting)
+* ***<ins>Arts</ins> ->*** Digital (Krita, Clip Studio Paint, GIMP, Inkscape) and Traditional art (drawing, painting)
 * ***<ins>Linguistics</ins> ->*** English and Portuguese
-* ***<ins>Game Development</ins> ->*** game jams, Itch.io, Google Play
-* ***<ins>Leadership</ins> ->*** NOIC's vice-president, Nery co-founder
+* ***<ins>Game Development</ins> ->*** Game Jams, Itch.io, Google Play
+* ***<ins>Leadership</ins> ->*** NOIC's vice-president, Nery co-founder, Keybind Paradox co-founder
 * ***<ins>Problem-solving</ins> ->*** Scientific Olympiads, Chess
 * ***<ins>Programming</ins> ->*** C#, JS, Python, PHP, CSS and HTML, Markdown, and more
-* ***<ins>Scientific Knowledge</ins> ->*** math, CS, physics, robotics, A&A
+* ***<ins>Scientific Knowledge</ins> ->*** Math, CS, Physics, Robotics, A&A
 * ***<ins>Web Design</ins> ->*** The Thought Compiler, NOIC, Nery, byKOGA
-* ***<ins>Writer</ins> ->*** byKOGA's posts, "Em Cartaz"
-* ***<ins>Influencer</ins> ->*** byKOGA's Twitter, Instagram art account
+* ***<ins>Writer</ins> ->*** byKOGA's posts, Book "Em Cartaz"
+* ***<ins>Influencer</ins> ->*** byKOGA's Twitter, Instagram art account, etc
 * ***<ins>Video Editor</ins> ->*** YouTube video-game highlights
 
 -split-
