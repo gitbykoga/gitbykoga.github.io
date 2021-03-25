@@ -55,6 +55,8 @@ I'm <span class="marked mode-none">***André Koga***</span>, a 18yr old Brazilia
 ###### <span style="color:#c50052">EDUCATION</span>
 #### <ins><span class="marked mode-none">Accepted in Multiple International Universities</span></ins>
 * **University of Toronto, Mississauga** - Studies in Computer Science, Mathematics, and Statistics
+* **University of Toronto, Scarborough** - Co-op Computer Science
+* **University of Toronto, Innis College** - Studies in Computer Science at the Faculty of Arts and Science
 * **University of British Columbia** - Bachelor of Applied Science Program
 * **Purdue University** - Computer Science in the College of Science at West Lafayette
 * **Georgia Institute of Technology** - Major at Computer Science
