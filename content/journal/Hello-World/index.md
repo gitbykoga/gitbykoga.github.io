@@ -25,7 +25,7 @@ Similarly, this is the first post of my self-made, self-coded, and self-designed
 
 Didn't take long for me to get the hang of the languages, and after some few months I helped a Brazilian NGO rebrand their <a href="https://www.noic.com.br" class="link" target="_blank">website</a> (you can check my name in the footer of the page). I became their vice-president as well, although nowadays I only help with tech related issues.
 
-### Framework and Tools
+### Framework and tools
 After realizing that I valued speed over flexibility, I decided to look for different ways of developing a website. After finding out about <a href="https://gohugo.io" class="link" target="_blank">Hugo</a> - self-proclaimed fastest website framework in the world - I fell in love with the simplicity and developer focused style of the tool.
 
 Together with Github Pages and Google Domains, I had the perfect combo for creating a fast and relatively cheap website for my needs. Around a few months later, byKOGA was oficially created.

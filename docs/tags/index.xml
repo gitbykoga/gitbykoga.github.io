@@ -6,7 +6,34 @@
     <description>Recent content in Tags on byKoga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Mar 2021 19:02:33 -0300</lastBuildDate><atom:link href="https://bykoga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Mar 2021 16:06:14 -0300</lastBuildDate><atom:link href="https://bykoga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://bykoga.com/tags/programming/</link>
+      <pubDate>Tue, 30 Mar 2021 16:06:14 -0300</pubDate>
+      
+      <guid>https://bykoga.com/tags/programming/</guid>
+      <description>#programming I love doing this, even if it&amp;rsquo;s cliché: print(&amp;ldquo;Hello World!&amp;quot;)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://bykoga.com/tags/game-dev/</link>
+      <pubDate>Tue, 30 Mar 2021 16:05:40 -0300</pubDate>
+      
+      <guid>https://bykoga.com/tags/game-dev/</guid>
+      <description>#game-dev Yup, anything about the art of creating and developing games!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://bykoga.com/tags/math/</link>
+      <pubDate>Tue, 30 Mar 2021 16:04:37 -0300</pubDate>
+      
+      <guid>https://bykoga.com/tags/math/</guid>
+      <description>#math 1 + 1 = 2, quick maths!</description>
+    </item>
+    
     <item>
       <title>easter-egg</title>
       <link>https://bykoga.com/tags/easter-egg/</link>

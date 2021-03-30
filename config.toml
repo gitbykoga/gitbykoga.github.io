@@ -2,7 +2,7 @@
 # To server: hugo server -D -w
 # To create new category: hugo new --kind category <category name>
 # To create new post: hugo new --kind post <category name>/<post name>
-# To create new tag: hugo new tags/<tag name>/_index.md
+# To create new tag: hugo new --kind tag tags/<tag name>
 
 baseURL = "https://bykoga.com/"
 languageCode = "en-us"
@@ -21,6 +21,11 @@ Paginate = 5
     tag = "tags"
     category = "/:slug/"
 
+[languages]
+  [languages.en]
+    weight = 1
+  [languages.pt]
+    weight = 2
 
 [imaging]
     resampleFilter = "box"

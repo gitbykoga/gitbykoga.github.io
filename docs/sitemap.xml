@@ -1,75 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <url>
-    <loc>https://bykoga.com/tags/easter-egg/</loc>
-    <lastmod>2021-03-08T19:02:33-03:00</lastmod>
-  </url>
+  <sitemap>
+    <loc>https://bykoga.com/en/sitemap.xml</loc>
+    
+      <lastmod>2021-03-30T16:06:14-03:00</lastmod>
+    
+  </sitemap>
   
-  <url>
-    <loc>https://bykoga.com/tags/</loc>
-    <lastmod>2021-03-08T19:02:33-03:00</lastmod>
-  </url>
+  <sitemap>
+    <loc>https://bykoga.com/pt/sitemap.xml</loc>
+    
+  </sitemap>
   
-  <url>
-    <loc>https://bykoga.com/tags/announcement/</loc>
-    <lastmod>2021-03-08T19:02:06-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/tags/info/</loc>
-    <lastmod>2021-03-08T19:01:33-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/tags/milestone/</loc>
-    <lastmod>2021-03-08T19:00:29-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/categories/</loc>
-    <lastmod>2021-03-08T18:32:45-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/journal/hello-world/</loc>
-    <lastmod>2021-03-08T18:32:45-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/categories/journal/</loc>
-    <lastmod>2021-03-08T18:32:45-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/journal/</loc>
-    <lastmod>2021-03-08T17:24:25-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/design/</loc>
-    <lastmod>2021-03-08T16:49:51-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/games/</loc>
-    <lastmod>2021-03-06T12:28:33-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/art/</loc>
-    <lastmod>2021-03-02T17:04:12-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/tags/digital-art/</loc>
-    <lastmod>2021-03-02T16:31:47-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/</loc>
-    <lastmod>2021-01-07T14:42:08-03:00</lastmod>
-  </url>
-  
-</urlset>
+</sitemapindex>
