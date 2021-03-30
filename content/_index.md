@@ -25,7 +25,7 @@ draft: false
 
 ***Some options to help you get started:***
 
-<a class="button has-text-weight-bold is-white has-shadow my-1" href="#resume">What's this</a>
+<a class="button has-text-weight-bold is-white has-shadow my-1" href="#about">What's this</a>
 <a class="button has-text-weight-bold is-white has-shadow my-1" href="#resume">About me</a>
 <a class="button has-text-weight-bold is-secondary has-shadow my-1" href="#posts">Check all the posts</a>
 <a id="toggle-mode" class="mode-toggle button has-text-weight-bold link no-underline has-shadow my-1" title="Dark mode!">Dark mode</a>
