@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bykoga.com/tags/programming/</loc>
-    <lastmod>2021-03-30T16:06:14-03:00</lastmod>
+    <loc>https://bykoga.com/tags/updates/</loc>
+    <lastmod>2021-04-08T12:42:54-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://bykoga.com/tags/</loc>
-    <lastmod>2021-03-30T16:06:14-03:00</lastmod>
+    <lastmod>2021-04-08T12:42:54-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -23,18 +23,13 @@
   </url>
   
   <url>
-    <loc>https://bykoga.com/tags/game-dev/</loc>
-    <lastmod>2021-03-30T16:05:40-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/tags/math/</loc>
-    <lastmod>2021-03-30T16:04:37-03:00</lastmod>
+    <loc>https://bykoga.com/journal/updates-1/</loc>
+    <lastmod>2021-04-08T12:23:35-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://bykoga.com/categories/</loc>
-    <lastmod>2021-03-30T14:45:22-03:00</lastmod>
+    <lastmod>2021-04-08T12:23:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -45,6 +40,26 @@
                 hreflang="en"
                 href="https://bykoga.com/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://bykoga.com/categories/journal/</loc>
+    <lastmod>2021-04-08T12:23:35-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bykoga.com/tags/programming/</loc>
+    <lastmod>2021-03-30T16:06:14-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bykoga.com/tags/game-dev/</loc>
+    <lastmod>2021-03-30T16:05:40-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bykoga.com/tags/math/</loc>
+    <lastmod>2021-03-30T16:04:37-03:00</lastmod>
   </url>
   
   <url>
@@ -79,11 +94,6 @@
   
   <url>
     <loc>https://bykoga.com/journal/hello-world/</loc>
-    <lastmod>2021-03-08T18:32:45-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bykoga.com/categories/journal/</loc>
     <lastmod>2021-03-08T18:32:45-03:00</lastmod>
   </url>
   

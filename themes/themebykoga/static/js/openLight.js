@@ -262,7 +262,8 @@ class OpenLight {
             document.getElementsByTagName('ol'),
             document.getElementsByTagName('footer'),
             document.getElementsByTagName('code'),
-            document.getElementsByTagName('section')
+            document.getElementsByTagName('section'),
+            document.getElementsByTagName('blockquote')
         ];
 
         this.foregrounds = [
