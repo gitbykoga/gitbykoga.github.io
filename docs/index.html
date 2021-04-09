@@ -214,7 +214,7 @@
             
             
             <div id="home-righthalf" class="column section pb-5 is-6 is-clipped is-relative is-flex is-flex-direction-column is-justify-items-flex-end no-bg">
-                <a href="https://bykoga.com/journal/updates-1/" id="home-bg" class="is-overlay" style='background-image: url(https://bykoga.com/journal/updates-1/images/jaepak_hu3de38c80476e1047720bc4e6297752ae_187363_960x1080_fit_q80_lanczos.jpg)'></a>
+                <a href="https://bykoga.com/journal/updates-2/" id="home-bg" class="is-overlay" style='background-image: url(https://bykoga.com/journal/updates-2/images/ow_hueeae22f441b7bc991e35563f7e8f3fc3_688017_960x1080_fit_q80_lanczos.jpg)'></a>
                 <div class="container no-bg m-0 pt-6" style="pointer-events: none">
                     <div class="content has-text-left is-flex mode-none">
                         </p>
@@ -236,7 +236,7 @@
                     
                     
                     <br>
-                    <a href="https://bykoga.com/journal/updates-1/"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">A social experiment, a morning routine, and half•alive</h1></a>
+                    <a href="https://bykoga.com/journal/updates-2/"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">Off to a great start... or not</h1></a>
                     
                     <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll is-clipped">
                         
@@ -248,15 +248,15 @@
                     </div>
                 </div>
             </div>
-            <a href="https://bykoga.com/journal/updates-1/">
+            <a href="https://bykoga.com/journal/updates-2/">
                 <div class="content">
                     <p>
-                        Daily update #1
+                        Daily update #2
                     </p>
 
                     
                     
-                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">12:23 - Apr 8, 2021
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">16:51 - Apr 9, 2021
                     </p>
                 </div>
             </a>
@@ -483,6 +483,80 @@ Was recruited by the school due to excellent performance on Scientific Olympiads
 
     <div id="grid-posts" class="mt-3"
         data-infinite-scroll='{ "path": ".pagination-next", "append" : ".postcard-wrapper", "history": false, "checkLastPage": true, "hideNav": ".pagination"}'>
+        
+        <div class="postcard-wrapper">
+    <div class="home-postcard card">
+        
+    
+        
+        <div class="card-image">
+            
+            
+            
+            <a href="https://bykoga.com/journal/updates-2/">
+                <figure class="image">
+                    <img class="lazy" data-src='https://bykoga.com/journal/updates-2/images/ow_hueeae22f441b7bc991e35563f7e8f3fc3_688017_256x192_fit_q75_lanczos.jpg' src='https://bykoga.com/journal/updates-2/images/ow_hueeae22f441b7bc991e35563f7e8f3fc3_688017_256x192_fit_q50_box.jpg' alt='The only game I play nowadays'>
+                </figure>
+            </a>
+        </div>
+        
+    
+        <div class="card-content postcard">
+            <div class="media mb-2">
+                <div class="media-content">
+                    
+                    
+                    
+                    <a class="link postcard-cat has-text-weight-bold is-lowercase" href="https://bykoga.com/journal">/journal</a>
+                    
+                    
+                    
+                    <br>
+                    <a href="https://bykoga.com/journal/updates-2/"><h1 class="link postcard-title is-size-5 has-text-weight-bold is-uppercase is-italic">Off to a great start... or not</h1></a>
+                    
+                    <div class="postcard-tags no-bg scroll-box is-hor-scroll is-auto-scroll">
+                        
+                        
+                        
+                        <a class="my-1 tag tag-color link has-text-weight-bold is-lowercase" href="https://bykoga.com/tags/updates">#updates</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://bykoga.com/journal/updates-2/">
+                <div class="content">
+                    <p>
+                        Daily update #2
+                    </p>
+
+                    
+                    
+                    <p class="is-size-7 is-lowercase has-text-weight-bold" datetime="2016-1-1">16:51 - Apr 9, 2021
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+<script>
+    openLight.updateModeAuto();
+    
+    $("#grid-posts").on('append.infiniteScroll', function (event, body, path, items, response) {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    });
+
+    setTimeout(() => {
+        delayResize();
+        openLight.updateModeAuto();
+        allAutoScrolls();
+        $(".is-hor-scroll").hScroll(25);
+    }, 200);
+</script>
         
         <div class="postcard-wrapper">
     <div class="home-postcard card">
