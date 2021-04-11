@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>byKoga</title>
+    <link>https://bykoga.com/tags/sunday-summary/</link>
+    <description>Recent content on byKoga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Apr 2021 15:40:29 -0300</lastBuildDate><atom:link href="https://bykoga.com/tags/sunday-summary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numerus, Morning Routine, and Kanji</title>
+      <link>https://bykoga.com/journal/sunday-summary-1/</link>
+      <pubDate>Sun, 11 Apr 2021 15:37:02 -0300</pubDate>
+      
+      <guid>https://bykoga.com/journal/sunday-summary-1/</guid>
+      <description>Sunday Summary #1</description>
+    </item>
+    
+  </channel>
+</rss>

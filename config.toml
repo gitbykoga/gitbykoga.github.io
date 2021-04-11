@@ -4,6 +4,8 @@
 # To create new post: hugo new --kind post <category name>/<post name>
 # To create new tag: hugo new --kind tag tags/<tag name>
 
+# IMGPROC shortcode: {{< imgproc "img/profile.jpg" Resize "220x" center />}}
+
 baseURL = "https://bykoga.com/"
 languageCode = "en-us"
 title = "byKoga"
