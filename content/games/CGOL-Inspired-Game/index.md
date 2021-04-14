@@ -8,7 +8,7 @@ date: 2021-03-30T14:45:22-03:00
 draft: false
 
 # Organization
-layout: ""
+layout: "games-single"
 categories: ["games"]
 tags: ["game-dev", "programming", "math"]
 

@@ -8,7 +8,7 @@ date: 2021-03-08T18:32:45-03:00
 draft: false
 
 # Organization
-layout: ""
+layout: "journal-single"
 categories: ["journal"]
 tags: ["milestone", "info", "announcement"]
 

@@ -1,0 +1,54 @@
+{{ define "main" }}
+{{ $content_parts := split .Content "-split-" }}
+
+{{ partial "topspace.html" . }}
+
+{{ $imageurl := print .Params.thumb }}
+{{ $image := .Resources.GetMatch $imageurl }}
+{{ if $image }}
+    {{ $lowres := $image.Fill "1920x1080 jpg q90 Lanczos Smart"}}
+
+    <div id="single-hero" style="background-image: url('{{ $lowres.Permalink | safeHTML }}')">
+    </div>
+
+    <div id="single-hero-space"></div>
+{{ end }}
+
+<section id="single-content" class="section">
+    <div id="single-header" class="container pb-6">
+        {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+        {{ $dateFormat := .Site.Params.dateFormat | default "15:04 - Jan 2, 2006" }}
+        <div class="single-links is-flex">
+            <div class="category">
+                {{ with .Params.categories }}
+                {{ range . }}
+                {{ $href := print (absURL "") (urlize .) }}
+                <a class="is-size-4 link has-text-weight-bold is-lowercase" href="{{ $href }}">/{{ . }}</a>
+                {{ end }}
+                {{ end }}
+            </div>
+            <div class="tags">
+                {{ with .Params.tags }}
+                {{ range . }}
+                {{ $href := print (absURL "/tags/") (urlize .) }}
+                <a class="tag tag-color link is-size-6 has-text-weight-bold is-lowercase" href="{{ $href }}">#{{ . }}</a>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        <hr>
+        <p class="is-size-6 is-lowercase has-text-weight-bold" datetime="2016-1-1">{{ .PublishDate.Format $dateFormat }}</p>
+        <h1 class="is-size-2 has-text-weight-bold">{{ .Title }}</h1>
+        <p class="is-size-5">{{ .Summary }}</p>
+    </div>
+
+    <div class="content container">
+        {{ range $i, $content_split := $content_parts }}
+            <div id="single-body-{{ $i }}">
+                {{ $content_split | safe.HTML}}
+            </div>
+        {{ end }}
+    </div>
+</section>
+
+{{ end }}

@@ -43,3 +43,179 @@ Paginate = 5
 
 [params]
      Description = "A blog, portfolio, and personal website! [byKoga]"
+
+baseurl = "/"
+
+[menu]
+
+    [[menu.cat]]
+    name = "daily"
+    URL = "/daily"
+    weight = 1
+
+    [[menu.cat]]
+    name = "journal"
+    URL = "/journal"
+    weight = 2
+
+    [[menu.cat]]
+    name = "art"
+    URL = "/art"
+    weight = 3
+
+    [[menu.cat]]
+    name = "games"
+    URL = "/games"
+    weight = 4
+
+    [[menu.cat]]
+    name = "design"
+    url = "/design"
+    weight = 5
+
+    #############################
+
+    [[menu.nav]]
+    name = "about"
+    URL = "#about"
+    weight = 2
+
+    [[menu.nav]]
+    name = "resume"
+    URL = "#resume"
+    weight = 3
+
+    [[menu.nav]]
+    name = "contact"
+    URL = "#contact"
+    weight = 4
+
+    [[menu.nav]]
+    name = "posts"
+    URL = "#posts"
+    weight = 5
+
+    ###################################
+
+    [[menu.bykoga]]
+    name = "twitter"
+    URL = "https://www.twitter.com/by_koga"
+    weight = -2
+    [menu.bykoga.params]
+        label = "all"
+        title = "Daily posts about my games, art, and guides!"
+        id = "twitter"
+
+    [[menu.bykoga]]
+    name = "instagram"
+    URL = "https://www.instagram.com/by.koga"
+    weight = 3
+    [menu.bykoga.params]
+        label = "art"
+        title = "Daily posts about my art adventures!"
+        id = "instagram"
+
+    [[menu.bykoga]]
+    name = "youtube"
+    URL = "https://www.youtube.com/channel/UCAxW6AjNiHJlYmhT8PR9YNg"
+    weight = 4
+    [menu.bykoga.params]
+        label = "videos"
+        title = "I post gamedev guides there from time to time!"
+        id = "youtube"
+
+    [[menu.bykoga]]
+    name = "itchio"
+    URL = "https://bykoga.itch.io/"
+    weight = 2
+    [menu.bykoga.params]
+        label = "my games"
+        title = "All of my published games!"
+        id = "itchio"
+
+    [[menu.bykoga]]
+    name = "email"
+    URL = "https://bykoga.com/#contact"
+    weight = -1
+    [menu.bykoga.params]
+        label = "contact"
+        title = "Contact me!"
+        id = "mail"
+
+    [[menu.bykoga]]
+    name = "github"
+    URL = "https://github.com/gitbykoga"
+    weight = 5
+    [menu.bykoga.params]
+        label = "code"
+        title = "Some repositories and packages!"
+        id = "github"
+
+    [[menu.bykoga]]
+    name = "reddit"
+    URL = "https://www.reddit.com/user/madebyKoga"
+    weight = 6
+    [menu.bykoga.params]
+        label = "random"
+        title = "Random stuff that I post for fun!"
+        id = "reddit"
+
+    ###################################
+
+    [[menu.glc]]
+    name = "twitter"
+    URL = "https://twitter.com/GL_Collective"
+    weight = 1
+    [menu.glc.params]
+        label = "updates"
+        title = "Content about what we are working on!"
+        id = "twitter"
+
+    [[menu.glc]]
+    name = "itchio"
+    URL = "https://goodluckcollective.itch.io/"
+    weight = 2
+    [menu.glc.params]
+        label = "our games"
+        title = "All of our games in one place!"
+        id = "itchio"
+
+    [[menu.glc]]
+    name = "github"
+    URL = "https://github.com/goodluckcollective"
+    weight = 3
+    [menu.glc.params]
+        label = "our code"
+        title = "Our code, behind the scenes tools, and more!"
+        id = "github"
+
+    ###################################
+
+    [[menu.dupla]]
+    name = "twitter"
+    URL = "https://twitter.com/dupla_tech_"
+    weight = 1
+    [menu.dupla.params]
+        label = "news"
+        title = "More about the startup I'm part of!"
+        id = "twitter"
+
+    [[menu.dupla]]
+    name = "linkedin"
+    URL = "https://linkedin.com/company/duplatech/"
+    weight = 3
+    [menu.dupla.params]
+        label = "work"
+        title = "Our official LinkedIn page"
+        id = "linkedin"
+
+    [[menu.dupla]]
+    name = "instagram"
+    URL = "https://www.instagram.com/dupla_tech_/"
+    weight = 2
+    [menu.dupla.params]
+        label = "brand"
+        title = "More about our brand!"
+        id = "instagram"
+
+        

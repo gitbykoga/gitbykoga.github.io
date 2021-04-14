@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ $content_parts := split .Content "-split-" }}
+
+{{ partial "topspace.html" . }}
+
+<!--section id="list-description" class="list section">
+    <div class="container py-4">
+        <div class="content">
+            {{ index $content_parts 0 | safe.HTML}}
+        </div>
+    </div>
+</section-->
+
+<section id="list-recent" class="list section">
+    <div class="container py-4">
+        <div class="content">
+            {{ index $content_parts 0 | safe.HTML}}
+        </div>
+    </div>
+    <!--div class="container">
+        {{ index $content_parts 1 | safe.HTML}}
+    </div-->
+
+    <div id="grid-posts" class="mt-3" data-infinite-scroll='{ "path": ".pagination-next", "append" : ".postcard-wrapper", "history": false, "checkLastPage": true, "hideNav": ".pagination"}'>
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ range $paginator.Pages }}
+        {{ partial "postcard.html" . }}
+        {{ end }}
+    </div>
+
+    <nav class="level pagination {{ if not .Paginator.HasPrev }}{{ if not .Paginator.HasNext }} is-not-displayed {{ end }}{{ end }}">
+        <a href="{{ if .Paginator.HasPrev }}{{ .Paginator.Prev.URL }}{{ end }}" aria-label="Prev"
+            class="level-item button pagination-prev" {{ if not .Paginator.HasPrev }} disabled {{ end }}>
+
+            <span aria-hidden="true">&laquo;</span>
+
+        </a>
+        <a href="{{ if .Paginator.HasNext }}{{ .Paginator.Next.URL }}{{ end }}" aria-label="Next"
+            class="level-item button pagination-next" {{ if not .Paginator.HasNext }} disabled {{ end }}>
+
+            <span aria-hidden="true">&raquo;</span>
+
+        </a>
+    </nav>
+</section>
+
+<!--section id="list-end" class="section">
+    <div class="container">
+        {{ index $content_parts 2 | safe.HTML}}
+    </div>
+</section-->
+
+{{ end }}

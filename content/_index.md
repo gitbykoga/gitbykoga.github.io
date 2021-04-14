@@ -72,19 +72,26 @@ Was recruited by the school due to excellent performance on Scientific Olympiads
 <hr style="background-color:#c50052"/>
 
 ###### <span style="color:#c50052">LEADERSHIPS</span>
-#### <ins><span class="marked mode-none">Founder of Nery</span>, a Medical Start-Up - 12th grade</ins>
-One of the 3 founders. Reinvested the money from the prize of the MIT Hackmed Brasil Competition (2nd place) to support the operation. Contributes UI/UX knowledge to strengthen and develop the users' interfaces and experiences on the app and website, creating a solid brand for the organization.
 
-#### <ins>Creator of byKOGA (formerly TTC) - 10th grade to current</ins>
+#### <ins><span class="marked mode-none">CMO of Dupla</span>, a Headhunting Start-Up - 2021 to current</ins>
+One of the 3 founders. Was hired as the Chief Marketing Officer, taking care of the branding, webdesign, and marketing on social medias.
+
+#### <ins><span class="marked mode-none">Co-founder of Good Luck Collective</span>, a Game-Dev Group - 2021 to current</ins>
+One of the 4 creators. Is currently the brand manager of the group. Helps with the coding, art, and design of the games. Got 36th place on the recent Brackeys 5th game-jam.
+
+#### <ins>Creator of the website byKOGA.com (formerly TTC) - 10th grade to current</ins>
 Initiator, designer, and blogger of the personal website and blog "byKOGA" (formerly known as The Thought Compiler).
 
-#### <ins>Developer of byKOGA (formerly Orion Core) - 6th grade to current</ins>
+#### <ins>Developer of the byKOGA games (formerly Orion Core) - 6th grade to current</ins>
 Has been developing games since the 6th grade, which includes coding, graphics, sound design, game mechanics, and advertisement. Launched over 6 games on Google Play and Itch.io (itch.io), finished over 20 smaller games.
+
+#### <ins><span class="marked mode-none">Founder of Nery</span>, a Medical Start-Up - 12th grade</ins>
+One of the 3 founders. Reinvested the money from the prize of the MIT Hackmed Brasil Competition (2nd place) to support the operation. Contributes UI/UX knowledge to strengthen and develop the users' interfaces and experiences on the app and website, creating a solid brand for the organization.
 
 <hr style="background-color:#c50052"/>
 
 ###### <span style="color:#c50052">COMMUNITY</span>
-#### <ins><span class="marked mode-none">Vice-President of NOIC</span>, an Education NGO - 10th grade to 12th grade</ins>
+#### <ins><span class="marked mode-none">Ex Vice-President of NOIC</span>, an Education NGO - 10th grade to 12th grade</ins>
 Supervises over 40 members; other responsibilities include redesigning the whole platform interface and brand, managing the website contents, and organizing major events (such as online meetings, livestreams and Q&A with our content creators, and fundraising - supervised 2 fundraising events until now). The [<span class="link">website</span>](https://www.noic.com.br) has released over a thousand classes and posts and drawn over almost 2 million viewers, 40 thousand monthly. The monthly views doubled after the platform redesign.
 
 <hr style="background-color:#c50052"/>
@@ -93,7 +100,7 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 * ***<ins>Arts</ins> ->*** Digital (Krita, Clip Studio Paint, GIMP, Inkscape) and Traditional art (drawing, painting)
 * ***<ins>Linguistics</ins> ->*** English and Portuguese
 * ***<ins>Game Development</ins> ->*** Game Jams, Itch.io, Google Play
-* ***<ins>Leadership</ins> ->*** NOIC's vice-president, Nery co-founder, Keybind Paradox co-founder
+* ***<ins>Leadership</ins> ->*** Dupla's CMO, Good Luck Collective co-founder, NOIC's vice-president, Nery co-founder
 * ***<ins>Problem-solving</ins> ->*** Scientific Olympiads, Chess
 * ***<ins>Programming</ins> ->*** C#, JS, Python, PHP, CSS and HTML, Markdown, and more
 * ***<ins>Scientific Knowledge</ins> ->*** Math, CS, Physics, Robotics, A&A
@@ -107,9 +114,22 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 <hr style="background-color:#c50052"/>
 
 ###### <span style="color:#c50052">AWARDS</span>
-*(8th to current - awards from 6th and 7th are available upon request)*
 
+#### **-> <ins>2014 - 6th grade</ins>**
+**National:**
 
+**State:**
+
+<hr>
+
+#### **-> <ins>2015 - 7th grade</ins>**
+**International:**
+
+**National:**
+
+**State:**
+
+<hr>
 
 #### **-> <ins>2016 - 8th grade</ins>**
 **National:**
@@ -127,7 +147,7 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 * **GOLD** - Math, [<span class="link">Sem Fronteiras Reg.</span>](http://matematicasemfronteiras.org/index.html)
 * **GOLD** - Math, [<span class="link">Mat. da Unicamp</span>](http://www.opf.pro.br/)
 
-
+<hr>
 
 #### **-> <ins>2017 - 9th grade</ins>**
 **International:**
@@ -150,8 +170,7 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 * **GOLD** - Math, [<span class="link">Mat. da Unicamp</span>](http://www.opf.pro.br/)
 * **SILVER** - Phys., [<span class="link">Paulista of Physics</span>](http://www.opf.pro.br/)
 
-
-
+<hr>
 
 #### **-> <ins>2018 - 10th grade</ins>**
 **National:**
@@ -163,7 +182,7 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 **State:**
 * **SILVER** - Math, [<span class="link">Paulista of Math</span>](http://www.opm.mat.br/)
 
-
+<hr>
 
 #### **-> <ins>2019 - 11th grade</ins>**
 **National:**
@@ -171,11 +190,17 @@ Supervises over 40 members; other responsibilities include redesigning the whole
 * **BRONZE** - Math, [<span class="link">OBMEP</span>](http://www.obmep.org.br/)
 * **HM** - Math, [<span class="link">Brazilian of Math</span>](https://www.obm.org.br/)
 
-
+<hr>
 
 #### **-> <ins>2020 - 12th grade</ins>**
 **National:**
 * **<span class="marked mode-none">2ND PLACE</span>** - [<span class="link">MIT Hackmed Hackathon</span>](https://hackingmedicine.mit.edu)
+
+<hr>
+
+#### **-> <ins>2021</ins>**
+**International:**
+* **36TH OUT OF 1.8K** - [Brackeys Game Jam](https://itch.io/jam/brackeys-5)
 
 -split-
 

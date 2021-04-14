@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>daily on byKoga</title>
+    <link>https://bykoga.com/categories/daily/</link>
+    <description>Recent content in daily on byKoga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Apr 2021 16:51:15 -0300</lastBuildDate><atom:link href="https://bykoga.com/categories/daily/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Off to a great start... or not</title>
+      <link>https://bykoga.com/daily/off-to-a-great-start/</link>
+      <pubDate>Fri, 09 Apr 2021 16:51:15 -0300</pubDate>
+      
+      <guid>https://bykoga.com/daily/off-to-a-great-start/</guid>
+      <description>Daily update #2</description>
+    </item>
+    
+    <item>
+      <title>A social experiment, a morning routine, and half•alive</title>
+      <link>https://bykoga.com/daily/a-social-experiment/</link>
+      <pubDate>Thu, 08 Apr 2021 12:23:35 -0300</pubDate>
+      
+      <guid>https://bykoga.com/daily/a-social-experiment/</guid>
+      <description>Daily update #1</description>
+    </item>
+    
+  </channel>
+</rss>
